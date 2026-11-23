@@ -452,3 +452,17 @@
 @media (max-width: 639px) { #mc-table th, #mc-table td { padding-block: 4px; } }
 @media (max-width: 639px) { #mc-table tbody tr:nth-child(11) { display: none; } }
 @media (max-width: 639px) { #so-sanh-bang .vs-note { font-size: 13px; line-height: 1.4; margin-top: var(--s-3); } }
+
+/* ---------------------------------------------------------------- no overflow on short screens
+   The kit holds every section at exactly 1 or 2 screens on desktops. On a short laptop screen (768px tall) a long
+   question step or the send form then runs into the next section. Here every section is at least its screens
+   and grows with its content, at every width; the footer is only as tall as its links. */
+main > :is(section, .section):not(.hero) { height: auto; min-height: calc(var(--h, 1) * 100vh); min-height: calc(var(--h, 1) * 100svh); }
+main > :is(section, .section):not(.hero) > .wrap { height: auto; }
+main > :is(section, .section).g2 > .wrap { min-height: calc(var(--h, 1) * 100svh - var(--padt) - var(--padb) - var(--bar)); }
+main > :is(section, .section) > .wrap > .fill { flex: 0 0 auto; }
+footer.closing { height: auto; min-height: 0; }
+footer.closing > .wrap { height: auto; }
+/* the hero: words on 4 columns, the collage on the other 8 (its own button is gone; the nav holds the one action) */
+@media (min-width: 1024px) { .hero--triptych .ly-collage { min-height: 560px; } }
+@media (max-width: 639px) { main > :is(section, .section):not(.hero) { min-height: calc(var(--hm, var(--h, 1)) * 100vh); min-height: calc(var(--hm, var(--h, 1)) * 100lvh); } }
