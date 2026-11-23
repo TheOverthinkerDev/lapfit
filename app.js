@@ -68,7 +68,7 @@
     const pick = (n) => $$(`input[name="${n}"]:checked`, form).map((i) => i.value);
     const one = (n) => (pick(n)[0] || 'any');
     return {
-      langs: pick('lang'), job: one('job'), fun: pick('fun'),
+      langs: pick('lang'), job: one('job'), fun: pick('fun').filter((v) => v !== 'none'),
       budget: +$('#budget').value * 1e6, carry: one('carry'), batt: one('batt'), os: one('os'), years: $('#years').checked,
       cpuBrand: one('cpub'), gpuPref: one('gpup'), ramMin: one('ramp'), size: one('size'), panel: one('panel'), hz: one('hz'), material: one('mat'),
     };
@@ -93,7 +93,8 @@
 
   /* ---------------------------------------------------------------- so khớp */
   // chưa có số liệu: trung tính (0,7) khi bạn có nhu cầu, để máy thiếu dữ liệu không lên đầu cũng không bị loại
-  const unknownFit = (need) => (need >= 60 ? 0.3 : need >= 40 ? 0.5 : need >= 25 ? 0.65 : 0.8);
+  // an unknown score never ranks above a known weak one when the need is high
+  const unknownFit = (need) => (need >= 60 ? 0 : need >= 40 ? 0.25 : need >= 25 ? 0.5 : 0.8);
   const fit = (have, need, soft = 1.6) => (need <= 5 ? 1 : !nz(have) ? unknownFit(need) : have >= need ? 1 : clamp(1 - ((need - have) / need) * soft, 0, 1));
   const verdict = (have, need) => {
     if (need <= 5) return ['ok', 'Không đòi hỏi'];
@@ -162,7 +163,8 @@
 
   const rank = (a) => {
     const P = profile(a);
-    let rows = L.map((l) => score(l, a, P)).filter(Boolean).sort((x, y) => y.pct - x.pct || x.l.price - y.l.price);
+    const unk = (l) => [l.s.cpu, l.s.gpu].filter((v) => !nz(v)).length; // ties: the laptop with more measured data first
+    let rows = L.map((l) => score(l, a, P)).filter(Boolean).sort((x, y) => y.pct - x.pct || unk(x.l) - unk(y.l) || x.l.price - y.l.price);
     return { P, rows };
   };
 
@@ -219,20 +221,34 @@
   };
   const drawResults = (res, a) => {
     rank.P = res.P; rank.a = a;
+    if (!isComplete()) return drawLocked();
     const top = res.rows.slice(0, 5);
     const box = $('#picks'), more = $('#more');
-    $('#res-count').textContent = `${res.rows.length} trong ${L.length} mẫu vừa ngân sách ${vnd(a.budget)}`;
+    const weak = top.length && top[0].pct < 60;
+    $('#res-count').textContent = `${res.rows.length} trong ${L.length} mẫu vừa ngân sách ${vnd(a.budget)}` + (weak ? '. Chưa mẫu nào đáp ứng tốt nhu cầu này: cân nhắc tăng ngân sách hoặc bớt yêu cầu.' : '');
     if (!top.length) { box.innerHTML = '<p class="empty">Không có mẫu nào trong ngân sách này. Kéo ngân sách lên hoặc bỏ bớt tuỳ chọn phần cứng.</p>'; more.innerHTML = ''; return; }
     box.innerHTML = top.slice(0, 3).map(card).join('');
     const n = res.P.n;
     more.innerHTML = `<table class="cmp-table"><caption class="sr">So sánh 5 mẫu hợp nhất</caption>
       <thead><tr><th scope="col">Mẫu</th><th scope="col">Phù hợp</th><th scope="col">Giá</th><th scope="col">CPU <span class="muted">cần ${n.cpu}</span></th><th scope="col">GPU <span class="muted">cần ${n.gpu}</span></th><th scope="col">RAM</th><th scope="col">Nặng</th><th scope="col">Lưu ý</th></tr></thead>
-      <tbody>${top.map((r, i) => `<tr><th scope="row"><span class="pick__rank">${i + 1}</span>${r.l.name} <button class="link vs-add" type="button" data-vs="${L.indexOf(r.l)}">So sánh</button></th><td><b>${r.pct}%</b></td><td>${vnd(r.l.price)}</td>
+      <tbody>${top.map((r, i) => `<tr><th scope="row"><span class="pick__rank">${i + 1}</span>${r.l.name}</th><td><b>${r.pct}%</b></td><td>${vnd(r.l.price)}</td>
         <td><span class="num">${txt(r.l.s.cpu)}</span> ${nz(r.l.s.cpu) ? verdict(r.l.s.cpu, n.cpu)[1] : ''}</td><td><span class="num">${txt(r.l.s.gpu)}</span> ${nz(r.l.s.gpu) ? verdict(r.l.s.gpu, n.gpu)[1] : ''}</td>
         <td>${txt(r.l.ram)} GB</td><td>${kg(r.l.weight)}</td><td>${r.warns[0] || r.notes[0] || 'Cân bằng'}</td></tr>`).join('')}</tbody></table>`;
     drawAdvice(res.P, a);
   };
 
+  // before every question is answered: the list of what is left, and two ghost cards holding the layout
+  const drawLocked = () => {
+    const m = missing();
+    $('#res-count').textContent = 'Kết quả hiện sau khi bạn trả lời đủ câu hỏi';
+    $('#picks').innerHTML = `<article class="card pick pick--locked">
+        <p class="locked__title">Còn ${m.length} câu chưa trả lời</p>
+        <ul class="locked__list">${m.map((g) => `<li>${g[1]}</li>`).join('')}</ul>
+        <button class="btn btn--secondary" type="button" data-goto-missing>Trả lời tiếp</button>
+      </article>` + '<div class="card pick pick--ghost" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>'.repeat(2);
+    $('#more').innerHTML = '<p class="locked__note">Bảng so sánh 5 mẫu hợp nhất hiện ở đây khi bạn trả lời xong.</p>';
+    ['#adv-min', '#adv-avoid', '#adv-tips'].forEach((sel) => { $(sel).innerHTML = '<li class="na">Hiện sau khi trả lời đủ câu hỏi</li>'; });
+  };
   const drawAdvice = (P, a) => {
     const n = P.n;
     const min = [
@@ -269,38 +285,22 @@
     const pages = Math.max(1, Math.ceil(rows.length / PER)); catPage = clamp(catPage, 0, pages - 1);
     $('#cat-page').textContent = `Trang ${catPage + 1} trên ${pages} · ${rows.length} mẫu`;
     $('#cat-prev').disabled = catPage === 0; $('#cat-next').disabled = catPage === pages - 1;
-    $('#cat-body').innerHTML = rows.slice(catPage * PER, catPage * PER + PER).map((l) => `<tr>
+    const full = mc.length >= MC_MAX;
+    $('#cat-body').innerHTML = rows.slice(catPage * PER, catPage * PER + PER).map((l) => { const i = L.indexOf(l), on = mc.includes(i); return `<tr>
       <th scope="row">${logos(l)}${l.name}</th><td class="num"><a class="price-link" href="${l.priceSource}" target="_blank" rel="noopener">${vnd(l.price)}</a></td>
       <td>${nz(l.s.cpu) ? `<span class="mini"><i style="--v:${l.s.cpu}%"></i></span><span class="num">${l.s.cpu}</span>` : '<span class="na">chưa có điểm</span>'}<small>${l.cpu}</small></td>
       <td>${nz(l.s.gpu) ? `<span class="mini"><i style="--v:${l.s.gpu}%"></i></span><span class="num">${l.s.gpu}</span>` : '<span class="na">chưa có điểm</span>'}<small>${l.gpu}</small></td>
       <td class="num">${txt(l.ram)} GB</td><td>${txt(l.screen)}</td><td class="num">${kg(l.weight)}</td>
-      <td><button class="btn btn--secondary vs-add" type="button" data-vs="${L.indexOf(l)}">So sánh</button></td></tr>`).join('');
+      <td><label class="mc-toggle"><input type="checkbox" data-mc="${i}"${on ? ' checked' : ''}${full && !on ? ' disabled' : ''}>So sánh</label></td></tr>`; }).join('');
   };
 
-  /* ---------------------------------------------------------------- so sánh hai laptop */
+  /* ---------------------------------------------------------------- so sánh nhiều laptop (2 đến 4) */
   // only fields the dataset holds; a field it lacks reads "chưa có", never a guess
   const NA = '<span class="na">chưa có</span>';
   const has = (v) => v !== undefined && v !== null && v !== '';
   const gb = (v) => (v >= 1024 ? v / 1024 + ' TB' : v + ' GB');
-  const ROWS = [
-    // [label, text(l), number for "better" (or null), higher is better?]
-    ['Giá', (l) => `<a class="price-link" href="${l.priceSource}" target="_blank" rel="noopener">${vnd(l.price)}</a> <small>${host(l.priceSource)}</small>`, (l) => l.price, false],
-    ['Hợp với bạn', (l) => { const r = rank.P && score(l, rank.a, rank.P); return r ? r.pct + '%' : 'Vượt ngân sách quá 15%'; }, (l) => { const r = rank.P && score(l, rank.a, rank.P); return r ? r.pct : -1; }, true],
-    ['CPU', (l) => `${l.cpu}${score100(l.s.cpu)}<br><small>${nz(l.cpuMulti) ? `Cinebench 2024: ${l.cpuSingle} đơn nhân, ${l.cpuMulti} đa nhân` : 'Cinebench 2024 chưa có'}${nz(l.gb6Multi) ? ` · Geekbench 6: ${l.gb6Single}/${l.gb6Multi}` : ''}</small>`, (l) => l.s.cpu, true],
-    ['GPU', (l) => `${l.gpu}${score100(l.s.gpu)}<br><small>${nz(l.gpuSN) ? `Steel Nomad ${l.gpuSN}` : 'Steel Nomad chưa có'}${nz(l.gpuTS) ? ` · Time Spy ${l.gpuTS}` : ''}${l.dgpu ? ` · TGP ${nz(l.tgp) ? l.tgp + ' W' : 'chưa có'}` : ''}${l.cuda ? ' · có CUDA' : ''}</small>`, (l) => l.s.gpu, true],
-    ['RAM', (l) => (has(l.ram) ? l.ram + ' GB' + (has(l.ramUp) ? (l.ramUp ? ', nâng được' : ', hàn chết') : '') : NA), (l) => l.ram, true],
-    ['SSD', (l) => (has(l.ssd) ? gb(l.ssd) : NA), (l) => l.ssd, true],
-    ['Màn hình', (l) => (has(l.screen) ? l.screen : NA), (l) => l.s.disp, true],
-    ['Cân nặng', (l) => (has(l.weight) ? l.weight.toLocaleString('vi-VN') + ' kg' : NA), (l) => l.weight, false],
-    ['Pin', (l) => (has(l.batWh) ? l.batWh + ' Wh' : 'Dung lượng ' + NA) + (has(l.batHours) ? `<br><small>${l.batHours.toLocaleString('vi-VN')} giờ, bài Wi-Fi Notebookcheck</small>` : ''), (l) => l.batHours, true],
-    ['Đo thực tế', (l) => measuredText(l), null, true],
-    ['Vỏ máy', (l) => (has(l.material) ? l.material : NA), null, true],
-    ['Hệ điều hành', (l) => (has(l.osText) ? l.osText : NA) + (l.arm ? ', chip ARM' : ''), null, true],
-    ['Nguồn', (l) => sourceLinks(l), null, true],
-  ];
-  const vsA = $('#vs-a'), vsB = $('#vs-b');
+  const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   function host(u) { try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return ''; } }
-  function score100(v) { return nz(v) ? `<span class="vs-bar"><i style="--v:${v}%"></i></span><span class="num">${v}</span>/100` : ' · <span class="na">điểm chưa có</span>'; }
   function measuredText(l) {
     const m = l.measured; if (!m) return NA + ' <small>(chưa có bài đánh giá đúng cấu hình)</small>';
     const parts = [];
@@ -315,65 +315,142 @@
     const urls = [...new Set([l.priceSource, ...(l.sources || []), l.cpuSrc, l.gpuSrc].filter(Boolean))].slice(0, 5);
     return '<small>' + urls.map((u) => `<a href="${u}" target="_blank" rel="noopener">${host(u)}</a>`).join(', ') + '</small>';
   }
-  const opts = L.map((l, i) => `<option value="${i}">${l.name} · ${vnd(l.price)}</option>`).join('');
-  vsA.innerHTML = opts; vsB.innerHTML = opts;
-  const drawVs = () => {
-    const a = L[+vsA.value], b = L[+vsB.value];
-    const row = ([label, text, num, up]) => {
-      let ca = '', cb = '';
-      if (num && a !== b) {
-        const x = num(a), y = num(b);
-        if (has(x) && has(y) && x !== y) { const aWins = up ? x > y : x < y; ca = aWins ? ' class="is-better"' : ''; cb = aWins ? '' : ' class="is-better"'; }
-      }
-      return `<tr><th scope="row">${label}</th><td${ca}>${text(a)}</td><td${cb}>${text(b)}</td></tr>`;
-    };
-    const cut = ROWS.findIndex((r) => r[0] === 'Cân nặng');
-    $('#vs-body').innerHTML = ROWS.slice(0, cut).map(row).join('');
-    $('#vs-body2').innerHTML = ROWS.slice(cut).map(row).join('');
-    $('#vs-name-a').textContent = a.name; $('#vs-name-b').textContent = b.name;
-    const miss = [a, b].filter((l) => (l.missing || []).length).map((l) => `${l.name}: ${l.missing.join(', ')}`);
-    $('#vs-note').textContent = (a === b ? 'Bạn đang chọn cùng một mẫu ở hai cột. ' : '') +
-      'Ô đậm có chấm xanh là bên tốt hơn. “Chưa có” nghĩa là nguồn chưa công bố số liệu đó; web không ước tính.' +
-      (miss.length ? ` Trường trang bán chưa ghi: ${miss.join('; ')}.` : '');
-  };
-  vsA.addEventListener('change', drawVs); vsB.addEventListener('change', drawVs);
-  // "So sánh" anywhere: the chosen laptop goes into the second column, the one there moves to the first
-  let vsLast = 'b';
-  document.addEventListener('click', (e) => {
-    const btn = e.target.closest('.vs-add'); if (!btn) return;
-    const i = btn.dataset.vs;
-    if (vsA.value === i || vsB.value === i) { /* already there */ }
-    else if (vsLast === 'b') { vsA.value = vsB.value; vsB.value = i; } else { vsB.value = i; }
-    drawVs();
-    $('#so-sanh').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
-    vsB.focus({ preventScroll: true });
-  });
-  const vsRefresh = () => { if (vsA.value !== '') drawVs(); };
+  // the match % only exists once every question is answered
+  const matchOf = (l) => { if (!isComplete()) return null; const r = score(l, rank.a, rank.P); return r ? r.pct : null; };
 
-  /* ---------------------------------------------------------------- các bước */
+  // four series colours, validated (validate_palette: CVD and normal-vision separation pass on white; aqua and
+  // yellow sit under 3:1, so every bar carries its value as text and every series its name in the legend chips)
+  const MC_COLORS = ['#2a78d6', '#eb6834', '#1baf7a', '#eda100'];
+  const MC_MAX = 4;
+  let mc = [];             // selected laptop indexes, in order added
+  const mcColor = new Map(); // laptop index -> colour, kept while it stays selected (colour follows the laptop)
+  const colorFor = (i) => {
+    if (!mcColor.has(i)) { const used = new Set(mcColor.values()); mcColor.set(i, MC_COLORS.find((c) => !used.has(c)) || MC_COLORS[0]); }
+    return mcColor.get(i);
+  };
+  const mcSet = (list) => {
+    mc = [...new Set(list)].slice(0, MC_MAX);
+    for (const k of [...mcColor.keys()]) if (!mc.includes(k)) mcColor.delete(k);
+    mc.forEach(colorFor);
+    drawMc(); drawCatalog();
+  };
+
+  // the small charts: one measure each; null draws no bar and says "chưa có"
+  const METRICS = [
+    { k: 'Hợp với bạn', unit: '%', get: (l) => matchOf(l), hi: true, max: 100, na: () => (isComplete() ? 'vượt ngân sách' : 'trả lời đủ câu hỏi để tính') },
+    { k: 'Điểm CPU', unit: '/100', get: (l) => l.s.cpu, hi: true, max: 100, sub: 'Cinebench 2024' },
+    { k: 'Điểm GPU', unit: '/100', get: (l) => l.s.gpu, hi: true, max: 100, sub: '3DMark Steel Nomad' },
+    { k: 'RAM', unit: ' GB', get: (l) => l.ram, hi: true },
+    { k: 'Giá', unit: ' triệu', get: (l) => +(l.price / 1e6).toFixed(1), hi: false, sub: 'thấp hơn là tốt hơn' },
+    { k: 'Cân nặng', unit: ' kg', get: (l) => l.weight, hi: false, sub: 'nhẹ hơn là tốt hơn' },
+  ];
+  const chartHtml = (m) => {
+    const vals = mc.map((i) => m.get(L[i]));
+    const known = vals.filter(nz);
+    const max = m.max || Math.max(...known, 1);
+    const best = known.length > 1 ? (m.hi ? Math.max(...known) : Math.min(...known)) : null;
+    const rows = mc.map((i, j) => {
+      const v = vals[j], l = L[i];
+      return `<li class="mc-bar${v === best ? ' is-best' : ''}">
+        <span class="mc-bar__name"><i style="--c:${colorFor(i)}"></i>${esc(l.name)}</span>
+        <span class="mc-bar__track">${nz(v) ? `<b style="--w:${Math.max(2, (v / max) * 100)}%;--c:${colorFor(i)}"></b><span class="mc-bar__val">${v.toLocaleString('vi-VN')}${m.unit}${v === best ? ' · tốt nhất' : ''}</span>` : `<span class="na">${m.na ? m.na() : 'chưa có'}</span>`}</span>
+      </li>`;
+    }).join('');
+    return `<figure class="mc-chart card span-4"><figcaption><b>${m.k}</b>${m.sub ? ` <span class="muted">${m.sub}</span>` : ''}</figcaption><ul>${rows}</ul></figure>`;
+  };
+
+  const TROWS = [
+    ['Giá', (l) => `<a class="price-link" href="${l.priceSource}" target="_blank" rel="noopener">${vnd(l.price)}</a> <small>${host(l.priceSource)}</small>`, (l) => l.price, false],
+    ['Hợp với bạn', (l) => { const p = matchOf(l); return nz(p) ? p + '%' : `<span class="na">${isComplete() ? 'vượt ngân sách' : 'chưa đủ câu trả lời'}</span>`; }, matchOf, true],
+    ['CPU', (l) => `${l.cpu}<br><small>${nz(l.cpuMulti) ? `Cinebench 2024: ${l.cpuSingle} đơn nhân, ${l.cpuMulti} đa nhân` : 'Cinebench 2024 chưa có'}${nz(l.gb6Multi) ? ` · Geekbench 6: ${l.gb6Single}/${l.gb6Multi}` : ''}</small>`, (l) => l.s.cpu, true],
+    ['GPU', (l) => `${l.gpu}<br><small>${nz(l.gpuSN) ? `Steel Nomad ${l.gpuSN}` : 'Steel Nomad chưa có'}${nz(l.gpuTS) ? ` · Time Spy ${l.gpuTS}` : ''}${l.dgpu ? ` · TGP ${nz(l.tgp) ? l.tgp + ' W' : 'chưa có'}` : ''}${l.cuda ? ' · có CUDA' : ''}</small>`, (l) => l.s.gpu, true],
+    ['RAM', (l) => (has(l.ram) ? l.ram + ' GB' + (has(l.ramUp) ? (l.ramUp ? ', nâng được' : ', hàn chết') : '') : NA), (l) => l.ram, true],
+    ['SSD', (l) => (has(l.ssd) ? gb(l.ssd) : NA), (l) => l.ssd, true],
+    ['Màn hình', (l) => (has(l.screen) ? l.screen : NA), (l) => l.s.disp, true],
+    ['Cân nặng', (l) => (has(l.weight) ? l.weight.toLocaleString('vi-VN') + ' kg' : NA), (l) => l.weight, false],
+    ['Pin', (l) => (has(l.batWh) ? l.batWh + ' Wh' : 'Dung lượng ' + NA) + (has(l.batHours) ? `<br><small>${l.batHours.toLocaleString('vi-VN')} giờ, bài Wi-Fi Notebookcheck</small>` : ''), (l) => l.batHours, true],
+    ['Đo thực tế', measuredText, null, true],
+    ['Vỏ máy', (l) => (has(l.material) ? l.material : NA), null, true],
+    ['Hệ điều hành', (l) => (has(l.osText) ? l.osText : NA) + (l.arm ? ', chip ARM' : ''), null, true],
+    ['Nguồn', sourceLinks, null, true],
+  ];
+  const drawMc = () => {
+    $('#mc-chips').innerHTML = mc.map((i) => `<li><i style="--c:${colorFor(i)}"></i><span>${esc(L[i].name)}</span>${mc.length > 2 ? `<button type="button" class="mc-x" data-mc-remove="${i}" aria-label="Bỏ ${esc(L[i].name)} khỏi so sánh">×</button>` : ''}</li>`).join('');
+    const add = $('#mc-add');
+    add.disabled = mc.length >= MC_MAX;
+    add.innerHTML = `<option value="">${mc.length >= MC_MAX ? 'Đã đủ 4 mẫu, bỏ bớt để thêm' : '+ Thêm laptop vào so sánh'}</option>` +
+      L.map((l, i) => (mc.includes(i) ? '' : `<option value="${i}">${esc(l.name)} · ${vnd(l.price)}</option>`)).join('');
+    $('#mc-charts').innerHTML = METRICS.map(chartHtml).join('');
+    const ls = mc.map((i) => L[i]);
+    const row = ([label, text, num, up]) => {
+      let best = null;
+      if (num) { const v = ls.map(num).filter(has); if (v.length > 1 && new Set(v).size > 1) best = up ? Math.max(...v) : Math.min(...v); }
+      return `<tr><th scope="row">${label}</th>${ls.map((l) => `<td${best !== null && num(l) === best ? ' class="is-better"' : ''}>${text(l)}</td>`).join('')}</tr>`;
+    };
+    $('#mc-table').innerHTML = `<thead><tr><th scope="col" class="vs__k"><span class="sr">Tiêu chí</span></th>${mc.map((i) => `<th scope="col"><span class="mc-head"><i style="--c:${colorFor(i)}"></i>${esc(L[i].name)}</span></th>`).join('')}</tr></thead><tbody>${TROWS.map(row).join('')}</tbody>`;
+    const miss = ls.filter((l) => (l.missing || []).length).map((l) => `${l.name}: ${l.missing.join(', ')}`);
+    $('#vs-note').textContent = 'Ô có chấm xanh là mẫu tốt nhất ở dòng đó. “Chưa có” nghĩa là nguồn chưa công bố số liệu; web không ước tính.' + (miss.length ? ` Trường trang bán chưa ghi: ${miss.join('; ')}.` : '');
+  };
+  $('#mc-add').addEventListener('change', (e) => { const v = e.target.value; if (v !== '') mcSet([...mc, +v]); });
+  document.addEventListener('click', (e) => { const x = e.target.closest('[data-mc-remove]'); if (x) mcSet(mc.filter((i) => i !== +x.dataset.mcRemove)); });
+  $('#cat-body').addEventListener('change', (e) => {
+    const c = e.target.closest('[data-mc]'); if (!c) return;
+    const i = +c.dataset.mc;
+    if (c.checked) mcSet([...mc, i]);
+    else if (mc.length > 2) mcSet(mc.filter((k) => k !== i));
+    else { c.checked = true; $('#cat-page').textContent = 'Cần ít nhất 2 mẫu để so sánh.'; }
+  });
+
+  /* ---------------------------------------------------------------- các bước, và kiểm tra đã trả lời đủ */
   const steps = $$('.step', form), tabs = $$('.stepper button', form);
-  let cur = 0;
+  let cur = 0, budgetOk = false;
+  const chosen = (n) => !!form.querySelector(`input[name="${n}"]:checked`);
+  const GROUPS = [
+    [0, 'Ngôn ngữ đang học', () => chosen('lang')],
+    [1, 'Nghề muốn làm', () => chosen('job')],
+    [2, 'Ngân sách', () => budgetOk], [2, 'Mang máy đi học', () => chosen('carry')], [2, 'Thời lượng pin', () => chosen('batt')], [2, 'Hệ điều hành', () => chosen('os')],
+    [3, 'Giải trí', () => chosen('fun')],
+    [4, 'Hãng CPU', () => chosen('cpub')], [4, 'Card đồ hoạ', () => chosen('gpup')], [4, 'RAM tối thiểu', () => chosen('ramp')],
+    [5, 'Kích thước', () => chosen('size')], [5, 'Tấm nền', () => chosen('panel')], [5, 'Tần số quét', () => chosen('hz')], [5, 'Chất liệu vỏ', () => chosen('mat')],
+  ];
+  const missing = () => GROUPS.filter((g) => !g[2]());
+  function isComplete() { return missing().length === 0; }
+  const stepDone = (k) => GROUPS.filter((g) => g[0] === k).every((g) => g[2]());
   const go = (i) => {
     cur = clamp(i, 0, steps.length - 1);
     steps.forEach((s, k) => { s.hidden = k !== cur; });
-    tabs.forEach((t, k) => { t.setAttribute('aria-current', k === cur ? 'step' : 'false'); t.classList.toggle('is-done', k < cur); });
+    tabs.forEach((t, k) => { t.setAttribute('aria-current', k === cur ? 'step' : 'false'); t.classList.toggle('is-done', stepDone(k)); });
     $('#prev').disabled = cur === 0;
     $('#next').hidden = cur === steps.length - 1; $('#see').hidden = cur !== steps.length - 1;
-    $('#step-of').textContent = `Bước ${cur + 1} trên ${steps.length} · ${tabs[cur].textContent}`;
+    const done = GROUPS.length - missing().length;
+    $('#step-of').textContent = `Bước ${cur + 1} trên ${steps.length} · ${tabs[cur].textContent} · đã trả lời ${done}/${GROUPS.length} câu`;
   };
+  const leave = () => { if (cur === 2) budgetOk = true; }; // the budget counts as answered once its step is left with "Câu tiếp theo"
   tabs.forEach((t, k) => t.addEventListener('click', () => go(k)));
   $('#prev').addEventListener('click', () => go(cur - 1));
-  $('#next').addEventListener('click', () => go(cur + 1));
+  $('#next').addEventListener('click', () => { leave(); update(); go(cur + 1); });
   $$('[data-step]').forEach((a) => a.addEventListener('click', () => go(+a.dataset.step)));
+  const goMissing = () => { const m = missing(); if (m.length) { go(m[0][0]); $('#chon').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }); } };
+  document.addEventListener('click', (e) => { if (e.target.closest('[data-goto-missing]')) goMissing(); });
+  // "Chỉ dùng để học" excludes the other entertainment answers, and the other way round
+  form.addEventListener('change', (e) => {
+    const t = e.target; if (t.name !== 'fun' || !t.checked) return;
+    $$('input[name="fun"]', form).forEach((i) => { if (t.value === 'none' ? i.value !== 'none' : i.value === 'none') i.checked = false; });
+  });
+  $('#budget').addEventListener('input', () => { budgetOk = true; });
 
   const update = () => {
     const a = read();
     $('#budget-out').textContent = `${a.budget / 1e6} triệu`;
-    const res = rank(a); drawProfile(res.P); drawResults(res, a); vsRefresh();
+    const res = rank(a); drawProfile(res.P); drawResults(res, a); drawMc();
+    go(cur);
   };
   form.addEventListener('input', update);
   form.addEventListener('change', update);
-  $('#see').addEventListener('click', () => { update(); $('#ket-qua').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }); });
+  $('#see').addEventListener('click', () => {
+    if (!isComplete()) { goMissing(); return; }
+    update(); $('#ket-qua').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+  });
   $('#cat-filter').addEventListener('change', () => { catPage = 0; drawCatalog(); });
   $('#cat-sort').addEventListener('change', () => { catPage = 0; drawCatalog(); });
   $('#cat-prev').addEventListener('click', () => { catPage--; drawCatalog(); });
@@ -382,8 +459,8 @@
   $$('[data-count-laptops]').forEach((e) => { e.textContent = L.length; });
   $$('[data-stat-laptops]').forEach((e) => { e.textContent = L.length; });
   $$('[data-stat-cpus]').forEach((e) => { e.textContent = new Set(L.map((l) => l.cpu.replace(/ \(.*\)$/, ''))).size; });
-  // two different laptops to start: the two best for the default answers
-  { const r = rank(read()).rows; vsA.value = String(L.indexOf(r[0] ? r[0].l : L[0])); vsB.value = String(L.indexOf(r[1] ? r[1].l : L[1])); }
-  window.LAPFIT = { read, rank };
-  go(0); update(); drawCatalog(); drawVs();
+  // three laptops to start the comparison: a MacBook, a business ultrabook and a budget gaming laptop
+  mcSet([/MacBook Air 13/, /ThinkPad E14/, /LOQ 15IRH11E/].map((re) => L.findIndex((l) => re.test(l.name))).filter((i) => i >= 0));
+  window.LAPFIT = { read, rank, isComplete };
+  go(0); update(); drawCatalog();
 })();

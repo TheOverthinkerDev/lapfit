@@ -11,17 +11,23 @@
   let last = null; // the JSON text last sent
 
   /* ---------------------------------------------------------------- the laptop list: the five best first */
+  const sendBtn = $('#send-btn'), lock = $('#send-lock');
   const fillPick = () => {
     const keep = sel.value;
+    // sending needs every question answered: the record carries the answers and the match %
+    const ok = api.isComplete();
+    sendBtn.disabled = !ok; lock.hidden = ok;
+    lock.innerHTML = ok ? '' : 'Trả lời đủ 6 nhóm câu hỏi để gửi kết quả. <button class="link" type="button" data-goto-missing>Trả lời tiếp</button>';
     const res = api.rank(api.read());
-    const top = res.rows.slice(0, 5);
+    const top = ok ? res.rows.slice(0, 5) : [];
     const topIdx = new Set(top.map((r) => L.indexOf(r.l)));
-    sel.innerHTML = `<optgroup label="5 mẫu hợp nhất với bạn">${top.map((r, i) => `<option value="${L.indexOf(r.l)}">${i + 1}. ${r.l.name} · ${r.pct}% · ${vnd(r.l.price)}</option>`).join('')}</optgroup>
+    sel.innerHTML = (top.length ? `<optgroup label="5 mẫu hợp nhất với bạn">${top.map((r, i) => `<option value="${L.indexOf(r.l)}">${i + 1}. ${r.l.name} · ${r.pct}% · ${vnd(r.l.price)}</option>`).join('')}</optgroup>` : '') + `
       <optgroup label="Các mẫu khác">${L.map((l, i) => (topIdx.has(i) ? '' : `<option value="${i}">${l.name} · ${vnd(l.price)}</option>`)).join('')}</optgroup>`;
     if (keep && [...sel.options].some((o) => o.value === keep)) sel.value = keep;
   };
   fillPick();
   $('#tool').addEventListener('change', fillPick);
+  $('#next').addEventListener('click', () => setTimeout(fillPick, 0));
 
   // "Chọn máy này" on a result card
   document.addEventListener('click', (e) => {
@@ -109,7 +115,7 @@
   });
 
   /* copy and save the JSON */
-  $('#copy-json').addEventListener('click', async () => {
+  if ($('#copy-json')) $('#copy-json').addEventListener('click', async () => {
     if (!last) return;
     const pretty = JSON.stringify(last.rec, null, 2);
     try { await navigator.clipboard.writeText(pretty); status.textContent = 'Đã sao chép JSON.'; }

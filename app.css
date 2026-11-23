@@ -373,3 +373,82 @@
 .pick__choose { justify-self: start; align-self: flex-start; background: none; border: 0; padding: 0; font: 600 var(--t-small)/1.3 var(--font-text); color: var(--action); cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
 @media (max-width: 1023px) { .send-grid > * { grid-column: 1 / -1; } #gui .grid.fill { flex: 0 0 auto; } .qr-box { max-width: 300px; } }
 .qr-empty--warn { color: var(--ink); line-height: 1.5; }
+
+/* ---------------------------------------------------------------- multi-laptop compare */
+.mc-pick { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-2) var(--s-3); margin-bottom: var(--s-4); }
+.mc-chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: var(--s-2); }
+.mc-chips li { display: inline-flex; align-items: center; gap: var(--s-2); min-height: 40px; padding: 0 var(--s-2) 0 var(--s-3); border: 1px solid var(--line-strong); border-radius: var(--r-sm); background: #fff; font: 600 var(--t-small)/1.2 var(--font-text); }
+.mc-chips li:not(:has(.mc-x)) { padding-right: var(--s-3); }
+.mc-chips i, .mc-bar__name i, .mc-head i { flex: none; width: 10px; height: 10px; border-radius: 50%; background: var(--c); }
+.mc-x { width: 32px; height: 32px; border: 0; border-radius: var(--r-sm); background: none; font-size: 20px; line-height: 1; color: var(--muted); cursor: pointer; }
+.mc-x:hover { background: var(--surface); color: var(--ink); }
+.mc-add select { height: 40px; min-width: 240px; max-width: 100%; padding: 0 var(--s-3); border: 1px dashed var(--line-strong); border-radius: var(--r-sm); background: transparent; font: 500 var(--t-small)/1.2 var(--font-text); color: var(--ink); }
+.mc-charts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s-3); flex: 1 1 auto; align-content: start; }
+.mc-chart { margin: 0; padding: var(--s-4); background: #fff; display: grid; gap: var(--s-3); align-content: start; min-width: 0; }
+.mc-chart figcaption { font-size: var(--t-small); }
+.mc-chart figcaption .muted { font-size: var(--t-label); }
+.mc-chart ul { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--s-2); }
+.mc-bar { display: grid; gap: 2px; }
+.mc-bar__name { display: flex; align-items: center; gap: 6px; font-size: var(--t-label); color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mc-bar__track { display: flex; align-items: center; gap: var(--s-2); min-height: 14px; }
+.mc-bar__track b { display: block; height: 10px; width: var(--w); background: var(--c); border-radius: 0 4px 4px 0; flex: none; max-width: calc(100% - 92px); }
+.mc-bar__val { font: 500 12px/1 var(--font-text); color: var(--ink); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.mc-bar.is-best .mc-bar__val { font-weight: 700; }
+.mc-head { display: inline-flex; align-items: center; gap: 6px; font: 600 var(--t-small)/1.3 var(--font-text); color: var(--ink); }
+#mc-table { min-width: 560px; }
+#mc-table .vs__k { width: 120px; }
+.mc-toggle { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; font-size: var(--t-label); font-weight: 500; cursor: pointer; white-space: nowrap; }
+.mc-toggle input { width: 18px; height: 18px; accent-color: var(--action); margin: 0; }
+.mc-toggle:has(input:disabled) { color: var(--muted); cursor: not-allowed; }
+@media (max-width: 1023px) { .mc-charts { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 639px) { .mc-charts { grid-template-columns: minmax(0, 1fr); } .mc-add, .mc-add select { width: 100%; min-width: 0; } }
+
+/* ---------------------------------------------------------------- results before every question is answered */
+.pick--locked { justify-content: flex-start; gap: var(--s-3); }
+.locked__title { margin: 0; font: var(--display-weight) var(--t-h3)/1.2 var(--font-display); letter-spacing: -0.02em; }
+.locked__list { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: var(--s-2); }
+.locked__list li { padding: var(--s-1) var(--s-3); border-radius: var(--r-sm); background: var(--surface); font-size: var(--t-small); font-weight: 500; }
+.pick--locked .btn { align-self: flex-start; }
+.pick--ghost { gap: var(--s-4); justify-content: flex-start; background: transparent; border: 1px dashed var(--line-strong); box-shadow: none; }
+.pick--ghost i { display: block; height: 14px; border-radius: 4px; background: var(--surface); }
+.pick--ghost i:nth-child(1) { width: 40%; height: 28px; } .pick--ghost i:nth-child(2) { width: 75%; } .pick--ghost i:nth-child(3) { width: 60%; }
+.locked__note { margin: 0; padding: var(--s-5); border: 1px dashed var(--line-strong); border-radius: var(--r-md); color: var(--muted); font-size: var(--t-small); }
+.send-lock { margin: 0; padding: var(--s-3) var(--s-4); border-radius: var(--r-sm); background: #fff; font-size: var(--t-small); }
+.send-lock .link { background: none; border: 0; padding: 0; color: var(--action); font: inherit; font-weight: 600; text-decoration: underline; cursor: pointer; }
+#send-btn:disabled { opacity: .45; cursor: not-allowed; }
+/* a finished step shows a tick */
+.stepper button.is-done::before { content: "✓ " counter(st); color: var(--action); }
+/* compare: charts on the page grid (3 a row, 2 on tablets, 1 on phones); the wide table scrolls inside its box */
+.vs-wrap { overflow-x: auto; }
+#mc-charts.grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gutter); row-gap: var(--s-3); }
+@media (max-width: 1023px) { #mc-charts > .mc-chart { grid-column: span 6; } }
+@media (max-width: 639px) { #mc-charts > .mc-chart { grid-column: 1 / -1; } }
+/* below 1280 the compare section grows with its content instead of holding exactly two screens */
+@media (max-width: 1279px) {
+  #so-sanh { --h: 1; --hm: 1; }
+  #so-sanh > .wrap { display: flex; flex-direction: column; row-gap: var(--s-8); }
+}
+/* the compare section is two screens on wide desktops only (the kit's .g2 layout, applied here from 1280) */
+@media (min-width: 1280px) {
+  #so-sanh { --h: 2; }
+  #so-sanh > .wrap { display: grid; grid-template-rows: minmax(0, 1fr) minmax(0, 1fr); row-gap: calc(var(--padt) + var(--padb) + var(--bar)); }
+  #so-sanh > .wrap > .group { min-height: 0; }
+}
+@media (max-width: 1279px) { #so-sanh > .wrap { display: flex; flex-direction: column; row-gap: var(--s-8); } }
+@media (max-width: 639px) {
+  #mc-table { min-width: 0; table-layout: fixed; font-size: 13px; }
+  #mc-table .vs__k { width: 68px; }
+  #mc-table td, #mc-table th { padding-right: 6px; overflow-wrap: anywhere; }
+  #mc-table .mc-head { font-size: 13px; }
+}
+/* split compare: charts one screen, the table two on wide desktops; below 1280 both grow with content */
+@media (min-width: 1280px) {
+  #so-sanh { --h: 1; }
+  #so-sanh > .wrap { display: flex; flex-direction: column; row-gap: 0; }
+  #so-sanh-bang { --h: 2; }
+}
+@media (max-width: 639px) { #so-sanh, #so-sanh-bang { --hm: 2; } }
+@media (min-width: 1280px) { #mc-table th, #mc-table td { padding-block: var(--s-3); } #so-sanh-bang .vs-note { margin-top: var(--s-6); } }
+@media (max-width: 639px) { #mc-table th, #mc-table td { padding-block: 4px; } }
+@media (max-width: 639px) { #mc-table tbody tr:nth-child(11) { display: none; } }
+@media (max-width: 639px) { #so-sanh-bang .vs-note { font-size: 13px; line-height: 1.4; margin-top: var(--s-3); } }
