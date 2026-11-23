@@ -21,9 +21,9 @@
     const res = api.rank(api.read());
     const top = ok ? res.rows.slice(0, 5) : [];
     const topIdx = new Set(top.map((r) => L.indexOf(r.l)));
-    sel.innerHTML = (top.length ? `<optgroup label="5 mẫu hợp nhất với bạn">${top.map((r, i) => `<option value="${L.indexOf(r.l)}">${i + 1}. ${r.l.name} · ${r.pct}% · ${vnd(r.l.price)}</option>`).join('')}</optgroup>` : '') + `
+    sel.innerHTML = '<option value="">Không chọn máy</option>' + (top.length ? `<optgroup label="5 mẫu hợp nhất với bạn">${top.map((r, i) => `<option value="${L.indexOf(r.l)}">${i + 1}. ${r.l.name} · ${r.pct}% · ${vnd(r.l.price)}</option>`).join('')}</optgroup>` : '') + `
       <optgroup label="Các mẫu khác">${L.map((l, i) => (topIdx.has(i) ? '' : `<option value="${i}">${l.name} · ${vnd(l.price)}</option>`)).join('')}</optgroup>`;
-    if (keep && [...sel.options].some((o) => o.value === keep)) sel.value = keep;
+    sel.value = keep && [...sel.options].some((o) => o.value === keep) ? keep : '';
   };
   fillPick();
   $('#tool').addEventListener('change', fillPick);
@@ -41,8 +41,8 @@
   const code = () => 'LF-' + Array.from(crypto.getRandomValues(new Uint8Array(4)), (b) => b.toString(36).padStart(2, '0')).join('').slice(0, 7).toUpperCase();
   const build = () => {
     const a = api.read(), res = api.rank(a), n = res.P.n;
-    const pick = L[+sel.value];
-    const pr = res.rows.find((r) => r.l === pick);
+    const pick = sel.value === '' ? null : L[+sel.value];
+    const pr = pick ? res.rows.find((r) => r.l === pick) : null;
     const lap = (l, pct) => ({ name: l.name, sku: l.sku, price_vnd: l.price, match_pct: pct ?? null });
     return {
       app: 'LapFit', v: 1, id: code(), time: new Date().toISOString(),
@@ -52,7 +52,7 @@
         cpu_brand: a.cpuBrand, gpu: a.gpuPref, ram_min: a.ramMin, size: a.size, panel: a.panel, hz: a.hz, material: a.material,
       },
       needs: { cpu: n.cpu, gpu: n.gpu, ram_gb: n.ram, ssd_gb: n.ssd, display: n.disp, portability: n.port, battery: n.bat, mac: !!n.mac, cuda: !!n.cuda, x86: !!n.x86 },
-      choice: { ...lap(pick, pr ? pr.pct : null), in_budget: !!pr, price_source: pick.priceSource },
+      choice: pick ? { ...lap(pick, pr ? pr.pct : null), in_budget: !!pr, price_source: pick.priceSource } : null,
       top5: res.rows.slice(0, 5).map((r) => lap(r.l, r.pct)),
       data_checked: window.LAPFIT_CHECKED || null,
     };
@@ -101,7 +101,7 @@
     const text = asciiJson(rec);
     last = { text, rec };
     const drawn = drawQr(text);
-    qrMeta.innerHTML = `Mã kết quả <b>${rec.id}</b> · ${rec.choice.name} · ${text.length.toLocaleString('vi-VN')} ký tự JSON`;
+    qrMeta.innerHTML = `Mã kết quả <b>${rec.id}</b> · ${rec.choice ? rec.choice.name : 'chưa chọn máy'} · ${text.length.toLocaleString('vi-VN')} ký tự JSON`;
     qrActions.hidden = false;
     status.textContent = 'Đang lưu kết quả…';
     const r = await saveOnline(rec);
@@ -146,8 +146,7 @@
       `- Thời gian: ${new Date(r.time).toLocaleString('vi-VN')}`,
       `- Sinh viên: ${r.student.name || 'không ghi'}`, `- Ghi chú: ${r.student.note || 'không có'}`, '',
       '## Máy đã chọn', '',
-      `**${r.choice.name}** (${r.choice.sku || 'không có mã'}) · ${vnd(r.choice.price_vnd)} · phù hợp ${r.choice.match_pct != null ? r.choice.match_pct + '%' : 'chưa tính (vượt ngân sách)'}`, '',
-      `Nơi bán: ${r.choice.price_source}`, '',
+      ...(r.choice ? [`**${r.choice.name}** (${r.choice.sku || 'không có mã'}) · ${vnd(r.choice.price_vnd)} · phù hợp ${r.choice.match_pct != null ? r.choice.match_pct + '%' : 'chưa tính (vượt ngân sách)'}`, '', `Nơi bán: ${r.choice.price_source}`, ''] : ['Chưa chọn máy.', '']),
       '## Câu trả lời', '',
       `- Ngôn ngữ đang học: ${list('lang', a.langs)}`,
       `- Nghề muốn làm: ${labelOf('job', a.job)}`,
@@ -180,7 +179,7 @@
         .sort((x, y) => String(y.time).localeCompare(String(x.time)));
       owner.hidden = false;
       $('#owner-count').textContent = `${ownerRows.length} lượt gửi`;
-      $('#owner-list').innerHTML = ownerRows.slice(0, 5).map((r) => `<li><b>${r.id}</b> ${r.student && r.student.name ? r.student.name.replace(/[<>&]/g, '') : 'Không tên'} · ${r.choice ? r.choice.name : ''} · ${new Date(r.time).toLocaleString('vi-VN')}</li>`).join('');
+      $('#owner-list').innerHTML = ownerRows.slice(0, 5).map((r) => `<li><b>${r.id}</b> ${r.student && r.student.name ? r.student.name.replace(/[<>&]/g, '') : 'Không tên'} · ${r.choice ? r.choice.name : 'chưa chọn máy'} · ${new Date(r.time).toLocaleString('vi-VN')}</li>`).join('');
     } catch { /* not readable for this viewer */ }
   }
   $('#owner-save').addEventListener('click', async () => { status.textContent = await saveFile('lapfit-tat-ca-ket-qua.json', JSON.stringify(ownerRows, null, 2)); });
