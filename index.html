@@ -82,14 +82,14 @@
           </div>
         </div>
       </div>
-      <div class="nav__item"><a class="nav__link" href="#ket-qua">Kết quả</a></div>
-      <div class="nav__item"><a class="nav__link" href="#cach-cham">Chấm điểm</a></div>
-      <div class="nav__item"><a class="nav__link" href="#chip">Chip</a></div>
-      <div class="nav__item"><a class="nav__link" href="#danh-sach">Danh sách</a></div>
-      <div class="nav__item"><a class="nav__link" href="#so-sanh">So sánh</a></div>
+      <div class="nav__item" data-gated hidden><a class="nav__link" href="#ket-qua">Kết quả</a></div>
+      <div class="nav__item" data-gated hidden><a class="nav__link" href="#cach-cham">Chấm điểm</a></div>
+      <div class="nav__item" data-gated hidden><a class="nav__link" href="#chip">Chip</a></div>
+      <div class="nav__item" data-gated hidden><a class="nav__link" href="#danh-sach">Danh sách</a></div>
+      <div class="nav__item" data-gated hidden><a class="nav__link" href="#so-sanh">So sánh</a></div>
     </nav>
     <div class="nav__actions">
-      <a class="btn btn--primary" href="#chon">Tìm laptop phù hợp</a>
+      <a class="btn btn--primary" href="#chon">Trả lời câu hỏi</a>
     </div>
     <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Mở menu">
       <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
@@ -98,70 +98,11 @@
 </header>
 
 <main id="top">
-  <section class="hero hero--triptych" data-enter aria-labelledby="hero-h">
-    <div class="wrap"><div class="hero-text grid hero__grid">
-      <div class="span-4">
-        <h1 id="hero-h">Chọn laptop cho sinh viên CNTT</h1>
-        <p class="hero__lead">Chọn ngôn ngữ, nghề và ngân sách. LapFit chấm <span data-count-laptops>33</span> mẫu đang bán tại Việt Nam theo nhu cầu đó.</p>
-      </div>
-      <div class="ly-collage span-8 start-5" role="img" aria-label="Ba ví dụ của LapFit: câu hỏi về ngôn ngữ đang học, hồ sơ nhu cầu CPU, GPU, RAM và thẻ kết quả với điểm phù hợp">
-        <div class="ly-collage__set is-on">
-          <div class="ly-piece pc-q" style="left: 4%; top: 6%; width: 54%">
-            <span class="pc-lbl">Bước 1 · Ngôn ngữ đang học</span>
-            <div class="pc-chips"><span class="on"><img data-icon="python" src="assets/icons/python.svg" alt="">Python</span><span class="on"><img data-icon="java" src="assets/icons/java.svg" alt="">Java</span><span><img data-icon="c-plusplus" src="assets/icons/c-plusplus.svg" alt="">C++</span><span><img data-icon="javascript" src="assets/icons/javascript.svg" alt="">JavaScript</span></div>
-          </div>
-          <div class="ly-piece pc-need" style="left: 30%; top: 40%; width: 44%">
-            <span class="pc-lbl">Hồ sơ nhu cầu</span>
-            <div class="ln"><span>CPU</span><i style="--v:62%"></i><em>Cao</em></div>
-            <div class="ln"><span>GPU</span><i style="--v:24%"></i><em>Nhẹ</em></div>
-            <div class="ln"><span>RAM</span><i style="--v:50%"></i><em>16 GB</em></div>
-            <div class="ln"><span>Pin</span><i style="--v:85%"></i><em>10 giờ</em></div>
-          </div>
-          <div class="ly-piece pc-res" style="left: 60%; top: 10%; width: 36%">
-            <span class="pc-pct">94%</span><b>MacBook Air 13 M5</b><small>16 GB · 1,23 kg · 33,7 triệu</small>
-          </div>
-          <div class="ly-piece pc-res pc-res--alt" style="left: 54%; top: 76%; width: 42%; height: 20%">
-            <span class="pc-pct">88%</span><b>ThinkPad E14 Gen 7</b><small>Core Ultra 5 · RAM nâng được</small>
-          </div>
-        </div>
-        <div class="ly-collage__set" aria-hidden="true">
-          <div class="ly-piece pc-q" style="left: 4%; top: 6%; width: 50%">
-            <span class="pc-lbl">Bước 2 · Nghề muốn làm</span>
-            <div class="pc-opt on"><b>AI, học máy</b><small>Cần GPU NVIDIA, 32 GB RAM</small></div>
-            <div class="pc-opt"><b>Phát triển web</b></div>
-          </div>
-          <div class="ly-piece pc-bench" style="left: 58%; top: 12%; width: 38%">
-            <span class="pc-lbl">GPU so với nhu cầu</span>
-            <div class="bar"><span>RTX 5070 Ti</span><i style="--v:88%"></i></div>
-            <div class="bar"><span>RTX 5060</span><i style="--v:78%"></i></div>
-            <div class="bar dim"><span>Arc 140V</span><i style="--v:47%"></i></div>
-            <span class="need-line" style="--n:78%"></span>
-          </div>
-          <div class="ly-piece pc-res" style="left: 18%; top: 58%; width: 44%">
-            <span class="pc-pct">91%</span><b>LOQ 15IRH11E</b><small>RTX 3050 · 26 triệu</small>
-          </div>
-        </div>
-        <div class="ly-collage__set" aria-hidden="true">
-          <div class="ly-piece pc-warn" style="left: 4%; top: 8%; width: 52%">
-            <span class="pc-lbl">Lưu ý</span><b>Học Swift cần MacBook</b><small>Xcode chỉ chạy trên macOS</small>
-          </div>
-          <div class="ly-piece pc-q" style="left: 44%; top: 40%; width: 52%">
-            <span class="pc-lbl">Bước 6 · Màn hình</span>
-            <div class="pc-chips"><span class="on">OLED</span><span>IPS</span><span class="on">120 Hz</span><span>Nhôm</span><span>Magie</span></div>
-          </div>
-          <div class="ly-piece pc-res" style="left: 8%; top: 64%; width: 40%">
-            <span class="pc-pct">90%</span><b>Zenbook 14 OLED</b><small>Ryzen AI 7 · 32 GB · 1,2 kg</small>
-          </div>
-        </div>
-      </div>
-    </div></div>
-  </section>
-
   <!-- CÂU HỎI: sáu bước bên trái, hồ sơ nhu cầu cập nhật ngay bên phải -->
   <section class="section" id="chon" style="--hm: 2" aria-labelledby="chon-h">
     <div class="wrap">
       <div class="section-head">
-        <h2 id="chon-h">Sáu câu hỏi chọn laptop. <span class="muted">Hồ sơ nhu cầu đổi theo.</span></h2>
+        <h1 id="chon-h">Chọn laptop cho sinh viên CNTT. <span class="muted">Trả lời đủ để xem kết quả.</span></h1>
       </div>
       <div class="grid fill tool">
         <div class="span-7 tool__form" id="tool" role="group" aria-label="Câu hỏi chọn laptop">
@@ -352,7 +293,7 @@
   </section>
 
   <!-- KẾT QUẢ: ba thẻ đầu, rồi bảng so sánh năm mẫu -->
-  <section class="section g2" id="ket-qua" aria-labelledby="kq-h">
+  <section class="section g2" id="ket-qua" data-gated hidden aria-labelledby="kq-h">
     <div class="wrap">
       <div class="group">
         <div class="section-head">
@@ -375,7 +316,7 @@
   </section>
 
   <!-- GỬI: chọn máy, tạo JSON + mã QR, lưu online khi chạy trên claude.ai -->
-  <section class="section" id="gui" aria-labelledby="gui-h">
+  <section class="section" id="gui" data-gated hidden aria-labelledby="gui-h">
     <div class="wrap">
       <div class="section-head">
         <h2 id="gui-h">Gửi lựa chọn của bạn. <span class="muted">Kèm mã QR chứa toàn bộ kết quả.</span></h2>
@@ -418,7 +359,7 @@
   </section>
 
   <!-- CÁCH CHẤM: dải tối, sơ đồ luồng chấm và bốn con số (moment counter-rolls) -->
-  <section class="section ground-inverse" id="cach-cham" aria-labelledby="cc-h">
+  <section class="section ground-inverse" id="cach-cham" data-gated hidden aria-labelledby="cc-h">
     <div class="wrap">
       <div class="section-head">
         <h2 id="cc-h">Điểm CPU, GPU theo việc bạn làm. <span class="muted">Không theo giá hay hãng.</span></h2>
@@ -438,7 +379,7 @@
   </section>
 
   <!-- CHIP: so sánh CPU (biểu đồ đơn nhân × đa nhân) và GPU (biểu đồ thanh Steel Nomad), mỗi bên một bảng đối đầu A với B -->
-  <section class="section" id="chip" style="--hm: 2" aria-labelledby="chip-h">
+  <section class="section" id="chip" data-gated hidden style="--hm: 2" aria-labelledby="chip-h">
     <div class="wrap">
         <div class="section-head">
           <h2 id="chip-h">So sánh CPU. <span class="muted">Điểm trung bình mỗi chip.</span></h2>
@@ -465,7 +406,7 @@
     </div>
   </section>
 
-  <section class="section" id="chip-gpu" aria-labelledby="gpu-h">
+  <section class="section" id="chip-gpu" data-gated hidden aria-labelledby="gpu-h">
     <div class="wrap">
         <div class="section-head">
           <h2 id="gpu-h">So sánh GPU. <span class="muted">Điểm đồ hoạ trung bình mỗi chip.</span></h2>
@@ -494,7 +435,7 @@
   </section>
 
   <!-- DANH SÁCH: mọi mẫu trong bộ dữ liệu, lọc và sắp xếp -->
-  <section class="section" id="danh-sach" style="--hm: 2" aria-labelledby="ds-h">
+  <section class="section" id="danh-sach" data-gated hidden style="--hm: 2" aria-labelledby="ds-h">
     <div class="wrap">
       <div class="section-head section-head--row">
         <div><h2 id="ds-h"><span data-count-laptops>33</span> laptop đang bán. <span class="muted">Giá 23/11/2026, bấm giá để xem nơi bán.</span></h2></div>
@@ -521,7 +462,7 @@
   </section>
 
   <!-- SO SÁNH: 2 đến 4 laptop, biểu đồ nhỏ theo từng tiêu chí, rồi bảng chi tiết -->
-  <section class="section" id="so-sanh" aria-labelledby="ss-h">
+  <section class="section" id="so-sanh" data-gated hidden aria-labelledby="ss-h">
     <div class="wrap">
       <div class="group">
         <div class="section-head">
@@ -539,7 +480,7 @@
     </div>
   </section>
 
-  <section class="section" id="so-sanh-bang" aria-labelledby="ssb-h">
+  <section class="section" id="so-sanh-bang" data-gated hidden aria-labelledby="ssb-h">
     <div class="wrap">
       <div class="group">
         <div class="section-head"><h2 id="ssb-h">Bảng so sánh chi tiết. <span class="muted">Cùng các mẫu ở trên.</span></h2></div>
@@ -560,8 +501,8 @@
           <a class="nav__logo" href="#top">LapFit</a>
           <p class="footer__lede">Công cụ chọn laptop cho sinh viên công nghệ thông tin.</p>
         </div>
-        <div class="span-2 start-7 footer__col"><h3>Công cụ</h3><ul><li><a href="#chon">Câu hỏi</a></li><li><a href="#ket-qua">Kết quả</a></li><li><a href="#gui">Gửi kết quả</a></li><li><a href="#so-sanh">So sánh</a></li></ul></div>
-        <div class="span-2 footer__col"><h3>Dữ liệu</h3><ul><li><a href="#cach-cham">Cách chấm</a></li><li><a href="#chip">So sánh chip</a></li><li><a href="#danh-sach">Danh sách</a></li></ul></div>
+        <div class="span-2 start-7 footer__col"><h3>Công cụ</h3><ul><li><a href="#chon">Câu hỏi</a></li><li data-gated hidden><a href="#ket-qua">Kết quả</a></li><li data-gated hidden><a href="#gui">Gửi kết quả</a></li><li data-gated hidden><a href="#so-sanh">So sánh</a></li></ul></div>
+        <div class="span-2 footer__col"><h3>Dữ liệu</h3><ul><li data-gated hidden><a href="#cach-cham">Cách chấm</a></li><li data-gated hidden><a href="#chip">So sánh chip</a></li><li data-gated hidden><a href="#danh-sach">Danh sách</a></li></ul></div>
         <div class="span-2 footer__col"><h3>Liên hệ</h3><ul><li><a href="mailto:hello@lapfit.example">Góp ý dữ liệu</a></li></ul></div>
       </div>
       <div class="footer__legal">

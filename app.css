@@ -466,3 +466,7 @@ footer.closing > .wrap { height: auto; }
 /* the hero: words on 4 columns, the collage on the other 8 (its own button is gone; the nav holds the one action) */
 @media (min-width: 1024px) { .hero--triptych .ly-collage { min-height: 560px; } }
 @media (max-width: 639px) { main > :is(section, .section):not(.hero) { min-height: calc(var(--hm, var(--h, 1)) * 100vh); min-height: calc(var(--hm, var(--h, 1)) * 100lvh); } }
+/* the questions open the page: their heading is the page's h1, at the section-heading size */
+#chon h1 { font: var(--display-weight) var(--t-h2)/1.1 var(--font-display); letter-spacing: var(--display-tracking); margin: 0; text-wrap: balance; }
+main > section[hidden] { display: none !important; }
+#chon { padding-top: calc(var(--nav) + var(--s-6)); }

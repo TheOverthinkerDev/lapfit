@@ -439,10 +439,19 @@
   });
   $('#budget').addEventListener('input', () => { budgetOk = true; });
 
+  // results, comparisons and the catalogue appear only once all 14 questions are answered
+  const navBtn = document.querySelector('.nav__actions .btn');
+  const showGated = () => {
+    const ok = isComplete();
+    $$('[data-gated]').forEach((el) => { el.hidden = !ok; });
+    if (navBtn) { navBtn.textContent = ok ? 'Xem kết quả' : 'Trả lời câu hỏi'; navBtn.setAttribute('href', ok ? '#ket-qua' : '#chon'); }
+    $('#see').textContent = ok ? 'Xem 5 laptop hợp nhất' : 'Xem kết quả';
+  };
   const update = () => {
     const a = read();
     $('#budget-out').textContent = `${a.budget / 1e6} triệu`;
     const res = rank(a); drawProfile(res.P); drawResults(res, a); drawMc();
+    showGated();
     go(cur);
   };
   form.addEventListener('input', update);
