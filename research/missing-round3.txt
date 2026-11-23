@@ -1,0 +1,69 @@
+0-15: 3 | 15-20: 16 | 20-25: 19 | 25-30: 20 | 30-34.5: 17 | 34.5-999: 39
+CPU (30):
+Apple M5 Pro
+Intel Core 3 Raptor Lake 100U
+AMD Ryzen 3 5400U
+AMD Ryzen 5 7520U
+Intel Core i5 Raptor Lake 1334U
+Intel Core 5 315
+Intel Core 5 Raptor Lake 205H
+Intel Core Ultra 5 Arrow Lake 235U
+Qualcomm Snapdragon X X1-26-101
+Intel Core Ultra 9 Panther Lake 386H
+Intel Core i3 Alder Lake 1215U
+AMD Ryzen 3 3200U
+Intel Core 3 Twin Lake N350
+AMD Ryzen 5 7430U
+Intel Core™ 3 304
+Intel Core 3 Wildcat Lake 304
+Intel Core i5 Alder Lake 1235U
+AMD Ryzen 7 7730U
+AMD Ryzen 5 125
+AMD Ryzen AI 7 260
+AMD Ryzen AI 5 330
+AMD Ryzen 7 155
+Intel Core i5 Raptor Lake 13450HX
+Intel Core 5 205H
+AMD Ryzen 5 7533HS
+AMD Ryzen 7 7445HS
+AMD Ryzen 7 7735HS
+AMD Ryzen 5 8645HS
+AMD Ryzen AI 7 345
+Intel Core 3 100U
+GPU (36):
+Intel UHD Graphics  [CPU: Intel Core 3 Raptor Lake 100U]
+Intel UHD Graphics  [CPU: Intel Core 5 Raptor Lake 210H]
+Intel Graphics  [CPU: Intel Core Ultra 5 Panther Lake 322]
+AMD Radeon Graphics  [CPU: AMD Ryzen 3 5400U]
+Intel UHD Graphics  [CPU: Intel Core i5 Raptor Lake 1334U]
+Intel Graphics  [CPU: Intel Core Ultra 5 Meteor Lake 135H]
+Intel Graphics  [CPU: Intel Core i3 Alder Lake 1215U]
+AMD Radeon Vega 3 (Integrated GPU)  [CPU: AMD Ryzen 3 3200U]
+Intel Graphics  [CPU: Intel Core 3 Twin Lake N350]
+AMD Radeon Graphics  [CPU: AMD Ryzen 5 7430U]
+Intel Graphics  [CPU: Intel Core™ 3 304]
+Intel Graphics  [CPU: Intel Core 3 Wildcat Lake 304]
+Intel UHD Graphics  [CPU: Intel Core i5 Alder Lake 1235U]
+Intel UHD Graphics  [CPU: Intel Core i5 Raptor Lake 13420H]
+Intel Graphics  [CPU: Intel Core 3 Raptor Lake 100U]
+AMD Radeon 680M Graphics  [CPU: AMD Ryzen 7 7730U]
+Intel Iris Xe Graphics  [CPU: Intel Core i5 Raptor Lake 1334U]
+Integrated Graphics  [CPU: AMD Ryzen 5 125]
+AMD Radeon Graphics  [CPU: AMD Ryzen AI 7 260]
+AMD Radeon Graphics  [CPU: AMD Ryzen AI 5 330]
+chưa có  [CPU: Intel Core 3 Raptor Lake 100U]
+AMD Radeon Graphics  [CPU: AMD Ryzen AI 7 445]
+NVIDIA GeForce RTX 3050, 6 GB, TGP 65 W  [CPU: Intel Core 5 Raptor Lake 210H]
+NVIDIA GeForce RTX 3050, 6 GB, TGP 70 W  [CPU: Intel Core i5 Raptor Lake 13420H]
+Intel Graphics  [CPU: Intel Core i5 Raptor Lake 13420H]
+NVIDIA GeForce RTX 3050, 6 GB  [CPU: Intel Core i5 Raptor Lake 13450HX]
+NVIDIA GeForce RTX 3050, 6 GB, TGP 70 W  [CPU: AMD Ryzen 5 7533HS]
+NVIDIA GeForce RTX 3050, 6 GB  [CPU: AMD Ryzen 7 7735HS]
+NVIDIA GeForce RTX 3050, 6 GB  [CPU: AMD Ryzen 5 8645HS]
+AMD Radeon 780M Graphics  [CPU: AMD Ryzen 7 250]
+Integrated Graphics  [CPU: Intel Core Ultra 5 Meteor Lake 226V]
+AMD Radeon Graphics  [CPU: AMD Ryzen 7 250]
+NVIDIA GeForce RTX 3050, 6 GB, TGP 65W  [CPU: Intel Core 5 Raptor Lake 205H]
+Integrated Intel® Arc™ Graphics Functions as Intel® Graphics  [CPU: Intel Core Ultra 5 135H]
+AMD Radeon Graphics  [CPU: AMD Ryzen AI 7 345]
+Intel Graphics (tích hợp)  [CPU: Intel Core 3 100U]

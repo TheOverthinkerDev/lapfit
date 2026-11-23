@@ -22,7 +22,7 @@ const SPECIAL_CPU = [
   [/^(?:Qualcomm )?Snapdragon X X1 ?-?26 ?-?101\b/i, 'Snapdragon X (X1-26-101)'],
 ];
 const cpuKeyOf = (l) => {
-  const raw = l.cpu.replace(/ \(.*$/, '').trim();
+  const raw = (l.cpu || '').replace(/ \(.*$/, '').trim();
   for (const [re, k] of SPECIAL_CPU) if (re.test(raw)) return k;
   if (/^Apple M5 Pro/i.test(raw)) return /20 nhân/.test(l.gpu) ? 'Apple M5 Pro (18-core CPU)' : /16 nhân/.test(l.gpu) ? 'Apple M5 Pro (15-core CPU)' : null;
   if (/^Apple M5\b/i.test(raw)) return 'Apple M5 (10-core)';
@@ -36,7 +36,7 @@ const cpuKeyOf = (l) => {
 
 /* ---------------------------------------------------------------- GPU: market string (+ its CPU) -> benchmark key */
 const gpuKeyOf = (l, cpuKey) => {
-  const g = l.gpu;
+  const g = l.gpu || '';
   const rtx = g.match(/RTX\s*(\d{4})\s*(Ti)?/i);
   if (rtx) {
     const k = `NVIDIA GeForce RTX ${rtx[1]}${rtx[2] ? ' Ti' : ''} Laptop`;
@@ -53,6 +53,13 @@ const gpuKeyOf = (l, cpuKey) => {
   if (/Radeon 840M/i.test(g)) return 'AMD Radeon 840M';
   if (/Arc Graphics 130V/i.test(g)) return 'Intel Arc Graphics 130V';
   if (/Arc Graphics 140V/i.test(g)) return 'Intel Arc Graphics 140V';
+  // a shop page that names the Radeon model: use that entry when benchmarks.json has it
+  const radeon = g.match(/Radeon\s+(\d{3,4}[MS])\b/i);
+  if (radeon && B.gpus[`AMD Radeon ${radeon[1].toUpperCase()}`]) return `AMD Radeon ${radeon[1].toUpperCase()}`;
+  // round 3: benchmarks.json gives each CPU's integrated GPU (igpu_key, from the maker's spec page).
+  // Used only when the shop page names no discrete GPU and the iGPU does not depend on RAM (no igpu_key_note).
+  const C = cpuKey && B.cpus[cpuKey];
+  if (C && typeof C.igpu_key === 'string' && B.gpus[C.igpu_key] && !C.igpu_key_note) return C.igpu_key;
   // integrated graphics named only generically on the shop page: linked through the CPU, as benchmarks.json maps it
   const byCpu = {
     'Intel Core 3 100U': 'Intel UHD Graphics 64EUs (Alder Lake 12th Gen)',
@@ -115,7 +122,7 @@ const out = M.laptops.filter((l) => l.status === 'on_sale').map((l) => {
   if (!cpuKey) log.push(`CPU chưa có benchmark: ${l.cpu} (${l.name})`);
   if (!gpuKey) log.push(`GPU chưa có benchmark: ${l.gpu} (${l.name})`);
   const d = l.display || {};
-  const tgp = (l.gpu.match(/TGP[^0-9]*(\d{2,3})\s*W/i) || [])[1];
+  const tgp = ((l.gpu || '').match(/TGP[^0-9]*(\d{2,3})\s*W/i) || [])[1];
   const meas = measuredFor(l);
   const nbcBattery = meas && meas.bat && /notebookcheck/i.test(meas.batType || '') && /wi-?fi/i.test(meas.batType || '') ? meas.bat : null;
   const brandCpu = /apple/i.test(l.cpu) ? 'apple' : /snapdragon|qualcomm/i.test(l.cpu) ? 'qualcomm' : /amd|ryzen/i.test(l.cpu) ? 'amd' : /intel|core/i.test(l.cpu) ? 'intel' : null;
@@ -127,11 +134,11 @@ const out = M.laptops.filter((l) => l.status === 'on_sale').map((l) => {
     cpuSingle: C ? num(C.cb2024_single) : null, cpuMulti: C ? num(C.cb2024_multi) : null,
     gb6Single: C ? num(C.gb6_single) : null, gb6Multi: C ? num(C.gb6_multi) : null,
     cpuSrc: C ? (C.sources || [])[0] || null : null,
-    gpu: l.gpu.replace(/\s*\(\d+ CUDA Cores\)/i, ''), gpuKey,
+    gpu: l.gpu ? l.gpu.replace(/\s*\(\d+ CUDA Cores\)/i, '') : 'chưa có', gpuKey,
     gpuSN: G ? num(G.steel_nomad) : null, gpuTS: G ? num(G.timespy_graphics) : null,
     gpuSrc: G ? (G.sources || []).find((u) => /notebookcheck/.test(u)) || (G.sources || [])[0] || null : null,
     tgp: tgp ? +tgp : null,
-    dgpu: /nvidia|rtx/i.test(l.gpu), cuda: /nvidia|rtx/i.test(l.gpu),
+    dgpu: /nvidia|rtx/i.test(l.gpu || ''), cuda: /nvidia|rtx/i.test(l.gpu || ''),
     ram: num(l.ram_gb), ramUp: typeof l.ram_upgradeable === 'boolean' ? l.ram_upgradeable : null,
     ssd: num(l.storage_gb),
     size: num(d.size_in), panel: panelOf(d), resW: resW(d.resolution || d.raw), hz: num(d.hz), nits: num(d.nits),

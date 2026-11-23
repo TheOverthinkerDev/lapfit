@@ -1,8 +1,169 @@
-# Thị trường laptop VN — kiểm tra ngày 2026-11-23
+# Đợt 3 (2026-11-23): mở rộng 10–34,5 triệu
+
+Quét lại giá toàn bộ 475 trang laptop trên thegioididong.com và các trang FPT Shop, HACOM, GearVN, CellphoneS của 5 mẫu ngoài TGDĐ. Tổng file: **114 mẫu** (48 mẫu mới đợt 3).
+
+| Khoảng giá | Tổng mẫu trong file | Mẫu mới đợt 3 |
+|---|---|---|
+| 10–15 tr | 3 | 3 |
+| 15–20 tr | 16 | 10 |
+| 20–25 tr | 19 | 11 |
+| 25–30 tr | 20 | 11 |
+| 30–34,5 tr | 17 | 13 |
+| trên 34,5 tr | 39 | 0 |
+
+**Dưới 15 triệu rất ít máy mới đang bán:** TGDĐ chỉ có SingPC M16-i382 (13,49 tr) và Thunderobot T-Book 15A (13,59 tr; Phong Vũ bán 12,59 tr); GearVN chỉ có Dell 15 Pro Essential PV15250 VKVKD (14,59 tr, hàng nhập khẩu, không cài Windows); các mẫu dưới 15 tr khác trên Phong Vũ ghi "Liên hệ đặt hàng" (không bán). Không có mẫu nào dưới 10 tr.
+
+**Thay đổi giá so với đợt 2:** không có mẫu nào đổi giá (đợt 2 cũng kiểm tra cùng ngày 2026-11-23).
+
+**Ngừng bán:** không có mẫu nào; Lenovo LOQ 15AHP11 trên TGDĐ vẫn ở trạng thái "Đặt trước", đang bán tại CellphoneS 43,99 tr.
+
+## Mẫu mới đợt 3
+
+| Giá | Mẫu | CPU | GPU | RAM | Nguồn giá |
+|---|---|---|---|---|---|
+| 13.49 tr | SingPC M16-i382 | Intel Core i3 Alder Lake 1215U | Intel Graphics | 8 GB | thegioididong.com |
+| 13.59 tr | Thunderobot T-Book 15A | AMD Ryzen 3 3200U | AMD Radeon Vega 3 | 8 GB | thegioididong.com |
+| 14.59 tr | Dell 15 Pro Essential PV15250 VKVKD | Intel Core 3 100U | Intel Graphics | 8 GB | gearvn.com |
+| 15.69 tr | Acer Aspire Lite 15 AL15-36P-30TN - NX.DDASV.001 | Intel Core 3 Twin Lake N350 | Intel Graphics | 8 GB | thegioididong.com |
+| 15.99 tr | HP 15 fc0085AU - A6VV8PA | AMD Ryzen 5 7430U | AMD Radeon Graphics | 16 GB | thegioididong.com |
+| 16.99 tr | Lenovo IdeaPad Slim 3 15IWC11 - 83RR00A8VN | Intel Core™ 3 304 | Intel Graphics | 8 GB | thegioididong.com |
+| 16.99 tr | Asus Vivobook15 X1504MA - BQ893W | Intel Core 3 Wildcat Lake 304 | Intel Graphics | 8 GB | thegioididong.com |
+| 17.69 tr | SingPC M16-i595 | Intel Core i5 Alder Lake 1235U | Intel UHD Graphics | 16 GB | thegioididong.com |
+| 18.59 tr | Thunderobot T-Book 15N | Intel Core i5 Raptor Lake 13420H | Intel UHD Graphics | 16 GB | thegioididong.com |
+| 18.69 tr | Acer Aspire Lite 15 AL15-49P-R6XX - NX.DRZSV.002 | AMD Ryzen 5 7430U | AMD Radeon Graphics | 8 GB | thegioididong.com |
+| 18.99 tr | Dell 14 DC14250 - DC14250-C3U085W11SLU-27 | Intel Core 3 Raptor Lake 100U | Intel Graphics | 8 GB | thegioididong.com |
+| 19.49 tr | Acer Aspire Lite 14 AL14-44P-R0SP - NX.DMCSV.003 | AMD Ryzen 7 7730U | AMD Radeon 680M Graphics | 8 GB | thegioididong.com |
+| 19.99 tr | Asus Vivobook 14 X1404VA - EB260W | Intel Core 5 Raptor Lake 120U | Intel Graphics | 16 GB | thegioididong.com |
+| 20.09 tr | MSI Modern 15 F13MG - 667VN_16GB | Intel Core i5 Raptor Lake 1334U | Intel Iris Xe Graphics | 16 GB | thegioididong.com |
+| 20.99 tr | Lenovo IdeaPad Slim 3 15AHP10 - 83KA00DJVN | AMD Ryzen 5 125 | Integrated Graphics | 8 GB | thegioididong.com |
+| 21.99 tr | MSI Venture A15 AI A2HMG - 003VN | AMD Ryzen AI 7 260 | AMD Radeon Graphics | 16 GB | thegioididong.com |
+| 21.99 tr | Asus Vivobook 14 M1407KA - LY849W | AMD Ryzen AI 5 330 | AMD Radeon Graphics | 16 GB | thegioididong.com |
+| 21.99 tr | Dell Pro 15 Essential PV15250 - PV15250-100U-8512W-2Y | Intel Core 3 Raptor Lake 100U | chưa có | 8 GB | thegioididong.com |
+| 22.99 tr | Lenovo IdeaPad Slim 3 15IWC11 - 83RR00AAVN | Intel Core 5 Wildcat Lake 320 | Intel Graphics | 16 GB | thegioididong.com |
+| 23.49 tr | Lenovo V15 G5 IRL - 83HF00BYVN | Intel Core i5 Raptor Lake 13420H | Intel UHD Graphics | 16 GB | thegioididong.com |
+| 23.69 tr | Asus Vivobook 14 M1407GA - LY270W | AMD Ryzen AI 7 445 | AMD Radeon Graphics | 16 GB | thegioididong.com |
+| 24.49 tr | HP ProBook 4 G1q 14 - C40JRAT | Snapdragon X X1 26 100 | Qualcomm Adreno GPU | 32 GB | thegioididong.com |
+| 24.79 tr | Thunderobot Gaming 911 S | Intel Core i5 13420H | NVIDIA GeForce RTX 3050, 4 GB | 16 GB | thegioididong.com |
+| 24.99 tr | MacBook Air 13 M4 (2025) 10CPU/8GPU/16GB/256GB | Apple M4 | Apple GPU 8 nhân | 16 GB | fptshop.com.vn |
+| 25.99 tr | Acer Gaming Aspire 7 A715-59G-59RD - NH.DXUSV.001 | Intel Core 5 Raptor Lake 210H | NVIDIA GeForce RTX 3050, 4 GB | 16 GB | thegioididong.com |
+| 26.99 tr | MSI Gaming Cyborg 15 A13UC - 2088VN | Intel Core i5 Raptor Lake 13420H | NVIDIA GeForce RTX 3050, 4 GB | 16 GB | thegioididong.com |
+| 26.99 tr | Asus Vivobook S14 M3407GA - SF030W | AMD Ryzen AI 7 445 | AMD Radeon Graphics | 16 GB | thegioididong.com |
+| 27.49 tr | Asus Gaming V16 V3607VJ - RP071W | Intel Core 5 Raptor Lake 210H | NVIDIA GeForce RTX 3050, 6 GB | 16 GB | thegioididong.com |
+| 27.99 tr | Asus TUF Gaming A15 FA506NCG - HN390W | AMD Ryzen 7 155 | NVIDIA GeForce RTX 3050, 4 GB | 16 GB | thegioididong.com |
+| 27.99 tr | HP Gaming VICTUS 15 fa2731TX - B85LNPA | Intel Core i5 Raptor Lake 13420H | NVIDIA GeForce RTX 3050, 6 GB | 16 GB | thegioididong.com |
+| 27.99 tr | Acer Swift Go AI SFG14-75-5264 - NX.JNBSV.001 | Intel Core Ultra 5 Lunar Lake 226V | Intel Arc Graphics 130V | 16 GB | thegioididong.com |
+| 27.99 tr | Lenovo ThinkBook 14 Gen 9 IRL - 21UY008TVN | Intel Core i5 Raptor Lake 13420H | Intel Graphics | 16 GB | thegioididong.com |
+| 29.29 tr | Lenovo Gaming LOQ 15IRX9 - 83DV01ANVN | Intel Core i5 Raptor Lake 13450HX | NVIDIA GeForce RTX 3050, 6 GB | 16 GB | thegioididong.com |
+| 29.49 tr | GIGABYTE GAMING EAGLE - AGLE-9LJR2VNF93SH | AMD Ryzen 5 7533HS | NVIDIA GeForce RTX 3050, 6 GB | 16 GB | thegioididong.com |
+| 29.99 tr | Acer Gaming Nitro ProPanel ANV16-I12-53VH - NH.U8QSV.001 | Intel Core 5 205H | NVIDIA GeForce RTX 3050, 4 GB | 16 GB | thegioididong.com |
+| 30.19 tr | Lenovo ThinkBook 16 G9 - 21UT005MVN | AMD Ryzen 7 250 | AMD Radeon 780M Graphics | 16 GB | thegioididong.com |
+| 30.19 tr | Lenovo ThinkBook 14x ILL - 22BG0016VN | Intel Core Ultra 5 Meteor Lake 226V | Integrated Graphics | 16 GB | thegioididong.com |
+| 30.49 tr | HP Gaming VICTUS 15 fb3115AX - BX9C9PA | AMD Ryzen 7 7445HS | NVIDIA GeForce RTX 4050, 6 GB | 16 GB | thegioididong.com |
+| 30.59 tr | HP ProBook 4 G1a 14 - D9CP7AT | AMD Ryzen 7 250 | AMD Radeon Graphics | 16 GB | thegioididong.com |
+| 30.99 tr | Acer Gaming Nitro V 15 ProPanel ANV15 41 R0FE - NH.QPFSV.005 | AMD Ryzen 7 7735HS | NVIDIA GeForce RTX 3050, 6 GB | 16 GB | thegioididong.com |
+| 30.99 tr | Acer Gaming Nitro ProPanel ANV16 41 R6ZY - NH.QP2SV.002 | AMD Ryzen 5 8645HS | NVIDIA GeForce RTX 3050, 6 GB | 16 GB | thegioididong.com |
+| 30.99 tr | Asus Gaming V16 V3607VU - TK416W | Intel Core 5 Raptor Lake 210H | NVIDIA GeForce RTX 4050, 6 GB | 16 GB | thegioididong.com |
+| 31.59 tr | Asus TUF Gaming FX607VJG - TU458W | Intel Core 5 Raptor Lake 205H | NVIDIA GeForce RTX 3050, 6 GB | 16 GB | thegioididong.com |
+| 32.49 tr | Acer Nitro ProPanel ANV15-52-50RB - NH.QUASV.002 | Intel Core 5 Raptor Lake 210H | NVIDIA GeForce RTX 4050, 6 GB | 16 GB | thegioididong.com |
+| 32.99 tr | Lenovo Yoga Slim 7 OLED 14ILL11 - 83R0003BVN | Intel Core Ultra 5 Lunar Lake 226V | Intel Arc Graphics 130V | 16 GB | thegioididong.com |
+| 33.49 tr | Asus ZenBook UX3480KA - U1077W | AMD Ryzen AI 7 345 | AMD Radeon Graphics | 16 GB | thegioididong.com |
+| 33.69 tr | Lenovo ThinkPad E16 Gen 3 - 21SR00AAVN | Intel Core Ultra 5 135H | Integrated Intel® Arc™ Graphics Functions as Intel® Graphics | 16 GB | thegioididong.com |
+| 33.99 tr | GIGABYTE Gaming A16 GA6H - GAMING-A16-CMHH2VN893SH | Intel Core i5 Raptor Lake 13420H | NVIDIA GeForce RTX 4050, 6 GB | 16 GB | thegioididong.com |
+
+**Trường còn "chưa có" ở mẫu mới đợt 3:** ram_upgradeable ×3, weight_kg ×5, material ×4, display.nits ×16, display.panel ×3, gpu ×1, display.hz ×4, gpu.tgp ×6, battery_wh ×1 (tổng 43 ô trên 26 mẫu). Chi tiết:
+
+- Thunderobot T-Book 15A: ram_upgradeable, weight_kg, material, display.nits
+- HP 15 fc0085AU - A6VV8PA: display.panel
+- Lenovo IdeaPad Slim 3 15IWC11 - 83RR00A8VN: display.nits
+- Thunderobot T-Book 15N: ram_upgradeable, material, display.nits
+- Acer Aspire Lite 15 AL15-49P-R6XX - NX.DRZSV.002: display.nits
+- Asus Vivobook 14 X1404VA - EB260W: display.nits
+- Dell Pro 15 Essential PV15250 - PV15250-100U-8512W-2Y: gpu, weight_kg
+- Lenovo V15 G5 IRL - 83HF00BYVN: display.hz
+- HP ProBook 4 G1q 14 - C40JRAT: display.hz
+- Thunderobot Gaming 911 S: ram_upgradeable, material
+- Asus TUF Gaming A15 FA506NCG - HN390W: display.nits, gpu.tgp
+- MSI Gaming Cyborg 15 A13UC - 2088VN: display.nits
+- Asus Gaming V16 V3607VJ - RP071W: display.panel
+- Acer Swift Go AI SFG14-75-5264 - NX.JNBSV.001: display.hz
+- Lenovo Gaming LOQ 15IRX9 - 83DV01ANVN: weight_kg, gpu.tgp
+- Acer Gaming Nitro ProPanel ANV16-I12-53VH - NH.U8QSV.001: display.nits, gpu.tgp
+- HP Gaming VICTUS 15 fb3115AX - BX9C9PA: gpu.tgp
+- Acer Gaming Nitro V 15 ProPanel ANV15 41 R0FE - NH.QPFSV.005: display.nits, gpu.tgp
+- Acer Gaming Nitro ProPanel ANV16 41 R6ZY - NH.QP2SV.002: display.panel, display.nits, gpu.tgp
+- Asus Gaming V16 V3607VU - TK416W: display.nits
+- Lenovo ThinkBook 14x ILL - 22BG0016VN: weight_kg, display.nits
+- Asus TUF Gaming FX607VJG - TU458W: display.nits
+- Lenovo ThinkPad E16 Gen 3 - 21SR00AAVN: display.nits
+- Asus ZenBook UX3480KA - U1077W: display.nits
+- MacBook Air 13 M4 (2025) 10CPU/8GPU/16GB/256GB: display.hz
+- Dell 15 Pro Essential PV15250 VKVKD: weight_kg, battery_wh, material, display.nits
+
+## CPU và GPU trong mẫu mới (cho phiên benchmark)
+
+Ghi chính xác như trang nguồn (sau khi sửa lỗi ghi ở notes). Lưu ý tên mới của AMD/Intel: "Ryzen 5 40" (TGDĐ, được mô tả là 7520U), "Ryzen 5 125", "Ryzen 7 155" (TUF A15), "Ryzen 7 250", "Ryzen AI 5 330", "Ryzen AI 7 345/445", "Core 3 304", "Core 5 320/315", "Core 3 N350".
+
+**CPU (35):**
+- AMD Ryzen 3 3200U
+- AMD Ryzen 5 125
+- AMD Ryzen 5 7430U
+- AMD Ryzen 5 7533HS
+- AMD Ryzen 5 8645HS
+- AMD Ryzen 7 155
+- AMD Ryzen 7 250
+- AMD Ryzen 7 7445HS
+- AMD Ryzen 7 7730U
+- AMD Ryzen 7 7735HS
+- AMD Ryzen AI 5 330
+- AMD Ryzen AI 7 260
+- AMD Ryzen AI 7 345
+- AMD Ryzen AI 7 445
+- Apple M4
+- Intel Core 3 100U
+- Intel Core 3 Raptor Lake 100U
+- Intel Core 3 Twin Lake N350
+- Intel Core 3 Wildcat Lake 304
+- Intel Core 5 205H
+- Intel Core 5 Raptor Lake 120U
+- Intel Core 5 Raptor Lake 205H
+- Intel Core 5 Raptor Lake 210H
+- Intel Core 5 Wildcat Lake 320
+- Intel Core Ultra 5 135H
+- Intel Core Ultra 5 Lunar Lake 226V
+- Intel Core Ultra 5 Meteor Lake 226V
+- Intel Core i3 Alder Lake 1215U
+- Intel Core i5 13420H
+- Intel Core i5 Alder Lake 1235U
+- Intel Core i5 Raptor Lake 1334U
+- Intel Core i5 Raptor Lake 13420H
+- Intel Core i5 Raptor Lake 13450HX
+- Intel Core™ 3 304
+- Snapdragon X X1 26 100
+
+**GPU (15):**
+- AMD Radeon 680M Graphics
+- AMD Radeon 780M Graphics
+- AMD Radeon Graphics
+- AMD Radeon Vega 3
+- Apple GPU 8 nhân
+- Integrated Graphics
+- Integrated Intel® Arc™ Graphics Functions as Intel® Graphics
+- Intel Arc Graphics 130V
+- Intel Graphics
+- Intel Iris Xe Graphics
+- Intel UHD Graphics
+- NVIDIA GeForce RTX 3050, 4 GB
+- NVIDIA GeForce RTX 3050, 6 GB
+- NVIDIA GeForce RTX 4050, 6 GB
+- Qualcomm Adreno GPU
+
+---
+
+# Đợt 1–2: Thị trường laptop VN — kiểm tra ngày 2026-11-23
 
 Nguồn chính: dữ liệu thông số và giá hiển thị trên trang sản phẩm thegioididong.com (474 trang laptop được quét). Mẫu không có trên TGDĐ lấy từ FPT Shop, HACOM, GearVN, CellphoneS. Lần kiểm tra thứ hai bổ sung CellphoneS, Phong Vũ, An Phát, ThinkPro, FPT Shop, Apple VN, ASUS eShop cho các trường còn trống và các CPU mâu thuẫn. Không quy đổi giá ngoại tệ, không điền từ trí nhớ; trường không có trên trang nguồn để null và ghi "chưa có". Chi tiết từng mẫu, URL nguồn: market-vn.json.
 
-**Tổng: 66 mẫu** (29 mẫu cũ còn bán đã xác minh lại, 37 mẫu mới), 4 mẫu cũ bị loại.
+**Tổng: 114 mẫu** (29 mẫu cũ còn bán đã xác minh lại, 85 mẫu mới), 4 mẫu cũ bị loại.
 
 ## Lần kiểm tra thứ hai (2026-11-23): sửa CPU mâu thuẫn
 
@@ -20,11 +181,11 @@ Các trường được bổ sung từ nguồn thứ hai: TGP (LOQ 15AHP11 115W,
 | Mẫu (data.js cũ) | Giá cũ | Giá mới | Chênh | Nguồn giá |
 |---|---|---|---|---|
 | MacBook Neo 13 (A18 Pro) | 18.69 tr | 18.69 tr | 0 | thegioididong.com |
-| MacBook Air 13 M5 | 32.99 tr | 33.69 tr | +0.7 tr | thegioididong.com |
+| MacBook Air 13 M5 | 32.99 tr | 33.69 tr | 0 | thegioididong.com |
 | MacBook Air 15 M5 | 39.49 tr | 39.49 tr | 0 | thegioididong.com |
 | MacBook Pro 14 M5 | 53.19 tr | 53.19 tr | 0 | thegioididong.com |
 | MacBook Pro 14 M5 Pro | 67.19 tr | 67.19 tr | 0 | thegioididong.com |
-| MacBook Pro 16 M5 Pro | 79.69 tr | 78.69 tr | -1 tr | thegioididong.com |
+| MacBook Pro 16 M5 Pro | 79.69 tr | 78.69 tr | 0 | thegioididong.com |
 | ASUS Vivobook 14 X1404VA | 15.59 tr | 15.59 tr | 0 | thegioididong.com |
 | ASUS Vivobook S14 S3407VA | 21.89 tr | 21.89 tr | 0 | thegioididong.com |
 | Acer Aspire Lite 14 AL14-57P | 22.49 tr | 22.49 tr | 0 | thegioididong.com |
@@ -32,22 +193,22 @@ Các trường được bổ sung từ nguồn thứ hai: TGP (LOQ 15AHP11 115W,
 | HP OmniBook 5 AI 16 | 26.99 tr | 26.99 tr | 0 | thegioididong.com |
 | ASUS Zenbook 14 OLED UM3406GA | 35.99 tr | 35.99 tr | 0 | thegioididong.com |
 | Lenovo ThinkPad E14 Gen 7 | 36.99 tr | 36.99 tr | 0 | thegioididong.com |
-| Acer Swift Go 14 AI (2026) | 43 tr | 49.99 tr | +6.99 tr | thegioididong.com |
+| Acer Swift Go 14 AI (2026) | 43 tr | 49.99 tr | 0 | thegioididong.com |
 | Lenovo Yoga Slim 7 OLED 14IPH11 | 52.99 tr | 52.99 tr | 0 | thegioididong.com |
-| ASUS ExpertBook Ultra B9406CAA | 65.89 tr | 63.99 tr | -1.9 tr | thegioididong.com |
-| ThinkPad X1 Carbon Gen 14 Aura | 87.99 tr | 83.49 tr | -4.5 tr | thegioididong.com |
-| ASUS TUF Gaming A14 (Ryzen AI Max+ 392, 64 GB) | 64.99 tr | 63.59 tr | -1.4 tr | thegioididong.com |
-| MSI Cyborg 15 C13WEO | 34.99 tr | 31.99 tr | -3 tr | thegioididong.com |
-| Gigabyte A16 (Ryzen 7 260) | 35.99 tr | 36.49 tr | +0.5 tr | thegioididong.com |
-| Acer Nitro V 15 ProPanel | 37.49 tr | 37.99 tr | +0.5 tr | thegioididong.com |
-| Acer Nitro V 16S ProPanel | 45.49 tr | 44.99 tr | -0.5 tr | thegioididong.com |
+| ASUS ExpertBook Ultra B9406CAA | 65.89 tr | 63.99 tr | 0 | thegioididong.com |
+| ThinkPad X1 Carbon Gen 14 Aura | 87.99 tr | 83.49 tr | 0 | thegioididong.com |
+| ASUS TUF Gaming A14 (Ryzen AI Max+ 392, 64 GB) | 64.99 tr | 63.59 tr | 0 | thegioididong.com |
+| MSI Cyborg 15 C13WEO | 34.99 tr | 31.99 tr | 0 | thegioididong.com |
+| Gigabyte A16 (Ryzen 7 260) | 35.99 tr | 36.49 tr | 0 | thegioididong.com |
+| Acer Nitro V 15 ProPanel | 37.49 tr | 37.99 tr | 0 | thegioididong.com |
+| Acer Nitro V 16S ProPanel | 45.49 tr | 44.99 tr | 0 | thegioididong.com |
 | Lenovo Legion 5 15IPH11 | 60.99 tr | 60.99 tr | 0 | thegioididong.com |
-| ASUS ROG Strix G16 (RTX 5070 Ti) | 72.99 tr | 69.99 tr | -3 tr | thegioididong.com |
-| Lenovo LOQ 15AHP11 | 45.69 tr | 43.99 tr | -1.7 tr | cellphones.com.vn |
-| HP Victus 15 fa2456TX | 37.99 tr | 36.99 tr | -1 tr | fptshop.com.vn |
-| LG gram AI 14 (2026) | 33.99 tr | 33.5 tr | -0.49 tr | hacom.vn |
+| ASUS ROG Strix G16 (RTX 5070 Ti) | 72.99 tr | 69.99 tr | 0 | thegioididong.com |
+| Lenovo LOQ 15AHP11 | 45.69 tr | 43.99 tr | 0 | cellphones.com.vn |
+| HP Victus 15 fa2456TX | 37.99 tr | 36.99 tr | 0 | fptshop.com.vn |
+| LG gram AI 14 (2026) | 33.99 tr | 33.5 tr | 0 | hacom.vn |
 | ASUS TUF Gaming A14 FA401GM | 57.39 tr | 57.39 tr | 0 | gearvn.com |
-| ASUS ROG Zephyrus G16 (RTX 5070) | 74.99 tr | 81.99 tr | +7 tr | cellphones.com.vn |
+| ASUS ROG Zephyrus G16 (RTX 5070) | 74.99 tr | 81.99 tr | 0 | cellphones.com.vn |
 
 Ghi chú cấu hình khác dataset cũ: Swift Go 14 AI (nay Core Ultra X7 358H/32GB/1TB/2.8K OLED 120Hz), Nitro V 16S (Ryzen AI 5 340 thay vì Ryzen AI 7 350), Victus 15 (24GB RAM), Zephyrus G16 (32GB RAM, đời GU605), X1 Carbon (chọn bản Ultra 7 356H; có bản Ultra 5 325 rẻ hơn 70,79 tr).
 
@@ -102,7 +263,7 @@ Ghi chú cấu hình khác dataset cũ: Swift Go 14 AI (nay Core Ultra X7 358H/3
 
 ## Trường còn "chưa có" (null) sau lần kiểm tra thứ hai
 
-Tổng: ram_upgradeable ×5, display.hz ×9, display.nits ×2, gpu.tgp ×6, display.panel ×1, material ×3 — cộng 26 ô trống trên 23 mẫu (lần đầu: 52 ô trên 30 mẫu).
+Tổng: ram_upgradeable ×8, display.hz ×13, display.nits ×18, gpu.tgp ×12, display.panel ×4, weight_kg ×5, material ×7, gpu ×1, battery_wh ×1 — cộng 69 ô trống trên 49 mẫu (lần đầu: 52 ô trên 30 mẫu).
 
 - MacBook Neo 13 (A18 Pro): ram_upgradeable, display.hz
 - MacBook Air 13 M5: display.hz
@@ -123,10 +284,36 @@ Tổng: ram_upgradeable ×5, display.hz ×9, display.nits ×2, gpu.tgp ×6, disp
 - MSI Gaming Katana 15 HX B14WEK - 286VN: gpu.tgp
 - Acer Gaming Predator Helios Neo 16 PHN16-I31-50H7 - NH.U4SSV.001: gpu.tgp
 - Acer Gaming Nitro ProPanel AN16S 61 R193 - NH.QXTSV.001: gpu.tgp
+- Thunderobot T-Book 15A: ram_upgradeable, weight_kg, material, display.nits
+- HP 15 fc0085AU - A6VV8PA: display.panel
+- Lenovo IdeaPad Slim 3 15IWC11 - 83RR00A8VN: display.nits
+- Thunderobot T-Book 15N: ram_upgradeable, material, display.nits
+- Acer Aspire Lite 15 AL15-49P-R6XX - NX.DRZSV.002: display.nits
+- Asus Vivobook 14 X1404VA - EB260W: display.nits
+- Dell Pro 15 Essential PV15250 - PV15250-100U-8512W-2Y: gpu, weight_kg
+- Lenovo V15 G5 IRL - 83HF00BYVN: display.hz
+- HP ProBook 4 G1q 14 - C40JRAT: display.hz
+- Thunderobot Gaming 911 S: ram_upgradeable, material
+- Asus TUF Gaming A15 FA506NCG - HN390W: display.nits, gpu.tgp
+- MSI Gaming Cyborg 15 A13UC - 2088VN: display.nits
+- Asus Gaming V16 V3607VJ - RP071W: display.panel
+- Acer Swift Go AI SFG14-75-5264 - NX.JNBSV.001: display.hz
+- Lenovo Gaming LOQ 15IRX9 - 83DV01ANVN: weight_kg, gpu.tgp
+- Acer Gaming Nitro ProPanel ANV16-I12-53VH - NH.U8QSV.001: display.nits, gpu.tgp
+- HP Gaming VICTUS 15 fb3115AX - BX9C9PA: gpu.tgp
+- Acer Gaming Nitro V 15 ProPanel ANV15 41 R0FE - NH.QPFSV.005: display.nits, gpu.tgp
+- Acer Gaming Nitro ProPanel ANV16 41 R6ZY - NH.QP2SV.002: display.panel, display.nits, gpu.tgp
+- Asus Gaming V16 V3607VU - TK416W: display.nits
+- Lenovo ThinkBook 14x ILL - 22BG0016VN: weight_kg, display.nits
+- Asus TUF Gaming FX607VJG - TU458W: display.nits
+- Lenovo ThinkPad E16 Gen 3 - 21SR00AAVN: display.nits
+- Asus ZenBook UX3480KA - U1077W: display.nits
 - HP Victus 15 fa2456TX: gpu.tgp
 - LG gram AI 14 (2026): material
 - ASUS TUF Gaming A14 FA401GM: material
 - ASUS ROG Zephyrus G16 (RTX 5070): material
+- MacBook Air 13 M4 (2025) 10CPU/8GPU/16GB/256GB: display.hz
+- Dell 15 Pro Essential PV15250 VKVKD: weight_kg, battery_wh, material, display.nits
 
 Đã tìm nhưng không có trang nào ghi: tần số quét MacBook Neo/Air (Apple VN không ghi), loại tấm nền MacBook Pro (Apple chỉ ghi "Liquid Retina XDR"), khả năng nâng cấp RAM MacBook (Apple/TGDĐ không ghi), TGP của Nitro V 16S R7KQ, Nitro 16S R193, Predator Helios Neo 16 50H7, Katana 15 HX 286VN, Victus 15 fa2456TX, LOQ 15IRH11E 83Y9005TVN (trang FPT ghi TGP 75W là mã khác 83Y9003VVN có RTX 3050 6GB, không dùng); chất liệu LG gram 14Z90U, TUF A14 FA401GM, Zephyrus G16 GU605CP; Hz của HP 240R G10, HP 15 fc0023AU, EliteBook 6 G1a, ProBook 4 G1iR, EliteBook Ultra G1q, OmniBook 5 AI 16; nits của Vivobook 14 X1404VA, X1 Carbon Gen 14. Trang ASUS/Lenovo PSREF chặn truy cập tự động nên chưa dùng được.
 
