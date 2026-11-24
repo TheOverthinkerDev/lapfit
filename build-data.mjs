@@ -56,10 +56,11 @@ const gpuKeyOf = (l, cpuKey) => {
   // a shop page that names the Radeon model: use that entry when benchmarks.json has it
   const radeon = g.match(/Radeon\s+(\d{3,4}[MS])\b/i);
   if (radeon && B.gpus[`AMD Radeon ${radeon[1].toUpperCase()}`]) return `AMD Radeon ${radeon[1].toUpperCase()}`;
-  // round 3: benchmarks.json gives each CPU's integrated GPU (igpu_key, from the maker's spec page).
-  // Used only when the shop page names no discrete GPU and the iGPU does not depend on RAM (no igpu_key_note).
+  // the shop's own name decides between two iGPU entries (round 3 notes): never assume the better one
   const C = cpuKey && B.cpus[cpuKey];
-  if (C && typeof C.igpu_key === 'string' && B.gpus[C.igpu_key] && !C.igpu_key_note) return C.igpu_key;
+  // benchmarks.json, round 3: the X1-26-101 GPU runs at half the clock of other X1-85 chips, so the X1-85 average
+  // does not apply to it
+  if (cpuKey === 'Snapdragon X (X1-26-101)') return null;
   // integrated graphics named only generically on the shop page: linked through the CPU, as benchmarks.json maps it
   const byCpu = {
     'Intel Core 3 100U': 'Intel UHD Graphics 64EUs (Alder Lake 12th Gen)',
@@ -80,13 +81,22 @@ const gpuKeyOf = (l, cpuKey) => {
     'Intel Core Ultra 5 135H': 'Intel Graphics (Core Ultra 5 135H)',
     'AMD Ryzen 5 7520U': 'AMD Radeon 610M',
     'AMD Ryzen 3 5400U': 'AMD Radeon Graphics (Ryzen 3 5400U, Vega 6)',
-    'Snapdragon X (X1-26-101)': 'Qualcomm Adreno X1-85 (3.8 TFLOPS)',
     'Intel Core Ultra 7 255H': /Arc/i.test(g) ? 'Intel Arc Graphics 140T' : null,
     'Snapdragon X2 Elite (X2E-88-100)': 'Qualcomm Adreno X2-90',
     'Snapdragon X Elite (X1E-78-100)': 'Qualcomm Adreno X1-85 (3.8 TFLOPS)',
     'Snapdragon X (X1-26-100)': 'Qualcomm Adreno X1-45 (1.7 TFLOPS)',
   };
-  return cpuKey && cpuKey in byCpu ? byCpu[cpuKey] : null;
+  if (cpuKey && cpuKey in byCpu) return byCpu[cpuKey];
+  // round 3: every CPU in benchmarks.json names its integrated GPU (igpu_key, with the maker's spec page).
+  if (!C || typeof C.igpu_key !== 'string' || !B.gpus[C.igpu_key]) return null;
+  if (C.igpu_key_alt) {
+    // two possible iGPUs (e.g. Arc only with dual-channel 16 GB): use the one the shop page names, else none
+    if (/\bArc\b/i.test(g) && !/functions as intel/i.test(g)) return C.igpu_key;
+    return /Intel Graphics|UHD/i.test(g) && B.gpus[C.igpu_key_alt] ? C.igpu_key_alt : null;
+  }
+  // Iris Xe needs dual-channel RAM, otherwise the laptop runs it as UHD: only take Iris Xe when the shop says Iris Xe
+  if (/Iris/i.test(C.igpu_key) && /dual-channel|128-bit|kênh đôi/i.test(C.igpu_key_note || '') && !/Iris/i.test(g)) return null;
+  return C.igpu_key;
 };
 
 /* ---------------------------------------------------------------- helpers */

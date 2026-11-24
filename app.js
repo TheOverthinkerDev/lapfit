@@ -164,8 +164,15 @@
   const rank = (a) => {
     const P = profile(a);
     const unk = (l) => [l.s.cpu, l.s.gpu].filter((v) => !nz(v)).length; // ties: the laptop with more measured data first
-    let rows = L.map((l) => score(l, a, P)).filter(Boolean).sort((x, y) => y.pct - x.pct || unk(x.l) - unk(y.l) || x.l.price - y.l.price);
-    return { P, rows };
+    const run = (aa) => L.map((l) => score(l, aa, P)).filter(Boolean).sort((x, y) => y.pct - x.pct || unk(x.l) - unk(y.l) || x.l.price - y.l.price);
+    let rows = run(a);
+    // fewer than 3 laptops fit the budget (the cheapest new laptop sold in VN is above 10 million): raise the budget
+    // a million at a time until 3 do, and say so, rather than show nothing
+    let used = a;
+    if (rows.length < 3) {
+      for (let b = a.budget + 1e6; b <= 100e6; b += 1e6) { used = { ...a, budget: b }; rows = run(used); if (rows.length >= 3) break; }
+    }
+    return { P, rows, used };
   };
 
   /* ---------------------------------------------------------------- vẽ hồ sơ nhu cầu */
@@ -220,13 +227,17 @@
     </article>`;
   };
   const drawResults = (res, a) => {
-    rank.P = res.P; rank.a = a;
+    const used = res.used || a;
+    rank.P = res.P; rank.a = used;
     if (!isComplete()) return drawLocked();
     const top = res.rows.slice(0, 5);
     const box = $('#picks'), more = $('#more');
     const weak = top.length && top[0].pct < 60;
-    $('#res-count').textContent = `${res.rows.length} trong ${L.length} mẫu vừa ngân sách ${vnd(a.budget)}` + (weak ? '. Chưa mẫu nào đáp ứng tốt nhu cầu này: cân nhắc tăng ngân sách hoặc bớt yêu cầu.' : '');
-    if (!top.length) { box.innerHTML = '<p class="empty">Không có mẫu nào trong ngân sách này. Kéo ngân sách lên hoặc bỏ bớt tuỳ chọn phần cứng.</p>'; more.innerHTML = ''; return; }
+    const cheapest = Math.min(...L.map((l) => l.price));
+    $('#res-count').textContent = used.budget > a.budget
+      ? `Không đủ mẫu mới trong ngân sách ${vnd(a.budget)}: máy rẻ nhất đang bán là ${vnd(cheapest)}. Gợi ý dưới đây tính theo ngân sách ${vnd(used.budget)}.`
+      : `${res.rows.length} trong ${L.length} mẫu vừa ngân sách ${vnd(a.budget)}` + (weak ? '. Chưa mẫu nào đáp ứng tốt nhu cầu này: cân nhắc tăng ngân sách hoặc bớt yêu cầu.' : '');
+    if (!top.length) { box.innerHTML = '<p class="empty">Không có mẫu nào phù hợp. Thử tăng ngân sách.</p>'; more.innerHTML = ''; return; }
     box.innerHTML = top.slice(0, 3).map(card).join('');
     const n = res.P.n;
     more.innerHTML = `<table class="cmp-table"><caption class="sr">So sánh 5 mẫu hợp nhất</caption>

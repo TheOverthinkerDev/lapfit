@@ -83,3 +83,47 @@ Mỗi CPU có thêm `igpu_name` và `igpu_source` (URL trang thông số của I
 **Lưu ý:**
 - Với 120U, 235U và 315, số GPU là trung bình của cả dòng iGPU, không phải đo riêng trên CPU đó.
 - Laptop RTX 3050 nên dùng mảng `by_tgp`.
+
+## Đợt 3 (23/11/2026): máy giá rẻ trong market-vn.json và iGPU cho mọi CPU
+
+**Mỗi CPU trong file (102 chip) giờ có thêm:**
+- `igpu_key`: tên khóa iGPU trong mục `gpus`.
+- `igpu_source`: link trang thông số của hãng (Intel, AMD, Apple hoặc Qualcomm).
+- `igpu_name_vendor`: tên iGPU đúng như hãng ghi.
+- `igpu_key_alt` và `igpu_key_note`: dùng khi tên iGPU phụ thuộc RAM:
+  - Iris Xe cần RAM kênh đôi, nếu không thì máy báo UHD.
+  - Arc trên Meteor/Arrow Lake H cần 16 GB RAM kênh đôi trở lên, nếu không thì báo "Intel Graphics".
+
+**`igpu_key` = null (không phải lỗi):**
+- **Core 5 205H** và **Ryzen 7 7435HS**: không có iGPU (hãng ghi tắt iGPU hoặc bắt buộc card rời).
+- **Core Ultra 7 365H**: không có trên intel.com.
+- **Apple M4**: chưa có entry GPU M4 trong file.
+
+| CPU mới | Tình trạng | iGPU (`igpu_key`) |
+|---|---|---|
+| i5-1235U | Đủ (CB2024 n=1) | Iris Xe G7 80EU (TS 1175, SN 155) |
+| i5-13450HX | Đủ (CB2024 n=1) | UHD 16EU (TS 344,7; SN chưa có) |
+| Core Ultra 9 386H | Đủ (trước chỉ có thông số) | Intel Graphics 4 Xe3 |
+| i3-1215U | GB6 có, CB2024 chưa có | UHD 64EU |
+| Core 3 N350 | GB6 có (n=1), CB2024 chưa có | Intel Graphics 32EU (TS 567, đo trên N305/N355; SN chưa có) |
+| Core 3 304 (Wildcat Lake) | GB6 có, CB2024 chưa có | Intel Graphics **1 nhân Xe3** (TS 753, n=1; SN chưa có) |
+| Ryzen 5 7430U | Đủ | Vega 7 (TS 980, SN 160,5) |
+| Ryzen 7 7730U | Đủ (CB2024 chỉ từ 1 mini PC) | Vega 8 (TS 1144, SN 235,5) |
+| Ryzen 7 7735HS | Đủ | Radeon 680M (TS 2195, SN 317,8) |
+| Ryzen 5 8645HS | Đủ (n=1) | Radeon 760M |
+| Ryzen AI 7 345 | Đủ (CB2024 n=1) | Radeon 840M |
+| **"Ryzen AI 7 260"** | Không có trên amd.com; spec MSI VN ghi **Ryzen 7 260**, nên dùng chung số liệu (`alias_of`) | Radeon 780M |
+| Ryzen 3 3200U | GB6 có, CB2024 chưa có | Vega 3 (TS 371,8; SN chưa có) |
+| Ryzen 5 125, Ryzen 7 155, Ryzen 7 7445HS | GB6 có (n=1), CB2024 chưa có | Radeon 740M |
+| Ryzen AI 5 330 | GB6 có, CB2024 chưa có | Radeon 820M |
+| Ryzen 5 7533HS | **Chưa có** benchmark (NBC chưa có trang) | Radeon 660M (TS 1450, SN 229,7) |
+
+**Kiểm tra lại CB2024: vẫn chưa có** cho Core 3 100U, Core 5 205H, Core 5 315, Ultra 5 235U, i5-1334U, Ryzen 5 7520U, Ryzen 3 5400U, Snapdragon X1-26-101 và M5 Pro 15 nhân. Trang NBC của M5 Pro 15 nhân chỉ có Cinebench 2026. Kết quả kiểm tra nằm trong trường `recheck_2026_11_23`.
+
+**RTX 3050 6 GB:** Steel Nomad vẫn chưa có; LaptopMedia chỉ có Steel Nomad Light, là bài test khác. **RTX 2050:** bỏ qua vì không model nào trong market-vn.json dùng.
+
+**Lưu ý khi dùng:**
+- **Snapdragon X1-26-101:** `igpu_key` trỏ tới Adreno X1-85, nhưng ở chip này GPU chỉ chạy tối đa 0,63 GHz (bản X1E chạy 1,25 GHz). Vì vậy **không dùng được** điểm trung bình của X1-85 cho chip này.
+- **Core 7 150U, Core 5 220H, Core 3 100U:** Intel gọi iGPU là "Intel Graphics"; đã map theo số EU (96, 80 và 64).
+- **M5 và M5 Max:** cùng CPU nhưng có bản GPU 8 nhân (M5) và 32 nhân (M5 Max), xem `igpu_key_alt`.
+- **Số mẫu ít:** iGPU 16EU, N350 và Steel Nomad của Iris Xe 96EU đều đo trên máy khác loại (chi tiết trong note).

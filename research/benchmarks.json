@@ -19,7 +19,11 @@
     "cb2024_single",
     "cb2024_multi"
    ],
-   "note": "Không có NPU (NBC: 'There is no Ryzen AI NPU support here'). iGPU Radeon 740M. Cinebench 2024 chưa có trên trang NBC."
+   "note": "Không có NPU (NBC: 'There is no Ryzen AI NPU support here'). iGPU Radeon 740M. Cinebench 2024 chưa có trên trang NBC.",
+   "igpu_key": "AMD Radeon 740M",
+   "igpu_key_note": "Direct name match on amd.com 'Graphics Model'.",
+   "igpu_name_vendor": "AMD Radeon™ 740M",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/200-series/amd-ryzen-5-220.html"
   },
   "AMD Ryzen 7 250": {
    "cores_threads": "8C/16T (Zen 4)",
@@ -35,7 +39,11 @@
     "https://www.notebookcheck.net/AMD-Ryzen-7-250-Processor-Benchmarks-and-Specs.945901.0.html"
    ],
    "missing": [],
-   "note": "iGPU Radeon 780M. All numbers from NBC chip page (GB6 from offset 100000 of same page)."
+   "note": "iGPU Radeon 780M. All numbers from NBC chip page (GB6 from offset 100000 of same page).",
+   "igpu_key": "AMD Radeon 780M",
+   "igpu_key_note": "Direct name match on amd.com 'Graphics Model'.",
+   "igpu_name_vendor": "AMD Radeon™ 780M",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/200-series/amd-ryzen-7-250.html"
   },
   "AMD Ryzen 7 260": {
    "cores_threads": "8C/16T (Zen 4)",
@@ -51,7 +59,11 @@
     "https://www.notebookcheck.net/AMD-Ryzen-7-260-Processor-Benchmarks-and-Specs.945912.0.html"
    ],
    "missing": [],
-   "note": "Hawk Point refresh, iGPU Radeon 780M, NPU 16 TOPS (chip total 38 TOPS)."
+   "note": "Hawk Point refresh, iGPU Radeon 780M, NPU 16 TOPS (chip total 38 TOPS).",
+   "igpu_key": "AMD Radeon 780M",
+   "igpu_key_note": "Direct name match on amd.com 'Graphics Model'.",
+   "igpu_name_vendor": "AMD Radeon™ 780M",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/200-series/amd-ryzen-7-260.html"
   },
   "AMD Ryzen 5 7535HS": {
    "cores_threads": "6C/12T (Zen 3+)",
@@ -71,7 +83,11 @@
     "gb6_single",
     "gb6_multi"
    ],
-   "note": "Không có NPU. iGPU Radeon 660M. GB6 chưa có (ngoài phần trang đã đọc)."
+   "note": "Không có NPU. iGPU Radeon 660M. GB6 chưa có (ngoài phần trang đã đọc).",
+   "igpu_key": "AMD Radeon 660M",
+   "igpu_key_note": "Direct name match on amd.com 'Graphics Model'. Uses the new ROUND3 canonical key.",
+   "igpu_name_vendor": "AMD Radeon™ 660M",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/7000-series/amd-ryzen-5-7535hs.html"
   },
   "AMD Ryzen 7 7435HS": {
    "cores_threads": "8C/16T (Zen 3+)",
@@ -91,7 +107,11 @@
     "cb2024_single",
     "cb2024_multi"
    ],
-   "note": "Không có NPU, iGPU bị tắt hẳn (NBC). Cinebench 2024 chưa có."
+   "note": "Không có NPU, iGPU bị tắt hẳn (NBC). Cinebench 2024 chưa có.",
+   "igpu_key": null,
+   "igpu_key_note": "No iGPU: amd.com 'Graphics Model' says 'Discrete Graphics Card Required'. Laptop must use its dGPU.",
+   "igpu_name_vendor": "Discrete Graphics Card Required",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/7000-series/amd-ryzen-7-7435hs.html"
   },
   "AMD Ryzen AI 5 340": {
    "cores_threads": "6C/12T (3 Zen 5 + 3 Zen 5c)",
@@ -107,7 +127,11 @@
     "https://www.notebookcheck.net/AMD-Ryzen-AI-5-340-Processor-Benchmarks-and-Specs.950403.0.html"
    ],
    "missing": [],
-   "note": "iGPU Radeon 840M. Chip AI 59 TOPS."
+   "note": "iGPU Radeon 840M. Chip AI 59 TOPS.",
+   "igpu_key": "AMD Radeon 840M",
+   "igpu_key_note": "Direct name match on amd.com 'Graphics Model'.",
+   "igpu_name_vendor": "AMD Radeon™ 840M",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/ai-300-series/amd-ryzen-ai-5-340.html"
   },
   "AMD Ryzen AI 7 350": {
    "cores_threads": "8C/16T (4 Zen 5 + 4 Zen 5c)",
@@ -126,7 +150,11 @@
     "gb6_single",
     "gb6_multi"
    ],
-   "note": "iGPU Radeon 860M. Chip AI 66 TOPS. GB6 chưa có (không nằm trong phần trang đã đọc)."
+   "note": "iGPU Radeon 860M. Chip AI 66 TOPS. GB6 chưa có (không nằm trong phần trang đã đọc).",
+   "igpu_key": "AMD Radeon 860M",
+   "igpu_key_note": "Direct name match on amd.com 'Graphics Model'.",
+   "igpu_name_vendor": "AMD Radeon™ 860M",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/ai-300-series/amd-ryzen-ai-7-350.html"
   },
   "AMD Ryzen AI 9 365": {
    "cores_threads": "10C/20T (4 Zen 5 + 6 Zen 5c)",
@@ -145,7 +173,11 @@
     "gb6_single",
     "gb6_multi"
    ],
-   "note": "iGPU Radeon 880M."
+   "note": "iGPU Radeon 880M.",
+   "igpu_key": "AMD Radeon 880M",
+   "igpu_key_note": "Direct name match on amd.com 'Graphics Model'.",
+   "igpu_name_vendor": "AMD Radeon™ 880M",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/ai-300-series/amd-ryzen-ai-9-365.html"
   },
   "AMD Ryzen AI 9 HX 370": {
    "cores_threads": "12C/24T (4 Zen 5 + 8 Zen 5c)",
@@ -164,7 +196,11 @@
     "gb6_single",
     "gb6_multi"
    ],
-   "note": "iGPU Radeon 890M."
+   "note": "iGPU Radeon 890M.",
+   "igpu_key": "AMD Radeon 890M",
+   "igpu_key_note": "Direct name match on amd.com 'Graphics Model'.",
+   "igpu_name_vendor": "AMD Radeon™ 890M",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/ai-300-series/amd-ryzen-ai-9-hx-370.html"
   },
   "AMD Ryzen AI 9 HX 375": {
    "cores_threads": "12C/24T (4 Zen 5 + 8 Zen 5c)",
@@ -180,7 +216,11 @@
     "https://www.notebookcheck.net/AMD-Ryzen-AI-9-HX-375-Processor-Benchmarks-and-Specs.870100.0.html"
    ],
    "missing": [],
-   "note": "iGPU Radeon 890M. CB2024 single 95.6 là 1 mẫu duy nhất, thấp bất thường so với HX 370 (117) -> độ tin cậy thấp."
+   "note": "iGPU Radeon 890M. CB2024 single 95.6 là 1 mẫu duy nhất, thấp bất thường so với HX 370 (117) -> độ tin cậy thấp.",
+   "igpu_key": "AMD Radeon 890M",
+   "igpu_key_note": "Direct name match on amd.com 'Graphics Model'.",
+   "igpu_name_vendor": "AMD Radeon™ 890M",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/ai-300-series/amd-ryzen-ai-9-hx-375.html"
   },
   "AMD Ryzen AI 5 435": {
    "cores_threads": "6C/12T (2 Zen 5 + 4 Zen 5c)",
@@ -199,7 +239,11 @@
     "gb6_single",
     "gb6_multi"
    ],
-   "note": "Gorgon Point. iGPU Radeon 840M."
+   "note": "Gorgon Point. iGPU Radeon 840M.",
+   "igpu_key": "AMD Radeon 840M",
+   "igpu_key_note": "Direct name match on amd.com 'Graphics Model'.",
+   "igpu_name_vendor": "AMD Radeon™ 840M",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/ai-400-series/amd-ryzen-ai-5-435.html"
   },
   "AMD Ryzen AI 7 445": {
    "cores_threads": "6C/12T (2 Zen 5 + 4 Zen 5c)",
@@ -215,7 +259,11 @@
     "https://www.notebookcheck.net/AMD-Ryzen-AI-7-445-Processor-Benchmarks-and-Specs.1197764.0.html"
    ],
    "missing": [],
-   "note": "Gorgon Point, iGPU Radeon 840M. NBC: gần như rebrand Ryzen AI 5 340."
+   "note": "Gorgon Point, iGPU Radeon 840M. NBC: gần như rebrand Ryzen AI 5 340.",
+   "igpu_key": "AMD Radeon 840M",
+   "igpu_key_note": "Direct name match on amd.com 'Graphics Model'.",
+   "igpu_name_vendor": "AMD Radeon™ 840M",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/ai-400-series/amd-ryzen-ai-7-445.html"
   },
   "AMD Ryzen AI 7 450": {
    "cores_threads": "8C/16T (4 Zen 5 + 4 Zen 5c)",
@@ -234,7 +282,11 @@
     "gb6_single",
     "gb6_multi"
    ],
-   "note": "iGPU Radeon 860M."
+   "note": "iGPU Radeon 860M.",
+   "igpu_key": "AMD Radeon 860M",
+   "igpu_key_note": "Direct name match on amd.com 'Graphics Model'.",
+   "igpu_name_vendor": "AMD Radeon™ 860M",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/ai-400-series/amd-ryzen-ai-7-450.html"
   },
   "AMD Ryzen AI 9 465": {
    "cores_threads": "10C/20T (4 Zen 5 + 6 Zen 5c)",
@@ -250,7 +302,11 @@
     "https://www.notebookcheck.net/AMD-Ryzen-AI-9-465-Processor-Benchmarks-and-Specs.1197759.0.html"
    ],
    "missing": [],
-   "note": "iGPU Radeon 880M. Average kéo xuống bởi mẫu 20 W."
+   "note": "iGPU Radeon 880M. Average kéo xuống bởi mẫu 20 W.",
+   "igpu_key": "AMD Radeon 880M",
+   "igpu_key_note": "Direct name match on amd.com 'Graphics Model'.",
+   "igpu_name_vendor": "AMD Radeon™ 880M",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/ai-400-series/amd-ryzen-ai-9-465.html"
   },
   "AMD Ryzen AI 9 HX 470": {
    "cores_threads": "12C/24T (4 Zen 5 + 8 Zen 5c)",
@@ -269,7 +325,11 @@
     "gb6_single",
     "gb6_multi"
    ],
-   "note": "iGPU Radeon 890M. Phần lớn mẫu là mini PC (TDP cao)."
+   "note": "iGPU Radeon 890M. Phần lớn mẫu là mini PC (TDP cao).",
+   "igpu_key": "AMD Radeon 890M",
+   "igpu_key_note": "Direct name match on amd.com 'Graphics Model'.",
+   "igpu_name_vendor": "AMD Radeon™ 890M",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/ai-400-series/amd-ryzen-ai-9-hx-470.html"
   },
   "AMD Ryzen AI 9 HX 475": {
    "cores_threads": "12C/24T (4 Zen 5 + 8 Zen 5c)",
@@ -288,7 +348,11 @@
     "cb2024_single",
     "cb2024_multi"
    ],
-   "note": "iGPU Radeon 890M."
+   "note": "iGPU Radeon 890M.",
+   "igpu_key": "AMD Radeon 890M",
+   "igpu_key_note": "Direct name match on amd.com 'Graphics Model'.",
+   "igpu_name_vendor": "AMD Radeon™ 890M",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/ai-400-series/amd-ryzen-ai-9-hx-475.html"
   },
   "AMD Ryzen AI Max 385": {
    "cores_threads": "8C/16T",
@@ -307,7 +371,11 @@
     "cb2024_single",
     "cb2024_multi"
    ],
-   "note": "iGPU Radeon 8050S (32 CU)."
+   "note": "iGPU Radeon 8050S (32 CU).",
+   "igpu_key": "AMD Radeon 8050S",
+   "igpu_key_note": "Direct name match on amd.com 'Graphics Model'.",
+   "igpu_name_vendor": "Radeon 8050S Graphics",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/ai-300-series/amd-ryzen-ai-max-385.html"
   },
   "AMD Ryzen AI Max 390": {
    "cores_threads": "12C/24T",
@@ -326,7 +394,11 @@
     "cb2024_single",
     "cb2024_multi"
    ],
-   "note": "iGPU Radeon 8050S."
+   "note": "iGPU Radeon 8050S.",
+   "igpu_key": "AMD Radeon 8050S",
+   "igpu_key_note": "Direct name match on amd.com 'Graphics Model'.",
+   "igpu_name_vendor": "Radeon 8050S Graphics",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/ai-300-series/amd-ryzen-ai-max-390.html"
   },
   "AMD Ryzen AI Max+ 392": {
    "cores_threads": "12C/24T",
@@ -342,7 +414,11 @@
     "https://www.notebookcheck.net/AMD-Ryzen-AI-Max-392-Processor-Benchmarks-and-Specs.1197727.0.html"
    ],
    "missing": [],
-   "note": "iGPU Radeon 8060S (40 CU). Ra mắt CES 2026."
+   "note": "iGPU Radeon 8060S (40 CU). Ra mắt CES 2026.",
+   "igpu_key": "AMD Radeon 8060S",
+   "igpu_key_note": "Direct name match on amd.com 'Graphics Model'.",
+   "igpu_name_vendor": "Radeon 8060S Graphics",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/ai-300-series/amd-ryzen-ai-max-plus-392.html"
   },
   "AMD Ryzen AI Max+ 395": {
    "cores_threads": "16C/32T",
@@ -361,7 +437,11 @@
     "gb6_single",
     "gb6_multi"
    ],
-   "note": "iGPU Radeon 8060S. Trang chỉ có GB6.3 multi leak ~20700, không dùng."
+   "note": "iGPU Radeon 8060S. Trang chỉ có GB6.3 multi leak ~20700, không dùng.",
+   "igpu_key": "AMD Radeon 8060S",
+   "igpu_key_note": "Direct name match on amd.com 'Graphics Model'.",
+   "igpu_name_vendor": "Radeon 8060S Graphics",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/ai-300-series/amd-ryzen-ai-max-plus-395.html"
   },
   "AMD Ryzen AI Max+ 388": {
    "cores_threads": null,
@@ -384,7 +464,11 @@
     "gb6_single",
     "gb6_multi"
    ],
-   "note": "chưa có: tồn tại (NBC page https://www.notebookcheck.net/AMD-Ryzen-AI-Max-388-Processor-Benchmarks-and-Specs.1197729.0.html, 8C/16T + Radeon 8060S theo kết quả tìm kiếm) nhưng chưa fetch trang nên không ghi số."
+   "note": "chưa có: tồn tại (NBC page https://www.notebookcheck.net/AMD-Ryzen-AI-Max-388-Processor-Benchmarks-and-Specs.1197729.0.html, 8C/16T + Radeon 8060S theo kết quả tìm kiếm) nhưng chưa fetch trang nên không ghi số.",
+   "igpu_key": "AMD Radeon 8060S",
+   "igpu_key_note": "Direct name match on amd.com 'Graphics Model'.",
+   "igpu_name_vendor": "Radeon 8060S Graphics",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/ai-300-series/amd-ryzen-ai-max-plus-388.html"
   },
   "AMD Ryzen 9 8940HX": {
    "cores_threads": "16C/32T (Zen 4)",
@@ -402,7 +486,11 @@
    "missing": [
     "npu_tops"
    ],
-   "note": "Không có NPU. iGPU Radeon 610M."
+   "note": "Không có NPU. iGPU Radeon 610M.",
+   "igpu_key": "AMD Radeon 610M",
+   "igpu_key_note": "Direct name match on amd.com 'Graphics Model'.",
+   "igpu_name_vendor": "AMD Radeon™ 610M",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/8000-series/amd-ryzen-9-8940hx.html"
   },
   "AMD Ryzen 9 8945HX": {
    "cores_threads": "16C/32T (Zen 4)",
@@ -420,7 +508,11 @@
    "missing": [
     "npu_tops"
    ],
-   "note": "Không có NPU. iGPU Radeon 610M."
+   "note": "Không có NPU. iGPU Radeon 610M.",
+   "igpu_key": "AMD Radeon 610M",
+   "igpu_key_note": "Direct name match on amd.com 'Graphics Model'.",
+   "igpu_name_vendor": "AMD Radeon™ 610M",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/8000-series/amd-ryzen-9-8945hx.html"
   },
   "AMD Ryzen 7 8745HX": {
    "cores_threads": "8C/16T (Zen 4)",
@@ -440,7 +532,11 @@
     "cb2024_single",
     "cb2024_multi"
    ],
-   "note": "Không có NPU. iGPU Radeon 610M."
+   "note": "Không có NPU. iGPU Radeon 610M.",
+   "igpu_key": "AMD Radeon 610M",
+   "igpu_key_note": "Direct name match on amd.com 'Graphics Model'.",
+   "igpu_name_vendor": "AMD Radeon™ 610M",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/8000-series/amd-ryzen-7-8745hx.html"
   },
   "AMD Ryzen 9 9955HX": {
    "cores_threads": "16C/32T (Zen 5)",
@@ -460,7 +556,11 @@
     "gb6_single",
     "gb6_multi"
    ],
-   "note": "Không có NPU. iGPU Radeon 610M."
+   "note": "Không có NPU. iGPU Radeon 610M.",
+   "igpu_key": "AMD Radeon 610M",
+   "igpu_key_note": "Direct name match on amd.com 'Graphics Model'.",
+   "igpu_name_vendor": "AMD Radeon™ 610M",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/9000-series/amd-ryzen-9-9955hx.html"
   },
   "AMD Ryzen 9 9955HX3D": {
    "cores_threads": "16C/32T (Zen 5, 128 MB L3)",
@@ -480,7 +580,11 @@
     "gb6_single",
     "gb6_multi"
    ],
-   "note": "Không có NPU. iGPU Radeon 610M."
+   "note": "Không có NPU. iGPU Radeon 610M.",
+   "igpu_key": "AMD Radeon 610M",
+   "igpu_key_note": "Direct name match on amd.com 'Graphics Model'.",
+   "igpu_name_vendor": "AMD Radeon™ 610M",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/9000-series/amd-ryzen-9-9955hx3d.html"
   },
   "Apple A18 Pro": {
    "cores_threads": "2P+4E / 6T",
@@ -498,7 +602,11 @@
    "missing": [
     "npu_tops"
    ],
-   "note": "All numbers from the Notebookcheck MacBook Neo review (single device, not a chip average). Geekbench version 6.7. The Notebookcheck A18 Pro CPU spec page URL tried returned 404. Apple publishes no TOPS figure -> npu_tops: chưa có."
+   "note": "All numbers from the Notebookcheck MacBook Neo review (single device, not a chip average). Geekbench version 6.7. The Notebookcheck A18 Pro CPU spec page URL tried returned 404. Apple publishes no TOPS figure -> npu_tops: chưa có.",
+   "igpu_key": "Apple A18 Pro GPU 5-core",
+   "igpu_key_note": "MacBook Neo has one chip config: 6-core CPU, 5-core GPU.",
+   "igpu_name_vendor": "A18 Pro chip 6-core CPU with 2 performance cores and 4 efficiency cores 5-core GPU",
+   "igpu_source": "https://www.apple.com/macbook-neo/specs/"
   },
   "Apple M5 (10-core)": {
    "cores_threads": "4 Super + 6 E / 10T",
@@ -517,7 +625,12 @@
     "tdp_w",
     "npu_tops"
    ],
-   "note": "NBC chip page averages. CB2024 multi range 957 (MBA13) - 1172 (MBP14); GB6.7.1 multi range 16544-18054. Spec table says 4608 MHz max while text says super cores up to 4.4 GHz (inconsistent on page). No chip TDP or TOPS published: chưa có."
+   "note": "NBC chip page averages. CB2024 multi range 957 (MBA13) - 1172 (MBP14); GB6.7.1 multi range 16544-18054. Spec table says 4608 MHz max while text says super cores up to 4.4 GHz (inconsistent on page). No chip TDP or TOPS published: chưa có.",
+   "igpu_key": "Apple M5 GPU 10-core",
+   "igpu_key_alt": "Apple M5 GPU 8-core",
+   "igpu_key_note": "CONFIG-DEPENDENT: apple.com MacBook Air (M5) specs list both 'M5 chip 10-core CPU ... 10-core GPU' and '... 8-core GPU'. Use 'Apple M5 GPU 8-core' for laptops sold with the 8-core GPU (base MacBook Air 13).",
+   "igpu_name_vendor": "M5 chip 10-core CPU with 4 super cores and 6 efficiency cores 10-core GPU (also listed: 8-core GPU)",
+   "igpu_source": "https://www.apple.com/macbook-air/specs/"
   },
   "Apple M5 Pro (15-core CPU)": {
    "cores_threads": "5 Super + 10 P / 15T",
@@ -538,7 +651,16 @@
     "cb2024_single",
     "cb2024_multi"
    ],
-   "note": "GB6.7.1 single result (one device). Page lists only Cinebench 2026 (730 single / 7200 multi), no Cinebench 2024 -> chưa có."
+   "note": "GB6.7.1 single result (one device). Page lists only Cinebench 2026 (730 single / 7200 multi), no Cinebench 2024 -> chưa có.",
+   "recheck_2026_11_23": {
+    "cb2024": "chưa có",
+    "checked_url": "https://www.notebookcheck.net/Apple-M5-Pro-15-Core-Processor-Benchmarks-and-Specs.1244350.0.html",
+    "note": "Rechecked 2026-11-23: chip page still lists only Cinebench 2026 (730 single / 7200 multi) plus Geekbench, from one device (MacBook Pro 14 2026, Mac17,9). NBC device page https://www.notebookcheck.net/Apple-MacBook-Pro-14-2026-M5-Pro.1304517.0.html (15-core) has no in-house review and no CB2024."
+   },
+   "igpu_key": "Apple M5 Pro GPU 16-core",
+   "igpu_key_note": "apple.com: the 15-core CPU M5 Pro comes only with a 16-core GPU (307GB/s).",
+   "igpu_name_vendor": "M5 Pro chip 15-core CPU with: 5 super cores 10 performance cores ... 16-core GPU",
+   "igpu_source": "https://www.apple.com/macbook-pro/specs/"
   },
   "Apple M5 Pro (18-core CPU)": {
    "cores_threads": "6 Super + 12 P / 18T",
@@ -558,7 +680,11 @@
    "missing": [
     "npu_tops"
    ],
-   "note": "Averages from chip page: CB2024 multi 2243-2347, GB6.7.1 multi 28436-29359. Power limits from the two reviews."
+   "note": "Averages from chip page: CB2024 multi 2243-2347, GB6.7.1 multi 28436-29359. Power limits from the two reviews.",
+   "igpu_key": "Apple M5 Pro GPU 20-core",
+   "igpu_key_note": "apple.com: the 18-core CPU M5 Pro comes with a 20-core GPU.",
+   "igpu_name_vendor": "M5 Pro chip 18-core CPU with: 6 super cores 12 performance cores 20-core GPU",
+   "igpu_source": "https://www.apple.com/macbook-pro/specs/"
   },
   "Apple M5 Max": {
    "cores_threads": "6 Super + 12 P / 18T",
@@ -576,7 +702,12 @@
    "missing": [
     "npu_tops"
    ],
-   "note": "NBC chip page averages. CB2024 multi 2073 (MBP14, throttles) - 2490 (MBP16). GB6.7 multi 29000-30057 (avg includes one 'simulated' Geekbench entry)."
+   "note": "NBC chip page averages. CB2024 multi 2073 (MBP14, throttles) - 2490 (MBP16). GB6.7 multi 29000-30057 (avg includes one 'simulated' Geekbench entry).",
+   "igpu_key": "Apple M5 Max GPU 40-core",
+   "igpu_key_alt": null,
+   "igpu_key_note": "CONFIG-DEPENDENT: apple.com lists M5 Max 18-core CPU with a 32-core GPU (460GB/s, max 36GB) or a 40-core GPU (614GB/s, up to 128GB). Only a 40-core key exists; a 32-core laptop needs 'NEW: Apple M5 Max 32-Core GPU'. | igpu_key_alt \"NEW: Apple M5 Max 32-Core GPU\": chưa có entry GPU này trong benchmarks.json (chưa có số liệu).",
+   "igpu_name_vendor": "M5 Max chip 18-core CPU with: 6 super cores 12 performance cores 40-core GPU (also listed: 32-core GPU)",
+   "igpu_source": "https://www.apple.com/macbook-pro/specs/"
   },
   "Apple M4 (10-core)": {
    "cores_threads": "4P+6E / 10T",
@@ -592,7 +723,12 @@
     "https://www.notebookcheck.net/Apple-M4-10-cores-Processor-Benchmarks-and-Specs.835975.0.html"
    ],
    "missing": [],
-   "note": "Reference chip. CB2024 multi range 815-986, GB6 multi 14690-15173. TDP 40 W and 38 TOPS as listed on NBC spec table."
+   "note": "Reference chip. CB2024 multi range 815-986, GB6 multi 14690-15173. TDP 40 W and 38 TOPS as listed on NBC spec table.",
+   "igpu_key": null,
+   "igpu_key_alt": null,
+   "igpu_key_note": "No Apple M4 GPU key exists. apple.com MacBook Air (13-inch, M4, 2025) specs: 'M4 chip 10-core CPU ... 8-core GPU, 10-core GPU'; the base 16GB config has the 8-core GPU ('NEW: Apple M4 8-Core GPU'), 24/32GB configs the 10-core GPU. | igpu_key \"NEW: Apple M4 10-Core GPU\": chưa có entry GPU này trong benchmarks.json (chưa có số liệu). | igpu_key_alt \"NEW: Apple M4 8-Core GPU\": chưa có entry GPU này trong benchmarks.json (chưa có số liệu).",
+   "igpu_name_vendor": "Apple M4 chip 10-core CPU with 4 performance cores and 6 efficiency cores 8-core GPU, 10-core GPU",
+   "igpu_source": "https://support.apple.com/en-us/122209"
   },
   "Snapdragon X (X1-26-100)": {
    "cores_threads": "8C / 8T",
@@ -608,7 +744,11 @@
     "https://www.notebookcheck.net/Qualcomm-Snapdragon-X1P-26-100-Processor-Benchmarks-and-Specs.942259.0.html"
    ],
    "missing": [],
-   "note": "NBC averages. CB2024 multi 646-708. GB6.7.1 single 1421-2675 (wide spread; median 2123.5), multi 10492-14998 (median 10643)."
+   "note": "NBC averages. CB2024 multi 646-708. GB6.7.1 single 1421-2675 (wide spread; median 2123.5), multi 10492-14998 (median 10643).",
+   "igpu_key": "Qualcomm Adreno X1-45 (1.7 TFLOPS)",
+   "igpu_key_note": "Also confirmed on qualcomm.com/laptops/products/snapdragon-x (X1-45 footnoted to X1-26-100). Source: per-SKU 'Snapdragon X Series' comparison table (19 products) on the qualcomm.com X2 Elite page (rendered in browser).",
+   "igpu_name_vendor": "Adreno X1-45, Up to 1.25 GHz",
+   "igpu_source": "https://www.qualcomm.com/laptops/products/snapdragon-x2-elite"
   },
   "Snapdragon X Plus (X1P-42-100)": {
    "cores_threads": "8C / 8T",
@@ -624,7 +764,11 @@
     "https://www.notebookcheck.net/Qualcomm-Snapdragon-X-Plus-X1P-42-100-Processor-Benchmarks-and-Specs.838787.0.html"
    ],
    "missing": [],
-   "note": "Chose X1P-42-100 (8-core) as the common 'Snapdragon X Plus' in VN laptops. CB2024 multi 554-763; GB6.7.1 multi 7609-14998. The 10-core X1P-64-100 was not fetched."
+   "note": "Chose X1P-42-100 (8-core) as the common 'Snapdragon X Plus' in VN laptops. CB2024 multi 554-763; GB6.7.1 multi 7609-14998. The 10-core X1P-64-100 was not fetched.",
+   "igpu_key": "Qualcomm Adreno X1-45 (1.7 TFLOPS)",
+   "igpu_key_note": "Source: per-SKU 'Snapdragon X Series' comparison table (19 products) on the qualcomm.com X2 Elite page (rendered in browser).",
+   "igpu_name_vendor": "Adreno X1-45, Up to 1.25 GHz",
+   "igpu_source": "https://www.qualcomm.com/laptops/products/snapdragon-x2-elite"
   },
   "Snapdragon X Elite (X1E-78-100)": {
    "cores_threads": "12C / 12T",
@@ -640,7 +784,11 @@
     "https://www.notebookcheck.net/Qualcomm-Snapdragon-X-Elite-X1E-78-100-Processor-Benchmarks-and-Specs.838568.0.html"
    ],
    "missing": [],
-   "note": "CB2024 multi 746-1132; GB6.7.1 multi 12971-14767."
+   "note": "CB2024 multi 746-1132; GB6.7.1 multi 12971-14767.",
+   "igpu_key": "Qualcomm Adreno X1-85 (3.8 TFLOPS)",
+   "igpu_key_note": "Source: per-SKU 'Snapdragon X Series' comparison table (19 products) on the qualcomm.com X2 Elite page (rendered in browser).",
+   "igpu_name_vendor": "Adreno X1-85, Up to 1.25 GHz",
+   "igpu_source": "https://www.qualcomm.com/laptops/products/snapdragon-x2-elite"
   },
   "Snapdragon X Elite (X1E-80-100)": {
    "cores_threads": "12C / 12T",
@@ -656,7 +804,11 @@
     "https://www.notebookcheck.net/Snapdragon-X-Elite-X1E-80-100-Processor-Benchmarks-and-Specs.838567.0.html"
    ],
    "missing": [],
-   "note": "4.0 GHz is 1-2 core boost; all-core up to 3.4 GHz. CB2024 multi 621-927; GB6.7.1 single 1896-2874, multi 7596-14998 (median 14312)."
+   "note": "4.0 GHz is 1-2 core boost; all-core up to 3.4 GHz. CB2024 multi 621-927; GB6.7.1 single 1896-2874, multi 7596-14998 (median 14312).",
+   "igpu_key": "Qualcomm Adreno X1-85 (3.8 TFLOPS)",
+   "igpu_key_note": "Source: per-SKU 'Snapdragon X Series' comparison table (19 products) on the qualcomm.com X2 Elite page (rendered in browser).",
+   "igpu_name_vendor": "Adreno X1-85, Up to 1.25 GHz",
+   "igpu_source": "https://www.qualcomm.com/laptops/products/snapdragon-x2-elite"
   },
   "Snapdragon X2 Elite (X2E-78-100)": {
    "cores_threads": "6 prime + 6 perf / 12T",
@@ -672,7 +824,11 @@
     "https://www.notebookcheck.net/Qualcomm-Snapdragon-X2-Elite-X2E-78-100-Processor-Benchmarks-and-Specs.1262941.0.html"
    ],
    "missing": [],
-   "note": "This is the chip in Surface Laptop 8 13.8 X2 Elite config. CB2024 multi 995-1078 (2 devices). GB6.7.1 is a single result, not an average."
+   "note": "This is the chip in Surface Laptop 8 13.8 X2 Elite config. CB2024 multi 995-1078 (2 devices). GB6.7.1 is a single result, not an average.",
+   "igpu_key": "Qualcomm Adreno X2-85",
+   "igpu_key_note": "X2E-80/84 run X2-85 at 1.70 GHz; X2E-78 is the 1.35 GHz variant. Source: per-SKU 'Snapdragon X Series' comparison table (19 products) on the qualcomm.com X2 Elite page (rendered in browser).",
+   "igpu_name_vendor": "Adreno X2-85, Up to 1.35 GHz",
+   "igpu_source": "https://www.qualcomm.com/laptops/products/snapdragon-x2-elite"
   },
   "Snapdragon X2 Elite (X2E-88-100)": {
    "cores_threads": "12 prime + 6 perf / 18T",
@@ -688,7 +844,11 @@
     "https://www.notebookcheck.net/Qualcomm-Snapdragon-X2-Elite-X2E-88-100-Processor-Benchmarks-and-Specs.1138774.0.html"
    ],
    "missing": [],
-   "note": "CB2024 multi 926 (Zenbook A14 whisper) - 1471 (performance mode). GB6.7.1 single 2836-3838, multi 16674-20325. All-core clock 4 GHz."
+   "note": "CB2024 multi 926 (Zenbook A14 whisper) - 1471 (performance mode). GB6.7.1 single 2836-3838, multi 16674-20325. All-core clock 4 GHz.",
+   "igpu_key": "Qualcomm Adreno X2-90",
+   "igpu_key_note": "Source: per-SKU 'Snapdragon X Series' comparison table (19 products) on the qualcomm.com X2 Elite page (rendered in browser).",
+   "igpu_name_vendor": "Adreno X2-90, Up to 1.70 GHz",
+   "igpu_source": "https://www.qualcomm.com/laptops/products/snapdragon-x2-elite"
   },
   "Snapdragon X2 Elite Extreme (X2E-96-100)": {
    "cores_threads": "12 prime + 6 perf / 18T",
@@ -704,7 +864,11 @@
     "https://www.notebookcheck.net/Qualcomm-Snapdragon-X2-Elite-Extreme-X2E-96-100-Processor-Benchmarks-and-Specs.1127282.0.html"
    ],
    "missing": [],
-   "note": "CB2024 numbers are Qualcomm reference scores (single entry). GB6.7.1 range 4043-4080 / 22841-23491. Rarely in VN laptops."
+   "note": "CB2024 numbers are Qualcomm reference scores (single entry). GB6.7.1 range 4043-4080 / 22841-23491. Rarely in VN laptops.",
+   "igpu_key": "Qualcomm Adreno X2-90",
+   "igpu_key_note": "qualcomm.com/laptops/products/snapdragon-x2-elite-extreme returns 404; the X2E-96-100 row is in the table. Source: per-SKU 'Snapdragon X Series' comparison table (19 products) on the qualcomm.com X2 Elite page (rendered in browser).",
+   "igpu_name_vendor": "Adreno X2-90, Up to 1.85 GHz",
+   "igpu_source": "https://www.qualcomm.com/laptops/products/snapdragon-x2-elite"
   },
   "Snapdragon X2 Plus (X2P-64-100)": {
    "cores_threads": "10C / 10T (page intro inconsistent)",
@@ -720,7 +884,11 @@
     "https://www.notebookcheck.net/Qualcomm-Snapdragon-X2-Plus-X2P-64-100-Processor-Benchmarks-and-Specs.1196969.0.html"
    ],
    "missing": [],
-   "note": "CB2024 single device only. GB6.7.1 single 2878-3265, multi 12923-14277 (2 devices)."
+   "note": "CB2024 single device only. GB6.7.1 single 2878-3265, multi 12923-14277 (2 devices).",
+   "igpu_key": "Qualcomm Adreno X2-45",
+   "igpu_key_note": "Also on qualcomm.com/laptops/products/snapdragon-x2-plus (X2P-42-100 runs X2-45 at 0.91 GHz). Source: per-SKU 'Snapdragon X Series' comparison table (19 products) on the qualcomm.com X2 Elite page (rendered in browser).",
+   "igpu_name_vendor": "Adreno X2-45, 1.7 GHz",
+   "igpu_source": "https://www.qualcomm.com/laptops/products/snapdragon-x2-elite"
   },
   "Intel Core i5-13420H": {
    "cores_threads": "4P+4E/12T",
@@ -736,7 +904,11 @@
     "https://www.notebookcheck.net/Intel-Core-i5-13420H-Processor-Benchmarks-and-Specs.677510.0.html"
    ],
    "missing": [],
-   "note": "All values from https://www.notebookcheck.net/Intel-Core-i5-13420H-Processor-Benchmarks-and-Specs.677510.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel UHD Graphics Xe G4 48EUs); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 single n=4 (95-102.7), multi n=4 (450-528); GB6 n=5 (single 2199-2365, multi 6625-9262). No NPU listed (npu_tops null = none). Missing fields: chưa có."
+   "note": "All values from https://www.notebookcheck.net/Intel-Core-i5-13420H-Processor-Benchmarks-and-Specs.677510.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel UHD Graphics Xe G4 48EUs); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 single n=4 (95-102.7), multi n=4 (450-528); GB6 n=5 (single 2199-2365, multi 6625-9262). No NPU listed (npu_tops null = none). Missing fields: chưa có.",
+   "igpu_key": "Intel UHD Graphics Xe G4 48EUs",
+   "igpu_key_note": "intel.com lists 48 EU -> 48EU key.",
+   "igpu_name_vendor": "Intel® UHD Graphics for 13th Gen Intel® Processors (48 EU, 1.40 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/232173/intel-core-i513420h-processor-12m-cache-up-to-4-60-ghz/specifications.html"
   },
   "Intel Core i7-13620H": {
    "cores_threads": "6P+4E/16T",
@@ -752,7 +924,11 @@
     "https://www.notebookcheck.net/Intel-Core-i7-13620H-Processor-Benchmarks-and-Specs.677505.0.html"
    ],
    "missing": [],
-   "note": "All values from https://www.notebookcheck.net/Intel-Core-i7-13620H-Processor-Benchmarks-and-Specs.677505.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel UHD Graphics 64EUs (Alder Lake 12th Gen)); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 n=3 (multi 691-824); GB6 n=6 (multi 9131-13077). No NPU. Missing fields: chưa có."
+   "note": "All values from https://www.notebookcheck.net/Intel-Core-i7-13620H-Processor-Benchmarks-and-Specs.677505.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel UHD Graphics 64EUs (Alder Lake 12th Gen)); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 n=3 (multi 691-824); GB6 n=6 (multi 9131-13077). No NPU. Missing fields: chưa có.",
+   "igpu_key": "Intel UHD Graphics 64EUs (Alder Lake 12th Gen)",
+   "igpu_key_note": "intel.com lists 64 EU (Raptor Lake UHD); nearest key is the 64EU Alder Lake UHD entry.",
+   "igpu_name_vendor": "Intel® UHD Graphics for 13th Gen Intel® Processors (64 EU, 1.50 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/232130/intel-core-i713620h-processor-24m-cache-up-to-4-90-ghz/specifications.html"
   },
   "Intel Core i5-12450H": {
    "cores_threads": "8C/12T (page shows 8/12 only, no P/E split)",
@@ -768,7 +944,11 @@
     "https://www.notebookcheck.net/Intel-Core-i5-12450H-Processor-Benchmarks-and-Specs.589270.0.html"
    ],
    "missing": [],
-   "note": "All values from https://www.notebookcheck.net/Intel-Core-i5-12450H-Processor-Benchmarks-and-Specs.589270.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel UHD Graphics Xe G4 48EUs); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 n=4 (multi 422-570); GB6.7 n=7 (multi 7081-9109). Page also has older GB6.0 avg 2132/8075 (n=5). No NPU. Missing fields: chưa có."
+   "note": "All values from https://www.notebookcheck.net/Intel-Core-i5-12450H-Processor-Benchmarks-and-Specs.589270.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel UHD Graphics Xe G4 48EUs); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 n=4 (multi 422-570); GB6.7 n=7 (multi 7081-9109). Page also has older GB6.0 avg 2132/8075 (n=5). No NPU. Missing fields: chưa có.",
+   "igpu_key": "Intel UHD Graphics Xe G4 48EUs",
+   "igpu_key_note": "intel.com lists 48 EU.",
+   "igpu_name_vendor": "Intel® UHD Graphics for 12th Gen Intel® Processors (48 EU, 1.20 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/132222/intel-core-i512450h-processor-12m-cache-up-to-4-40-ghz/specifications.html"
   },
   "Intel Core 3 100U": {
    "cores_threads": "2P+4E/8T",
@@ -787,7 +967,16 @@
     "cb2024_single",
     "cb2024_multi"
    ],
-   "note": "All values from https://www.notebookcheck.net/Intel-Core-3-100U-Processor-Benchmarks-and-Specs.791268.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel UHD Graphics 64EUs (Alder Lake 12th Gen)); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). No Cinebench 2024 results on page -> chưa có. GB6.7 n=2 (single 2200-2389, multi 6620-7260); older GB6.0 single 1836/multi 5767 (n=1). No NPU. Missing fields: chưa có."
+   "note": "All values from https://www.notebookcheck.net/Intel-Core-3-100U-Processor-Benchmarks-and-Specs.791268.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel UHD Graphics 64EUs (Alder Lake 12th Gen)); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). No Cinebench 2024 results on page -> chưa có. GB6.7 n=2 (single 2200-2389, multi 6620-7260); older GB6.0 single 1836/multi 5767 (n=1). No NPU. Missing fields: chưa có.",
+   "recheck_2026_11_23": {
+    "cb2024": "chưa có",
+    "checked_url": "https://www.notebookcheck.net/Intel-Core-3-100U-Processor-Benchmarks-and-Specs.791268.0.html",
+    "note": "Page has Geekbench 7/6.7/6.0/5.5, Kraken, WebXPRT, CrossMark, CrXPRT. No Cinebench 2024."
+   },
+   "igpu_key": "Intel UHD Graphics 64EUs (Alder Lake 12th Gen)",
+   "igpu_key_note": "intel.com names it 'Intel Graphics' with 64 EU (Raptor Lake-U refresh); mapped to the 64EU UHD key by EU count.",
+   "igpu_name_vendor": "Intel® Graphics (64 EU, 1.25 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/236776/intel-core-3-processor-100u-10m-cache-up-to-4-70-ghz/specifications.html"
   },
   "Intel Core 5 120U": {
    "cores_threads": "2P+8E/12T",
@@ -805,7 +994,11 @@
    "missing": [
     "cb2024_single"
    ],
-   "note": "All values from https://www.notebookcheck.net/Intel-Core-5-120U-Processor-Benchmarks-and-Specs.791267.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel Iris Xe Graphics G7 80EUs); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 multi is a single result (n=1); CB24 single not on page -> chưa có. GB6 n=2 (multi 8406-9733). No NPU. Missing fields: chưa có."
+   "note": "All values from https://www.notebookcheck.net/Intel-Core-5-120U-Processor-Benchmarks-and-Specs.791267.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel Iris Xe Graphics G7 80EUs); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 multi is a single result (n=1); CB24 single not on page -> chưa có. GB6 n=2 (multi 8406-9733). No NPU. Missing fields: chưa có.",
+   "igpu_key": "Intel UHD Graphics / Intel Graphics (Core 5 120U)",
+   "igpu_key_note": "intel.com names it 'Intel Graphics' (80 EU), not Iris Xe; existing dedicated key used. Same 80 EU count as Iris Xe G7 80EUs; full performance needs dual-channel memory.",
+   "igpu_name_vendor": "Intel® Graphics (80 EU, 1.3 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/236796/intel-core-5-processor-120u-12m-cache-up-to-5-00-ghz/specifications.html"
   },
   "Intel Core 7 150U": {
    "cores_threads": "2P+8E/12T",
@@ -821,7 +1014,11 @@
     "https://www.notebookcheck.net/Intel-Core-7-150U-Processor-Benchmarks-and-Specs.791266.0.html"
    ],
    "missing": [],
-   "note": "All values from https://www.notebookcheck.net/Intel-Core-7-150U-Processor-Benchmarks-and-Specs.791266.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel Iris Xe Graphics G7 96EUs); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 single n=1, multi n=2 (432-508); GB6 n=4 (multi 7737-10160). No NPU. Missing fields: chưa có."
+   "note": "All values from https://www.notebookcheck.net/Intel-Core-7-150U-Processor-Benchmarks-and-Specs.791266.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel Iris Xe Graphics G7 96EUs); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 single n=1, multi n=2 (432-508); GB6 n=4 (multi 7737-10160). No NPU. Missing fields: chưa có.",
+   "igpu_key": "Intel Iris Xe Graphics G7 96EUs",
+   "igpu_key_note": "intel.com names it 'Intel Graphics' (Core Series 1 branding), 96 EU; mapped to Iris Xe 96EU key by EU count. No 96EU UHD key exists. Performance depends on dual-channel memory.",
+   "igpu_name_vendor": "Intel® Graphics (96 EU, 1.3 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/236795/intel-core-7-processor-150u-12m-cache-up-to-5-40-ghz/specifications.html"
   },
   "Intel Core 5 210H": {
    "cores_threads": "4P+4E/12T",
@@ -837,7 +1034,11 @@
     "https://www.notebookcheck.net/Intel-Core-5-210H-Processor-Benchmarks-and-Specs.936302.0.html"
    ],
    "missing": [],
-   "note": "All values from https://www.notebookcheck.net/Intel-Core-5-210H-Processor-Benchmarks-and-Specs.936302.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel UHD Graphics Xe G4 48EUs); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 n=3, multi spread large 404-709 (median 686); GB6 n=4 (multi 9321-10816). No NPU. Missing fields: chưa có."
+   "note": "All values from https://www.notebookcheck.net/Intel-Core-5-210H-Processor-Benchmarks-and-Specs.936302.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel UHD Graphics Xe G4 48EUs); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 n=3, multi spread large 404-709 (median 686); GB6 n=4 (multi 9321-10816). No NPU. Missing fields: chưa có.",
+   "igpu_key": "Intel UHD Graphics Xe G4 48EUs",
+   "igpu_key_note": "intel.com lists 48 EU -> 48EU key.",
+   "igpu_name_vendor": "Intel® Graphics (48 EU, 1.4 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/241652/intel-core-5-processor-210h-12m-cache-up-to-4-80-ghz/specifications.html"
   },
   "Intel Core 5 220H": {
    "cores_threads": "4P+8E/16T",
@@ -853,7 +1054,11 @@
     "https://www.notebookcheck.net/Intel-Core-5-220H-Processor-Benchmarks-and-Specs.936297.0.html"
    ],
    "missing": [],
-   "note": "All values from https://www.notebookcheck.net/Intel-Core-5-220H-Processor-Benchmarks-and-Specs.936297.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel Iris Xe Graphics G7 80EUs); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). All benchmarks single result (n=1). No NPU. Missing fields: chưa có."
+   "note": "All values from https://www.notebookcheck.net/Intel-Core-5-220H-Processor-Benchmarks-and-Specs.936297.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel Iris Xe Graphics G7 80EUs); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). All benchmarks single result (n=1). No NPU. Missing fields: chưa có.",
+   "igpu_key": "Intel Iris Xe Graphics G7 80EUs",
+   "igpu_key_note": "intel.com names it 'Intel Graphics' with 80 EU; mapped to Iris Xe 80EU key by EU count. No 80EU UHD key exists. Needs dual-channel memory for full performance.",
+   "igpu_name_vendor": "Intel® Graphics (80 EU, 1.5 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/241654/intel-core-5-processor-220h-18m-cache-up-to-4-90-ghz/specifications.html"
   },
   "Intel Core 7 240H": {
    "cores_threads": "6P+4E/16T",
@@ -869,7 +1074,11 @@
     "https://www.notebookcheck.net/Intel-Core-7-240H-Processor-Benchmarks-and-Specs.936272.0.html"
    ],
    "missing": [],
-   "note": "All values from https://www.notebookcheck.net/Intel-Core-7-240H-Processor-Benchmarks-and-Specs.936272.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel UHD Graphics 64EUs (Alder Lake 12th Gen)); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 n=4 (multi 728-861); GB6 n=5 (multi 9713-12846). No NPU. Missing fields: chưa có."
+   "note": "All values from https://www.notebookcheck.net/Intel-Core-7-240H-Processor-Benchmarks-and-Specs.936272.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel UHD Graphics 64EUs (Alder Lake 12th Gen)); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 n=4 (multi 728-861); GB6 n=5 (multi 9713-12846). No NPU. Missing fields: chưa có.",
+   "igpu_key": "Intel UHD Graphics 64EUs (Alder Lake 12th Gen)",
+   "igpu_key_note": "intel.com lists 64 EU -> 64EU key.",
+   "igpu_name_vendor": "Intel® Graphics (64 EU, 1.55 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/241653/intel-core-7-processor-240h-24m-cache-up-to-5-20-ghz/specifications.html"
   },
   "Intel Core Ultra 5 125H": {
    "cores_threads": "4P+8E+2LPE/18T",
@@ -885,7 +1094,11 @@
     "https://www.notebookcheck.net/Intel-Core-Ultra-5-125H-Processor-Benchmarks-and-Specs.783325.0.html"
    ],
    "missing": [],
-   "note": "All values from https://www.notebookcheck.net/Intel-Core-Ultra-5-125H-Processor-Benchmarks-and-Specs.783325.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel Arc 7-Core iGPU); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 n=6 (multi 331-815); GB6.7 n=7 (multi 10527-11749)."
+   "note": "All values from https://www.notebookcheck.net/Intel-Core-Ultra-5-125H-Processor-Benchmarks-and-Specs.783325.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel Arc 7-Core iGPU); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 n=6 (multi 331-815); GB6.7 n=7 (multi 10527-11749).",
+   "igpu_key": "Intel Arc 7-Core iGPU",
+   "igpu_key_note": "7 Xe-cores confirmed. intel.com footnote: Intel Arc only on H-series systems with >=16GB dual-channel memory (OEM enablement required); other configs are 'Intel Graphics'. No separate fallback key.",
+   "igpu_name_vendor": "Intel® Arc™ graphics (7 Xe-cores, 2.2 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/236848/intel-core-ultra-5-processor-125h-18m-cache-up-to-4-50-ghz/specifications.html"
   },
   "Intel Core Ultra 5 135H": {
    "cores_threads": "4P+8E+2LPE/18T",
@@ -901,7 +1114,12 @@
     "https://www.notebookcheck.net/Intel-Core-Ultra-5-135H-Processor-Benchmarks-and-Specs.783324.0.html"
    ],
    "missing": [],
-   "note": "All values from https://www.notebookcheck.net/Intel-Core-Ultra-5-135H-Processor-Benchmarks-and-Specs.783324.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel Arc 8-Core iGPU); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 n=1; GB6 n=2 (multi 10077-10659). boost from Clock Rate row 3600-4600 MHz."
+   "note": "All values from https://www.notebookcheck.net/Intel-Core-Ultra-5-135H-Processor-Benchmarks-and-Specs.783324.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel Arc 8-Core iGPU); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 n=1; GB6 n=2 (multi 10077-10659). boost from Clock Rate row 3600-4600 MHz.",
+   "igpu_key": "Intel Arc 8-Core iGPU",
+   "igpu_key_alt": "Intel Graphics (Core Ultra 5 135H)",
+   "igpu_key_note": "8 Xe-cores confirmed. intel.com footnote: Intel Arc only on H-series systems with >=16GB dual-channel memory (OEM enablement required); other configs are 'Intel Graphics'. igpu_key_alt is the existing keys_round3 entry for the fallback mode.",
+   "igpu_name_vendor": "Intel® Arc™ graphics (8 Xe-cores, 2.2 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/236850/intel-core-ultra-5-processor-135h-18m-cache-up-to-4-60-ghz/specifications.html"
   },
   "Intel Core Ultra 5 225U": {
    "cores_threads": "2P+8E+2LPE/14T",
@@ -917,7 +1135,11 @@
     "https://www.notebookcheck.net/Intel-Core-Ultra-5-225U-Processor-Benchmarks-and-Specs.943067.0.html"
    ],
    "missing": [],
-   "note": "All values from https://www.notebookcheck.net/Intel-Core-Ultra-5-225U-Processor-Benchmarks-and-Specs.943067.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel Graphics 4-Core iGPU (Meteor / Arrow Lake)); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 n=1; GB6 n=2 (multi 9276-10497). Chip AI total 24 TOPS."
+   "note": "All values from https://www.notebookcheck.net/Intel-Core-Ultra-5-225U-Processor-Benchmarks-and-Specs.943067.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel Graphics 4-Core iGPU (Meteor / Arrow Lake)); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 n=1; GB6 n=2 (multi 9276-10497). Chip AI total 24 TOPS.",
+   "igpu_key": "Intel Graphics 4-Core iGPU (Meteor / Arrow Lake)",
+   "igpu_key_note": "4 Xe-cores confirmed.",
+   "igpu_name_vendor": "Intel® Graphics (4 Xe-cores, 2 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/241861/intel-core-ultra-5-processor-225u-12m-cache-up-to-4-80-ghz/specifications.html"
   },
   "Intel Core Ultra 7 255U": {
    "cores_threads": "2P+8E+2LPE/14T",
@@ -933,7 +1155,11 @@
     "https://www.notebookcheck.net/Intel-Core-Ultra-7-255U-Processor-Benchmarks-and-Specs.943065.0.html"
    ],
    "missing": [],
-   "note": "All values from https://www.notebookcheck.net/Intel-Core-Ultra-7-255U-Processor-Benchmarks-and-Specs.943065.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel Graphics 4-Core iGPU (Meteor / Arrow Lake)); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). Page 'Clock Rate' row says 3800-4800 MHz but core row says 2 x 5.2 GHz P-core; boost_ghz=5.2 from core row (NBC Omnibook 5 16 review spec also says 2 x 5.2 GHz). CB24 n=5 (multi 421-672); GB6 n=5. Chip AI 24 TOPS."
+   "note": "All values from https://www.notebookcheck.net/Intel-Core-Ultra-7-255U-Processor-Benchmarks-and-Specs.943065.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel Graphics 4-Core iGPU (Meteor / Arrow Lake)); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). Page 'Clock Rate' row says 3800-4800 MHz but core row says 2 x 5.2 GHz P-core; boost_ghz=5.2 from core row (NBC Omnibook 5 16 review spec also says 2 x 5.2 GHz). CB24 n=5 (multi 421-672); GB6 n=5. Chip AI 24 TOPS.",
+   "igpu_key": "Intel Graphics 4-Core iGPU (Meteor / Arrow Lake)",
+   "igpu_key_note": "4 Xe-cores confirmed.",
+   "igpu_name_vendor": "Intel® Graphics (4 Xe-cores, 2.1 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/241860/intel-core-ultra-7-processor-255u-12m-cache-up-to-5-20-ghz/specifications.html"
   },
   "Intel Core Ultra 5 225H": {
    "cores_threads": "4P+8E+2LPE/14T",
@@ -949,7 +1175,11 @@
     "https://www.notebookcheck.net/Intel-Core-Ultra-5-225H-Processor-Benchmarks-and-Specs.944682.0.html"
    ],
    "missing": [],
-   "note": "All values from https://www.notebookcheck.net/Intel-Core-Ultra-5-225H-Processor-Benchmarks-and-Specs.944682.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel Arc Graphics 130T); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 n=2 (multi 581-859); GB6 n=3. Chip AI 83 TOPS."
+   "note": "All values from https://www.notebookcheck.net/Intel-Core-Ultra-5-225H-Processor-Benchmarks-and-Specs.944682.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel Arc Graphics 130T); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 n=2 (multi 581-859); GB6 n=3. Chip AI 83 TOPS.",
+   "igpu_key": "Intel Arc Graphics 130T",
+   "igpu_key_note": "7 Xe-cores confirmed. intel.com footnote: Intel Arc only on H-series systems with >=16GB dual-channel memory (OEM enablement required); other configs are 'Intel Graphics'. No separate fallback key.",
+   "igpu_name_vendor": "Intel® Arc™ 130T GPU (7 Xe-cores, 2.2 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/241749/intel-core-ultra-5-processor-225h-18m-cache-up-to-4-90-ghz/specifications.html"
   },
   "Intel Core Ultra 7 255H": {
    "cores_threads": "6P+8E+2LPE/16T",
@@ -965,7 +1195,11 @@
     "https://www.notebookcheck.net/Intel-Core-Ultra-7-255H-Processor-Benchmarks-and-Specs.944139.0.html"
    ],
    "missing": [],
-   "note": "All values from https://www.notebookcheck.net/Intel-Core-Ultra-7-255H-Processor-Benchmarks-and-Specs.944139.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel Arc Graphics 140T); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 single n=15, multi n=13 (750-1201, median 1053); GB6 n=20 (multi 11979-17489). Chip AI 96 TOPS."
+   "note": "All values from https://www.notebookcheck.net/Intel-Core-Ultra-7-255H-Processor-Benchmarks-and-Specs.944139.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel Arc Graphics 140T); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 single n=15, multi n=13 (750-1201, median 1053); GB6 n=20 (multi 11979-17489). Chip AI 96 TOPS.",
+   "igpu_key": "Intel Arc Graphics 140T",
+   "igpu_key_note": "8 Xe-cores confirmed. intel.com footnote: Intel Arc only on H-series systems with >=16GB dual-channel memory (OEM enablement required); other configs are 'Intel Graphics'. No separate fallback key.",
+   "igpu_name_vendor": "Intel® Arc™ 140T GPU (8 Xe-cores, 2.25 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/241751/intel-core-ultra-7-processor-255h-24m-cache-up-to-5-10-ghz/specifications.html"
   },
   "Intel Core Ultra 9 285H": {
    "cores_threads": "6P+8E+2LPE/16T",
@@ -981,7 +1215,11 @@
     "https://www.notebookcheck.net/Intel-Core-Ultra-9-285H-Processor-Benchmarks-and-Specs.944114.0.html"
    ],
    "missing": [],
-   "note": "All values from https://www.notebookcheck.net/Intel-Core-Ultra-9-285H-Processor-Benchmarks-and-Specs.944114.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel Arc Graphics 140T); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 n=11 (multi 740-1194); GB6.7 n=15 (multi 15284-17992). Chip AI 99 TOPS."
+   "note": "All values from https://www.notebookcheck.net/Intel-Core-Ultra-9-285H-Processor-Benchmarks-and-Specs.944114.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel Arc Graphics 140T); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 n=11 (multi 740-1194); GB6.7 n=15 (multi 15284-17992). Chip AI 99 TOPS.",
+   "igpu_key": "Intel Arc Graphics 140T",
+   "igpu_key_note": "8 Xe-cores confirmed. intel.com footnote: Intel Arc only on H-series systems with >=16GB dual-channel memory (OEM enablement required); other configs are 'Intel Graphics'. No separate fallback key.",
+   "igpu_name_vendor": "Intel® Arc™ 140T GPU (8 Xe-cores, 2.35 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/241747/intel-core-ultra-9-processor-285h-24m-cache-up-to-5-40-ghz/specifications.html"
   },
   "Intel Core Ultra 5 226V": {
    "cores_threads": "4P+4LPE/8T",
@@ -997,7 +1235,11 @@
     "https://www.notebookcheck.net/Intel-Core-Ultra-5-226V-Processor-Benchmarks-and-Specs.893266.0.html"
    ],
    "missing": [],
-   "note": "All values from https://www.notebookcheck.net/Intel-Core-Ultra-5-226V-Processor-Benchmarks-and-Specs.893266.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel Arc Graphics 130V); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 n=8 (multi 512-609); GB6.7 n=9-10. Chip AI 97 TOPS."
+   "note": "All values from https://www.notebookcheck.net/Intel-Core-Ultra-5-226V-Processor-Benchmarks-and-Specs.893266.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel Arc Graphics 130V); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 n=8 (multi 512-609); GB6.7 n=9-10. Chip AI 97 TOPS.",
+   "igpu_key": "Intel Arc Graphics 130V",
+   "igpu_key_note": "On-package memory, no RAM-dependent fallback.",
+   "igpu_name_vendor": "Intel® Arc™ 130V GPU (7 Xe-cores, 1.85 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/240960/intel-core-ultra-5-processor-226v-8m-cache-up-to-4-50-ghz/specifications.html"
   },
   "Intel Core Ultra 7 256V": {
    "cores_threads": "4P+4LPE/8T",
@@ -1013,7 +1255,11 @@
     "https://www.notebookcheck.net/Intel-Core-Ultra-7-256V-Processor-Benchmarks-and-Specs.892554.0.html"
    ],
    "missing": [],
-   "note": "All values from https://www.notebookcheck.net/Intel-Core-Ultra-7-256V-Processor-Benchmarks-and-Specs.892554.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel Arc Graphics 140V); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 n=8 (multi 435-649); GB6 n=10. Chip AI 115 TOPS."
+   "note": "All values from https://www.notebookcheck.net/Intel-Core-Ultra-7-256V-Processor-Benchmarks-and-Specs.892554.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel Arc Graphics 140V); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 n=8 (multi 435-649); GB6 n=10. Chip AI 115 TOPS.",
+   "igpu_key": "Intel Arc Graphics 140V",
+   "igpu_key_note": "On-package memory, no RAM-dependent fallback.",
+   "igpu_name_vendor": "Intel® Arc™ 140V GPU (8 Xe-cores, 1.95 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/240954/intel-core-ultra-7-processor-256v-12m-cache-up-to-4-80-ghz/specifications.html"
   },
   "Intel Core Ultra 7 258V": {
    "cores_threads": "4P+4LPE/8T",
@@ -1029,7 +1275,11 @@
     "https://www.notebookcheck.net/Intel-Core-Ultra-7-258V-Processor-Benchmarks-and-Specs.892883.0.html"
    ],
    "missing": [],
-   "note": "All values from https://www.notebookcheck.net/Intel-Core-Ultra-7-258V-Processor-Benchmarks-and-Specs.892883.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel Arc Graphics 140V); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 single n=18, multi n=24 (406-660); GB6 n=24. Chip AI 115 TOPS."
+   "note": "All values from https://www.notebookcheck.net/Intel-Core-Ultra-7-258V-Processor-Benchmarks-and-Specs.892883.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel Arc Graphics 140V); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 single n=18, multi n=24 (406-660); GB6 n=24. Chip AI 115 TOPS.",
+   "igpu_key": "Intel Arc Graphics 140V",
+   "igpu_key_note": "On-package memory, no RAM-dependent fallback.",
+   "igpu_name_vendor": "Intel® Arc™ 140V GPU (8 Xe-cores, 1.95 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/240957/intel-core-ultra-7-processor-258v-12m-cache-up-to-4-80-ghz/specifications.html"
   },
   "Intel Core Ultra 9 288V": {
    "cores_threads": "4P+4LPE/8T",
@@ -1045,7 +1295,11 @@
     "https://www.notebookcheck.net/Intel-Core-Ultra-9-288V-Processor-Benchmarks-and-Specs.856335.0.html"
    ],
    "missing": [],
-   "note": "All values from https://www.notebookcheck.net/Intel-Core-Ultra-9-288V-Processor-Benchmarks-and-Specs.856335.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel Arc Graphics 140V); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 n=4 (multi 493-670); GB6 n=4-5. Chip AI 120 TOPS."
+   "note": "All values from https://www.notebookcheck.net/Intel-Core-Ultra-9-288V-Processor-Benchmarks-and-Specs.856335.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel Arc Graphics 140V); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 n=4 (multi 493-670); GB6 n=4-5. Chip AI 120 TOPS.",
+   "igpu_key": "Intel Arc Graphics 140V",
+   "igpu_key_note": "On-package memory, no RAM-dependent fallback.",
+   "igpu_name_vendor": "Intel® Arc™ 140V GPU (8 Xe-cores, 2.05 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/240961/intel-core-ultra-9-processor-288v-12m-cache-up-to-5-10-ghz/specifications.html"
   },
   "Intel Core Ultra 7 255HX": {
    "cores_threads": "8P+12E/20T",
@@ -1061,7 +1315,11 @@
     "https://www.notebookcheck.net/Intel-Core-Ultra-7-255HX-Processor-Benchmarks-and-Specs.943333.0.html"
    ],
    "missing": [],
-   "note": "All values from https://www.notebookcheck.net/Intel-Core-Ultra-7-255HX-Processor-Benchmarks-and-Specs.943333.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel Graphics 4-Core iGPU (Meteor / Arrow Lake)); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 n=4 (multi 1500-1758); GB6 n=6. Chip AI 33 TOPS."
+   "note": "All values from https://www.notebookcheck.net/Intel-Core-Ultra-7-255HX-Processor-Benchmarks-and-Specs.943333.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel Graphics 4-Core iGPU (Meteor / Arrow Lake)); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 n=4 (multi 1500-1758); GB6 n=6. Chip AI 33 TOPS.",
+   "igpu_key": "Intel Graphics 4-Core iGPU (Meteor / Arrow Lake)",
+   "igpu_key_note": "4 Xe-cores confirmed (Arrow Lake HX). Usually bypassed by the dGPU in gaming laptops.",
+   "igpu_name_vendor": "Intel® Graphics (4 Xe-cores, 1.85 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/242292/intel-core-ultra-7-processor-255hx-30m-cache-up-to-5-20-ghz/specifications.html"
   },
   "Intel Core Ultra 9 275HX": {
    "cores_threads": "8P+16E/24T",
@@ -1077,7 +1335,11 @@
     "https://www.notebookcheck.net/Intel-Core-Ultra-9-275HX-Processor-Benchmarks-and-Specs.943094.0.html"
    ],
    "missing": [],
-   "note": "All values from https://www.notebookcheck.net/Intel-Core-Ultra-9-275HX-Processor-Benchmarks-and-Specs.943094.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel Graphics 4-Core iGPU (Meteor / Arrow Lake)); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 n=27 (multi 1547-2288); GB6.7 n=33. Chip AI 36 TOPS."
+   "note": "All values from https://www.notebookcheck.net/Intel-Core-Ultra-9-275HX-Processor-Benchmarks-and-Specs.943094.0.html: specs table (cores, clock, TDP/PL2, NPU, iGPU = Intel Graphics 4-Core iGPU (Meteor / Arrow Lake)); benchmarks are Notebookcheck per-chip averages across reviewed laptops (Geekbench section labelled 'Geekbench 6.7.1' on page). CB24 n=27 (multi 1547-2288); GB6.7 n=33. Chip AI 36 TOPS.",
+   "igpu_key": "Intel Graphics 4-Core iGPU (Meteor / Arrow Lake)",
+   "igpu_key_note": "4 Xe-cores confirmed (Arrow Lake HX). Usually bypassed by the dGPU in gaming laptops.",
+   "igpu_name_vendor": "Intel® Graphics (4 Xe-cores, 1.9 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/242293/intel-core-ultra-9-processor-275hx-36m-cache-up-to-5-40-ghz/specifications.html"
   },
   "Intel Core Ultra 5 322": {
    "cores_threads": "2P+4LPE/6T",
@@ -1096,7 +1358,11 @@
     "https://www.notebookcheck.net/Intel-Core-Ultra-5-322-Processor-Benchmarks-and-Specs.1196964.0.html"
    ],
    "missing": [],
-   "note": "Specs (2P+0E+4LPE, 4.4 GHz, 25 W base / 55 W max turbo / 12 W min assured, NPU 46 TOPS, 2 Xe-cores) from intel.com SKU page + QRG. CB2024 111/445 and GB6 2487 (range 2418-2556) / 8045 (8042-8048) from Notebookcheck chip page. CB2024 is a single sample."
+   "note": "Specs (2P+0E+4LPE, 4.4 GHz, 25 W base / 55 W max turbo / 12 W min assured, NPU 46 TOPS, 2 Xe-cores) from intel.com SKU page + QRG. CB2024 111/445 and GB6 2487 (range 2418-2556) / 8045 (8042-8048) from Notebookcheck chip page. CB2024 is a single sample.",
+   "igpu_key": "Intel Graphics 2 Xe3 (Panther Lake, Core Ultra 5 322/332)",
+   "igpu_key_note": "2 Xe-cores confirmed.",
+   "igpu_name_vendor": "Intel® Graphics (2 Xe-cores, 2.3 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/245716/intel-core-ultra-5-processor-322-12m-cache-up-to-4-40-ghz/specifications.html"
   },
   "Intel Core Ultra 5 325": {
    "cores_threads": "4P+4LPE/8T",
@@ -1114,7 +1380,11 @@
     "https://www.notebookcheck.net/Intel-Core-Ultra-5-325-Processor-Benchmarks-and-Specs.1196417.0.html"
    ],
    "missing": [],
-   "note": "Specs from Intel QRG (8C, 4.5 GHz, NPU 47, 4 Xe, 25/55 W); core split + 15 W min assured from Notebookcheck. CB2024 single range 112.4-113.9, multi 574-645. GB6 single avg 2433 (range 1489-2622, median 2576), multi avg 10010 (range 6094-11088, median 10907); low end is Lenovo Googlebook 15 (ChromeOS) dragging the average down - typical Windows laptops 9334-11088."
+   "note": "Specs from Intel QRG (8C, 4.5 GHz, NPU 47, 4 Xe, 25/55 W); core split + 15 W min assured from Notebookcheck. CB2024 single range 112.4-113.9, multi 574-645. GB6 single avg 2433 (range 1489-2622, median 2576), multi avg 10010 (range 6094-11088, median 10907); low end is Lenovo Googlebook 15 (ChromeOS) dragging the average down - typical Windows laptops 9334-11088.",
+   "igpu_key": "Intel Graphics 4 Xe3 (Panther Lake)",
+   "igpu_key_note": "4 Xe-cores confirmed.",
+   "igpu_name_vendor": "Intel® Graphics (4 Xe-cores, 2.45 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/245720/intel-core-ultra-5-processor-325-12m-cache-up-to-4-50-ghz/specifications.html"
   },
   "Intel Core Ultra 5 332": {
    "cores_threads": "2P+4LPE/6T",
@@ -1135,7 +1405,11 @@
     "cb2024_single: chưa có",
     "cb2024_multi: chưa có"
    ],
-   "note": "vPro/SIPP twin of the 322. Specs from Intel QRG; 12 W min assured from Notebookcheck. GB6 is one sample."
+   "note": "vPro/SIPP twin of the 322. Specs from Intel QRG; 12 W min assured from Notebookcheck. GB6 is one sample.",
+   "igpu_key": "Intel Graphics 2 Xe3 (Panther Lake, Core Ultra 5 322/332)",
+   "igpu_key_note": "2 Xe-cores confirmed.",
+   "igpu_name_vendor": "Intel® Graphics (2 Xe-cores, 2.3 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/245718/intel-core-ultra-5-processor-332-12m-cache-up-to-4-40-ghz/specifications.html"
   },
   "Intel Core Ultra 5 335": {
    "cores_threads": "8C/8T (4P+4LPE assumed same die as 325; Intel QRG lists only total 8)",
@@ -1157,7 +1431,11 @@
     "gb6_single: chưa có",
     "gb6_multi: chưa có"
    ],
-   "note": "Exists per Intel QRG (vPro version of 325). No benchmark page fetched."
+   "note": "Exists per Intel QRG (vPro version of 325). No benchmark page fetched.",
+   "igpu_key": "Intel Graphics 4 Xe3 (Panther Lake)",
+   "igpu_key_note": "4 Xe-cores confirmed.",
+   "igpu_name_vendor": "Intel® Graphics (4 Xe-cores, 2.45 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/245727/intel-core-ultra-5-processor-335-12m-cache-up-to-4-60-ghz/specifications.html"
   },
   "Intel Core Ultra 5 338H": {
    "cores_threads": "12C/12T (P/E/LPE split not stated in Intel QRG)",
@@ -1179,7 +1457,11 @@
     "gb6_single: chưa có",
     "gb6_multi: chưa có"
    ],
-   "note": "Exists per Intel QRG. Also Core Ultra 5 336H exists (12C, 4.6 GHz, NPU 47, Intel Graphics 4 Xe, 64/80 W). No CPU benchmark page fetched for either."
+   "note": "Exists per Intel QRG. Also Core Ultra 5 336H exists (12C, 4.6 GHz, NPU 47, Intel Graphics 4 Xe, 64/80 W). No CPU benchmark page fetched for either.",
+   "igpu_key": "Intel Arc B370 (10 Xe3)",
+   "igpu_key_note": "10 Xe-cores confirmed.",
+   "igpu_name_vendor": "Intel® Arc™ B370 GPU (10 Xe-cores, 2.4 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/245531/intel-core-ultra-5-processor-338h-18m-cache-up-to-4-70-ghz/specifications.html"
   },
   "Intel Core Ultra 7 355": {
    "cores_threads": "4P+4LPE/8T",
@@ -1197,7 +1479,11 @@
     "https://www.notebookcheck.net/Intel-Core-Ultra-7-355-Processor-Benchmarks-and-Specs.1196950.0.html"
    ],
    "missing": [],
-   "note": "Specs from Intel QRG (NPU 49 TOPS); Notebookcheck lists 50 TOPS. CB2024 single range 117.1-119.4, multi 636-677. GB6 single avg 2567 (range 1585-2769, median 2718), multi avg 10594 (6354-11702, median 11227); the 1585/6354 low end is Asus Googlebook 14 (ChromeOS) - Windows laptops are 10971-11702."
+   "note": "Specs from Intel QRG (NPU 49 TOPS); Notebookcheck lists 50 TOPS. CB2024 single range 117.1-119.4, multi 636-677. GB6 single avg 2567 (range 1585-2769, median 2718), multi avg 10594 (6354-11702, median 11227); the 1585/6354 low end is Asus Googlebook 14 (ChromeOS) - Windows laptops are 10971-11702.",
+   "igpu_key": "Intel Graphics 4 Xe3 (Panther Lake)",
+   "igpu_key_note": "4 Xe-cores confirmed.",
+   "igpu_name_vendor": "Intel® Graphics (4 Xe-cores, 2.5 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/245722/intel-core-ultra-7-processor-355-12m-cache-up-to-4-70-ghz/specifications.html"
   },
   "Intel Core Ultra 7 356H": {
    "cores_threads": "4P+8E+4LPE/16T",
@@ -1215,7 +1501,11 @@
     "https://www.notebookcheck.net/Intel-Core-Ultra-7-356H-Processor-Benchmarks-and-Specs.1196617.0.html"
    ],
    "missing": [],
-   "note": "Intel QRG: 16C, 4.7 GHz, NPU 50, max turbo 65/80 W; Notebookcheck: PL1 25 W, PL2 80 W, 15 W min. CB2024 single range 116-122.4, multi 870-1232. GB6 single 2532-2851 (median 2809), multi 12119-16676 (median 16386)."
+   "note": "Intel QRG: 16C, 4.7 GHz, NPU 50, max turbo 65/80 W; Notebookcheck: PL1 25 W, PL2 80 W, 15 W min. CB2024 single range 116-122.4, multi 870-1232. GB6 single 2532-2851 (median 2809), multi 12119-16676 (median 16386).",
+   "igpu_key": "Intel Graphics 4 Xe3 (Panther Lake)",
+   "igpu_key_note": "4 Xe-cores confirmed; non-X H chip, no Arc B-series.",
+   "igpu_name_vendor": "Intel® Graphics (4 Xe-cores, 2.45 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/245532/intel-core-ultra-7-processor-356h-18m-cache-up-to-4-70-ghz/specifications.html"
   },
   "Intel Core Ultra 7 365": {
    "cores_threads": "4P+4LPE/8T",
@@ -1235,7 +1525,10 @@
     "https://www.notebookcheck.net/Intel-Core-Ultra-7-365-Processor-Benchmarks-and-Specs.1196952.0.html"
    ],
    "missing": [],
-   "note": "Số liệu từ lần tra cứu 2 (trước đây ghi dưới tên \"365H\"). 'Core Ultra 7 365H' is NOT a real SKU: intel.com lists 'Core Ultra 7 Processor 365' (no H) and 'Core Ultra 7 Processor 366H'; NBC 365 page lists 366H and 356H but no 365H. Values here are for the Core Ultra 7 365 (intel.com: 8 cores = 4P + 0E + 4 LP-E, 8T, 4.8 GHz, 25 W base / 12 W min / 55 W max turbo, Intel Graphics 4 Xe-cores, NPU 49 TOPS; NBC says 50). If the laptop actually has the 366H: intel.com lists 16 cores (4P/8E/4LP-E), 16T, 4.8 GHz, 25 W base / 15 W min / 80 W max turbo, Intel Graphics 4 Xe-cores, NPU 50 TOPS; no 366H benchmarks collected here. CB2024 117/476 (n=1; low multi from a 15 W detachable) and Geekbench 6.7.1 avg 2753 (2737-2769) / 11204 (10960-11447) from NBC 365 page. | Thông số trước đó: Exists (vPro version of 355). Notebookcheck chip page exists (https://www.notebookcheck.net/Intel-Core-Ultra-7-365-Processor-Benchmarks-and-Specs.1196952.0.html) but was not fetched, so no numbers taken."
+   "note": "Số liệu từ lần tra cứu 2 (trước đây ghi dưới tên \"365H\"). 'Core Ultra 7 365H' is NOT a real SKU: intel.com lists 'Core Ultra 7 Processor 365' (no H) and 'Core Ultra 7 Processor 366H'; NBC 365 page lists 366H and 356H but no 365H. Values here are for the Core Ultra 7 365 (intel.com: 8 cores = 4P + 0E + 4 LP-E, 8T, 4.8 GHz, 25 W base / 12 W min / 55 W max turbo, Intel Graphics 4 Xe-cores, NPU 49 TOPS; NBC says 50). If the laptop actually has the 366H: intel.com lists 16 cores (4P/8E/4LP-E), 16T, 4.8 GHz, 25 W base / 15 W min / 80 W max turbo, Intel Graphics 4 Xe-cores, NPU 50 TOPS; no 366H benchmarks collected here. CB2024 117/476 (n=1; low multi from a 15 W detachable) and Geekbench 6.7.1 avg 2753 (2737-2769) / 11204 (10960-11447) from NBC 365 page. | Thông số trước đó: Exists (vPro version of 355). Notebookcheck chip page exists (https://www.notebookcheck.net/Intel-Core-Ultra-7-365-Processor-Benchmarks-and-Specs.1196952.0.html) but was not fetched, so no numbers taken.",
+   "igpu_key": "Intel Graphics 4 Xe3 (Panther Lake)",
+   "igpu_key_note": "4 Xe-cores confirmed.",
+   "igpu_name_vendor": "Intel® Graphics (4 Xe-cores, 2.5 GHz)"
   },
   "Intel Core Ultra 7 366H": {
    "cores_threads": "16C/16T",
@@ -1257,7 +1550,11 @@
     "gb6_single: chưa có",
     "gb6_multi: chưa có"
    ],
-   "note": "Exists (vPro version of 356H). No benchmark page fetched."
+   "note": "Exists (vPro version of 356H). No benchmark page fetched.",
+   "igpu_key": "Intel Graphics 4 Xe3 (Panther Lake)",
+   "igpu_key_note": "4 Xe-cores confirmed; non-X H chip, no Arc B-series.",
+   "igpu_name_vendor": "Intel® Graphics (4 Xe-cores, 2.5 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/245530/intel-core-ultra-7-processor-366h-18m-cache-up-to-4-80-ghz/specifications.html"
   },
   "Intel Core Ultra X7 358H": {
    "cores_threads": "4P+8E+4LPE/16T",
@@ -1275,29 +1572,32 @@
     "https://www.notebookcheck.net/Intel-Core-Ultra-X7-358H-Processor-Benchmarks-and-Specs.1196614.0.html"
    ],
    "missing": [],
-   "note": "CB2024 single range 116.8-125.5, multi 859-1125. GB6 single 2778-2927, multi 14309-17121. Asus ExpertBook Ultra B9406CAA (63 W/41 W): GB6 2836/16674."
+   "note": "CB2024 single range 116.8-125.5, multi 859-1125. GB6 single 2778-2927, multi 14309-17121. Asus ExpertBook Ultra B9406CAA (63 W/41 W): GB6 2836/16674.",
+   "igpu_key": "Intel Arc B390 (12 Xe3)",
+   "igpu_key_note": "12 Xe-cores confirmed.",
+   "igpu_name_vendor": "Intel® Arc™ B390 GPU (12 Xe-cores, 2.5 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/245527/intel-core-ultra-x7-processor-358h-18m-cache-up-to-4-80-ghz/specifications.html"
   },
   "Intel Core Ultra 9 386H": {
-   "cores_threads": "16C/16T",
+   "cores_threads": "4P+8E+4LPE/16T",
    "boost_ghz": 4.9,
-   "tdp_w": "25 (15-65/80)",
+   "tdp_w": "25 (15-80)",
    "npu_tops": 50,
-   "cb2024_single": null,
-   "cb2024_multi": null,
-   "gb6_single": null,
-   "gb6_multi": null,
-   "igpu": "Intel Graphics, 4 Xe3 cores, 2.5 GHz",
-   "test_device": "",
+   "cb2024_single": 122.6,
+   "cb2024_multi": 1148,
+   "gb6_single": 2873,
+   "gb6_multi": 16257,
+   "test_device": "NBC averages. CB2024 n=11 (single 118.1-126.8, multi 873-1271): MSI Prestige 13 AI+ A3MG, MSI Cubi NUC AI+ 3MG, Asus ZenBook S14 UX5406AA, Razer Blade 16, HP Omen 15-ga0931nr, Lenovo Pro 9 16IPH11, Lenovo Yoga Pro 7 15IPH11, MSI Stealth 16 AI B3WH, Asus ROG Zephyrus G14 GU405AR / G16 GU606AW / Duo GX651. GB 6.7.1 n=12 (single 2778-2947, multi 13776-17405): the same devices plus Acer Predator PHN16S and Casper Excalibur G915",
    "sources": [
-    "https://cdrdv2-public.intel.com/871380/Intel%20Core%20Ultra%20Series%203%20Processors%20-%20Quick%20Reference%20Guide%20v1.pdf"
+    "https://www.intel.com/content/www/us/en/products/sku/245529/intel-core-ultra-9-processor-386h-18m-cache-up-to-4-90-ghz/specifications.html",
+    "https://www.notebookcheck.net/Intel-Core-Ultra-9-386H-Processor-Benchmarks-and-Specs.1196560.0.html"
    ],
-   "missing": [
-    "cb2024_single: chưa có",
-    "cb2024_multi: chưa có",
-    "gb6_single: chưa có",
-    "gb6_multi: chưa có"
-   ],
-   "note": "Exists per Intel QRG. Notebookcheck chip page (https://www.notebookcheck.net/Intel-Core-Ultra-9-386H-Processor-Benchmarks-and-Specs.1196560.0.html) not fetched."
+   "missing": [],
+   "note": "intel.com: 16 cores (4P+8E+4LPE) / 16T, 4.9 GHz, base 25 W, minimum assured 15 W, max turbo 80 W, NPU 50 TOPS Int8. NBC CB2024 average single 122.6 / multi 1148 (n=11). NBC GB 6.7.1 average single 2873 / multi 16257 (n=12). Multi spans 873-1271 and 13776-17405, which reflects power limits (thin 13-inch vs gaming laptops). GB 6.0: 2722 / 15102 (n=1, HP Omen), not used.",
+   "igpu_key": "Intel Graphics 4 Xe3 (Panther Lake)",
+   "igpu_key_note": "4 Xe-cores confirmed; non-X H chip, no Arc B-series.",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/245529/intel-core-ultra-9-processor-386h-18m-cache-up-to-4-90-ghz/specifications.html",
+   "igpu_name_vendor": "Intel® Graphics (4 Xe-cores, 2.5 GHz)"
   },
   "Intel Core Ultra X9 388H": {
    "cores_threads": "4P+8E+4LPE/16T",
@@ -1315,7 +1615,11 @@
     "https://www.notebookcheck.net/Intel-Core-Ultra-X9-388H-Processor-Benchmarks-and-Specs.1148259.0.html"
    ],
    "missing": [],
-   "note": "CB2024 single range 129-129.8, multi 794-1172. GB6 average includes an Intel reference board (not a laptop). Few samples."
+   "note": "CB2024 single range 129-129.8, multi 794-1172. GB6 average includes an Intel reference board (not a laptop). Few samples.",
+   "igpu_key": "Intel Arc B390 (12 Xe3)",
+   "igpu_key_note": "12 Xe-cores confirmed.",
+   "igpu_name_vendor": "Intel® Arc™ B390 GPU (12 Xe-cores, 2.5 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/245526/intel-core-ultra-x9-processor-388h-18m-cache-up-to-5-10-ghz/specifications.html"
   },
   "Intel Core 5 320": {
    "cores_threads": "2P+4LPE/6T",
@@ -1334,7 +1638,11 @@
     "https://www.intel.com/content/www/us/en/ark/products/series/246025/intel-core-processors-series-3.html"
    ],
    "missing": [],
-   "note": "Specs from intel.com SKU page (2P+0E+4LPE, 4.6 GHz, 15 W base, 35 W max turbo, 10 W min assured, NPU 16 TOPS, 2 Xe-cores). Benchmarks from Notebookcheck: GB6 single range 2564-2600, multi 7802-8122. Other Wildcat Lake SKUs on intel.com series page (no benchmarks collected): Core 3 304 (5C, 4.3 GHz), Core 3 305 (6C, 4.3 GHz), Core 5 315 (6C, 4.4 GHz), Core 5 330 (6C, 4.6 GHz), Core 7 350 (6C, 4.8 GHz), Core 7 360 (6C, 4.8 GHz), all 6 MB cache, Q2'26."
+   "note": "Specs from intel.com SKU page (2P+0E+4LPE, 4.6 GHz, 15 W base, 35 W max turbo, 10 W min assured, NPU 16 TOPS, 2 Xe-cores). Benchmarks from Notebookcheck: GB6 single range 2564-2600, multi 7802-8122. Other Wildcat Lake SKUs on intel.com series page (no benchmarks collected): Core 3 304 (5C, 4.3 GHz), Core 3 305 (6C, 4.3 GHz), Core 5 315 (6C, 4.4 GHz), Core 5 330 (6C, 4.6 GHz), Core 7 350 (6C, 4.8 GHz), Core 7 360 (6C, 4.8 GHz), all 6 MB cache, Q2'26.",
+   "igpu_key": "Intel Graphics 2 Xe3 (Wildcat Lake)",
+   "igpu_key_note": "2 Xe-cores confirmed (Wildcat Lake). Max freq 2.5 GHz vs 2.3 GHz on Core 5 315.",
+   "igpu_name_vendor": "Intel® Graphics (2 Xe-cores, 2.5 GHz)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/246018/intel-core-5-processor-320-6m-cache-up-to-4-60-ghz/specifications.html"
   },
   "Intel Core i5-14450HX": {
    "cores_threads": "6P+4E/16T",
@@ -1353,7 +1661,10 @@
     "https://www.notebookcheck.net/Intel-Core-i5-14450HX-Processor-Benchmarks-and-Specs.790779.0.html"
    ],
    "missing": [],
-   "note": "Cores/threads, boost 4.8, power 55 base / 45 min assured / 157 max turbo, iGPU from intel.com. No NPU (not listed on intel.com; NBC mentions only GNA) -> npu_tops null by design. CB2024 108/719 (n=1 each) and Geekbench 6.7.1 avg 2473/12423 from NBC chip page. CB2024 is a single device, treat as indicative."
+   "note": "Cores/threads, boost 4.8, power 55 base / 45 min assured / 157 max turbo, iGPU from intel.com. No NPU (not listed on intel.com; NBC mentions only GNA) -> npu_tops null by design. CB2024 108/719 (n=1 each) and Geekbench 6.7.1 avg 2473/12423 from NBC chip page. CB2024 is a single device, treat as indicative.",
+   "igpu_key": "Intel UHD Graphics 16EUs (Raptor Lake HX)",
+   "igpu_key_note": "16 EU confirmed.",
+   "igpu_name_vendor": "Intel® UHD Graphics for 14th Gen Intel® Processors (16 EU, 1.5 GHz)"
   },
   "Intel Core i7-13650HX": {
    "cores_threads": "6P+8E/20T",
@@ -1372,7 +1683,10 @@
     "https://www.notebookcheck.net/Intel-Core-i7-13650HX-Processor-Benchmarks-and-Specs.677228.0.html"
    ],
    "missing": [],
-   "note": "Specs/iGPU from intel.com (55 W base, 45 W min assured, 157 W max turbo). No NPU -> null by design. NBC: CB2024 single avg 108.6 (105.7-111.9), multi avg 972 (805-1176), n=4. Geekbench 6.7.1 single avg 2558 (2505-2595), multi avg 13261 (11401-14378). NBC also lists Geekbench 6.0 avg 2437/13080 (not used)."
+   "note": "Specs/iGPU from intel.com (55 W base, 45 W min assured, 157 W max turbo). No NPU -> null by design. NBC: CB2024 single avg 108.6 (105.7-111.9), multi avg 972 (805-1176), n=4. Geekbench 6.7.1 single avg 2558 (2505-2595), multi avg 13261 (11401-14378). NBC also lists Geekbench 6.0 avg 2437/13080 (not used).",
+   "igpu_key": "Intel UHD Graphics 16EUs (Raptor Lake HX)",
+   "igpu_key_note": "16 EU confirmed.",
+   "igpu_name_vendor": "Intel® UHD Graphics for 13th Gen Intel® Processors (16 EU, 1.55 GHz)"
   },
   "Intel Core 5 205H": {
    "cores_threads": "4P+4E/12T",
@@ -1394,7 +1708,15 @@
     "cb2024_single",
     "cb2024_multi"
    ],
-   "note": "Specs from intel.com (45 W base, 35 W min assured, 115 W max turbo; integrated graphics disabled -> needs a dGPU). No NPU -> null by design. Geekbench 6.7.1 2449/9426 from NBC (single result, n=1). CB2024: chưa có (not on NBC page)."
+   "note": "Specs from intel.com (45 W base, 35 W min assured, 115 W max turbo; integrated graphics disabled -> needs a dGPU). No NPU -> null by design. Geekbench 6.7.1 2449/9426 from NBC (single result, n=1). CB2024: chưa có (not on NBC page).",
+   "recheck_2026_11_23": {
+    "cb2024": "chưa có",
+    "checked_url": "https://www.notebookcheck.net/Intel-Core-5-205H-Processor-Benchmarks-and-Specs.1364948.0.html",
+    "note": "Only Geekbench 7 and 6.7 listed."
+   },
+   "igpu_key": null,
+   "igpu_key_note": "intel.com: integrated graphics disabled; no GPU Name/EU fields. Laptop relies entirely on its dGPU.",
+   "igpu_name_vendor": "none (Supplemental Information: 'Integrated graphics disabled')"
   },
   "Intel Core 5 315": {
    "cores_threads": "2P+4LPE/6T",
@@ -1416,7 +1738,15 @@
     "cb2024_single",
     "cb2024_multi"
    ],
-   "note": "Wildcat Lake. intel.com: 6 cores (2 P + 0 E + 4 LP-E), 6 threads, 4.4 GHz, 15 W base / 10 W min assured / 35 W max turbo, Intel Graphics 2 Xe-cores, NPU 15 TOPS, max 1 memory channel. NBC spec table also says 15 TOPS (its text says 16). Geekbench 6.7.1 2516/7454 from NBC (Lecoo N140). CB2024: chưa có."
+   "note": "Wildcat Lake. intel.com: 6 cores (2 P + 0 E + 4 LP-E), 6 threads, 4.4 GHz, 15 W base / 10 W min assured / 35 W max turbo, Intel Graphics 2 Xe-cores, NPU 15 TOPS, max 1 memory channel. NBC spec table also says 15 TOPS (its text says 16). Geekbench 6.7.1 2516/7454 from NBC (Lecoo N140). CB2024: chưa có.",
+   "recheck_2026_11_23": {
+    "cb2024": "chưa có",
+    "checked_url": "https://www.notebookcheck.net/Intel-Core-5-315-Processor-Benchmarks-and-Specs.1276872.0.html",
+    "note": "Only Geekbench 7 and 6.7.1 listed."
+   },
+   "igpu_key": "Intel Graphics 2 Xe3 (Wildcat Lake)",
+   "igpu_key_note": "2 Xe-cores confirmed. keys_round3 also has a dedicated key 'Intel Graphics (Core 5 315, Wildcat Lake)'.",
+   "igpu_name_vendor": "Intel® Graphics (2 Xe-cores, 2.3 GHz)"
   },
   "Intel Core Ultra 5 235U": {
    "cores_threads": "2P+8E+2LPE/14T",
@@ -1438,7 +1768,15 @@
     "cb2024_single",
     "cb2024_multi"
    ],
-   "note": "intel.com: 12 cores (2P/8E/2LP-E), 14T, 4.9 GHz, 15 W base / 12 W min / 57 W max turbo, Intel Graphics 4 Xe-cores, NPU 12 TOPS (overall platform 24 TOPS). Geekbench 6.7.1 2422/9395 from NBC (single result). CB2024: chưa có."
+   "note": "intel.com: 12 cores (2P/8E/2LP-E), 14T, 4.9 GHz, 15 W base / 12 W min / 57 W max turbo, Intel Graphics 4 Xe-cores, NPU 12 TOPS (overall platform 24 TOPS). Geekbench 6.7.1 2422/9395 from NBC (single result). CB2024: chưa có.",
+   "recheck_2026_11_23": {
+    "cb2024": "chưa có",
+    "checked_url": "https://www.notebookcheck.net/Intel-Core-Ultra-5-235U-Processor-Benchmarks-and-Specs.943066.0.html",
+    "note": "Only Geekbench 7 and 6.7 listed."
+   },
+   "igpu_key": "Intel Graphics 4-Core iGPU (Meteor / Arrow Lake)",
+   "igpu_key_note": "4 Xe-cores confirmed. keys_round3 also has a dedicated key 'Intel Graphics (Core Ultra 5 235U)' for this exact chip.",
+   "igpu_name_vendor": "Intel® Graphics (4 Xe-cores, 2.05 GHz)"
   },
   "Intel Core i5-1334U": {
    "cores_threads": "2P+8E/12T",
@@ -1460,7 +1798,15 @@
     "cb2024_single",
     "cb2024_multi"
    ],
-   "note": "intel.com: 10 cores (2P/8E), 12T, 4.6 GHz, 15 W base, 55 W max turbo (min assured not listed). No NPU -> null by design. NBC: Geekbench 6.7.1 avg 2331/7346. CB2024: chưa có on NBC chip page (only R23/R20/R15 etc.)."
+   "note": "intel.com: 10 cores (2P/8E), 12T, 4.6 GHz, 15 W base, 55 W max turbo (min assured not listed). No NPU -> null by design. NBC: Geekbench 6.7.1 avg 2331/7346. CB2024: chưa có on NBC chip page (only R23/R20/R15 etc.).",
+   "recheck_2026_11_23": {
+    "cb2024": "chưa có",
+    "checked_url": "https://www.notebookcheck.net/Intel-Core-i5-1334U-Processor-Benchmarks-and-Specs.678470.0.html",
+    "note": "Cinebench R23/R20/R15/R11.5/R10 only. Characters 0-200000 of 214658 were checked (the benchmark sections end in that range)."
+   },
+   "igpu_key": "Intel Iris Xe Graphics G7 80EUs",
+   "igpu_key_note": "Intel Iris Xe brand needs 128-bit (dual-channel) memory, otherwise Intel UHD brand (intel.com footnote). No 80EU UHD key exists, so no alt.",
+   "igpu_name_vendor": "Intel® Iris® Xe Graphics eligible (80 EU, 1.25 GHz)"
   },
   "Intel Core Ultra 7 365H": {
    "cores_threads": null,
@@ -1478,9 +1824,14 @@
     "https://www.notebookcheck.net/Intel-Core-Ultra-7-365-Processor-Benchmarks-and-Specs.1196952.0.html"
    ],
    "missing": [
-    "sku_khong_ton_tai"
+    "sku_khong_ton_tai",
+    "igpu_source"
    ],
-   "note": "intel.com không có SKU \"Core Ultra 7 365H\"; chỉ có \"Core Ultra 7 365\" (8 nhân, U-class) và \"Core Ultra 7 366H\" (16 nhân, H-class). Cần kiểm tra lại trang shop của Legion 5 15IPH11 83RW0023VN: nhiều khả năng là 366H (hoặc 356H). Không gán số liệu cho tên này."
+   "note": "intel.com không có SKU \"Core Ultra 7 365H\"; chỉ có \"Core Ultra 7 365\" (8 nhân, U-class) và \"Core Ultra 7 366H\" (16 nhân, H-class). Cần kiểm tra lại trang shop của Legion 5 15IPH11 83RW0023VN: nhiều khả năng là 366H (hoặc 356H). Không gán số liệu cho tên này.",
+   "igpu_key": null,
+   "igpu_key_note": "No 'Core Ultra 7 365H' exists on intel.com: the full Core Ultra Series 3 ARK list (series 245528) has only 365, 365RE, 366H, 366HRE. Probably a typo for 365 or 366H (both 'Intel Graphics' 4 Xe-cores -> 'Intel Graphics 4 Xe3 (Panther Lake)'), but not assigned without confirming the SKU.",
+   "igpu_name_vendor": null,
+   "igpu_source": null
   },
   "AMD Ryzen 3 5400U": {
    "cores_threads": "4C/8T",
@@ -1503,7 +1854,15 @@
     "cb2024_multi: chưa có",
     "npu_tops: chưa có (no NPU listed on amd.com spec)"
    ],
-   "note": "amd.com (spec block on the support/drivers page; the /products/... URL returns 404): 4 cores / 8 threads, max boost up to 4 GHz, default TDP 15W, cTDP 10-25W, Graphics Model 'AMD Radeon Graphics', Graphics Core Count 6, 1600 MHz, codename Cezanne. NBC page: GB 6.7.1 single 1820 / multi 5412, each n=1 (LENOVO 21ACS0AA00). NBC lists no Cinebench 2024 (nor R23) for this chip. NBC spec table says TDP 25 W while its text says 15 W default (10-25 W configurable); amd.com value used."
+   "note": "amd.com (spec block on the support/drivers page; the /products/... URL returns 404): 4 cores / 8 threads, max boost up to 4 GHz, default TDP 15W, cTDP 10-25W, Graphics Model 'AMD Radeon Graphics', Graphics Core Count 6, 1600 MHz, codename Cezanne. NBC page: GB 6.7.1 single 1820 / multi 5412, each n=1 (LENOVO 21ACS0AA00). NBC lists no Cinebench 2024 (nor R23) for this chip. NBC spec table says TDP 25 W while its text says 15 W default (10-25 W configurable); amd.com value used.",
+   "recheck_2026_11_23": {
+    "cb2024": "chưa có",
+    "checked_url": "https://www.notebookcheck.net/AMD-Ryzen-3-5400U-Processor-Benchmarks-and-Specs.511022.0.html",
+    "note": "Rechecked 2026-11-23: page still has only Geekbench 6.7.1 (1820/5412, LENOVO 21ACS0AA00); no Cinebench 2024 section."
+   },
+   "igpu_key": "AMD Radeon Graphics (Ryzen 3 5400U, Vega 6)",
+   "igpu_key_note": "Existing dedicated key. Source is the amd.com support/spec page (no /products/ page exists any more).",
+   "igpu_name_vendor": "AMD Radeon™ Graphics (Graphics Core Count 6, Graphics Frequency 1600 MHz)"
   },
   "AMD Ryzen 5 7520U": {
    "cores_threads": "4C/8T",
@@ -1526,7 +1885,15 @@
     "cb2024_multi: chưa có",
     "npu_tops: chưa có (no NPU listed on amd.com spec)"
    ],
-   "note": "amd.com: 4 cores / 8 threads, up to 4.3 GHz, default TDP 15W, Graphics Model AMD Radeon 610M, 2 cores, 1900 MHz. NBC: Geekbench 6.7.1 single 1374 / multi 4434 (Asus Vivobook Go E1504FA); Geekbench 6.0 single 1338 / multi 4253 (Acer Aspire 3 A315-24P-R77Z). Separate single results, not averaged here. NBC has no Cinebench 2024 for this chip; it lists Cinebench R23 single 1171 / multi 5149 (Acer Aspire 3 A315-24P-R77Z, n=1) for reference."
+   "note": "amd.com: 4 cores / 8 threads, up to 4.3 GHz, default TDP 15W, Graphics Model AMD Radeon 610M, 2 cores, 1900 MHz. NBC: Geekbench 6.7.1 single 1374 / multi 4434 (Asus Vivobook Go E1504FA); Geekbench 6.0 single 1338 / multi 4253 (Acer Aspire 3 A315-24P-R77Z). Separate single results, not averaged here. NBC has no Cinebench 2024 for this chip; it lists Cinebench R23 single 1171 / multi 5149 (Acer Aspire 3 A315-24P-R77Z, n=1) for reference.",
+   "recheck_2026_11_23": {
+    "cb2024": "chưa có",
+    "checked_url": "https://www.notebookcheck.net/AMD-Ryzen-5-7520U-Processor-Benchmarks-and-Specs.654934.0.html",
+    "note": "Rechecked 2026-11-23: page still has only Geekbench 6.7.1 (1374/4434, Asus Vivobook Go E1504FA) and Geekbench 6.0 (1338/4253, Acer Aspire 3 A315-24P-R77Z); no Cinebench 2024 section."
+   },
+   "igpu_key": "AMD Radeon 610M",
+   "igpu_key_note": "Direct name match on amd.com 'Graphics Model'.",
+   "igpu_name_vendor": "AMD Radeon™ 610M"
   },
   "Snapdragon X (X1-26-101)": {
    "cores_threads": "8C/8T",
@@ -1538,7 +1905,7 @@
    "gb6_single": 2132,
    "gb6_multi": 10638,
    "igpu_name": "Qualcomm Adreno X1-85, up to 0.63 GHz (the X1-26-100 has Adreno X1-45, up to 1.25 GHz)",
-   "igpu_source": "https://www.qualcomm.com/laptops/products/snapdragon-x",
+   "igpu_source": "https://www.qualcomm.com/laptops/products/snapdragon-x2-elite",
    "differs_from_x1_26_100": "Yes, GPU only. qualcomm.com lists part numbers 'X1-26-100, X1-26-101' on one page with 'GPU part number: X1-45, X1-85' and 'GPU clock speed: Up to 1.25 GHz, up to 0.63 GHz'; CPU (8 cores, up to 3 GHz, 30 MB cache) and the 45 TOPS NPU are shared. NBC's separate X1-26-101 page (codename Purwa SE2) says it integrates a more powerful GPU running at a significantly lower clock (Adreno X1-85 3.8 TFLOPS at 630 MHz) and expects graphics performance close to the X1-45. NBC's X1-26-100 page text still says the 101 has 'the same specifications as the X1-26-100', which is outdated against its own 101 page and qualcomm.com.",
    "x1_26_100_reference": {
     "cb2024_single": 96,
@@ -1560,7 +1927,414 @@
     "cb2024_multi: chưa có (for X1-26-101 itself)",
     "tdp_w: chưa có (no official TDP)"
    ],
-   "note": "NBC does NOT merge 100/101: they have separate pages. X1-26-101 own numbers (NBC 101 page): GB 6.7.1 single 2132 / multi 10638, n=1, ASUS Vivobook S14 S5408QA; no Cinebench 2024 yet. Clock <=2980 MHz, 8/8, 45 TOPS INT8 from the NBC 101 page; qualcomm.com says CPU up to 3 GHz, 45 TOPS. TDP: NBC only says 15-30 W under sustained load including RAM (not an official TDP). The CPU is the same as X1-26-100, so the X1-26-100 CB2024 averages (96 / 688) are given under x1_26_100_reference as a proxy, NOT as X1-26-101 measurements."
+   "note": "NBC does NOT merge 100/101: they have separate pages. X1-26-101 own numbers (NBC 101 page): GB 6.7.1 single 2132 / multi 10638, n=1, ASUS Vivobook S14 S5408QA; no Cinebench 2024 yet. Clock <=2980 MHz, 8/8, 45 TOPS INT8 from the NBC 101 page; qualcomm.com says CPU up to 3 GHz, 45 TOPS. TDP: NBC only says 15-30 W under sustained load including RAM (not an official TDP). The CPU is the same as X1-26-100, so the X1-26-100 CB2024 averages (96 / 688) are given under x1_26_100_reference as a proxy, NOT as X1-26-101 measurements.",
+   "recheck_2026_11_23": {
+    "cb2024": "chưa có",
+    "checked_url": "https://www.notebookcheck.net/Qualcomm-Snapdragon-X-X1-26-101-Processor-Benchmarks-and-Specs.1413631.0.html",
+    "note": "Rechecked 2026-11-23: chip page benchmarks are Geekbench 6.7 and Geekbench 7 only; no Cinebench 2024. Web search found no review of an X1-26-101 laptop with CB2024 (only X1-26-100 results, which must not be reused)."
+   },
+   "igpu_key": "Qualcomm Adreno X1-85 (3.8 TFLOPS)",
+   "igpu_key_note": "CAUTION: same X1-85 part, but clocked up to 0.63 GHz vs 1.25 GHz in X1E-78/80, so the key's '3.8 TFLOPS' label and its benchmark numbers do not apply as-is; consider a separate 'NEW: Qualcomm Adreno X1-85 (0.63 GHz, X1-26-101)'. Also confirmed on qualcomm.com/laptops/products/snapdragon-x (X1-85 footnoted to X1-26-101). Source: per-SKU 'Snapdragon X Series' comparison table (19 products) on the qualcomm.com X2 Elite page (rendered in browser).",
+   "igpu_name_vendor": "Adreno X1-85, Up to 0.63 GHz"
+  },
+  "Intel Core i3-1215U": {
+   "cores_threads": "2P+4E/8T",
+   "boost_ghz": 4.4,
+   "tdp_w": "15 (PL2 55)",
+   "npu_tops": null,
+   "cb2024_single": null,
+   "cb2024_multi": null,
+   "gb6_single": 2082,
+   "gb6_multi": 5213,
+   "test_device": "GB6: HP 250 G9 7N029ES (NBC lists it with 30 W / 15 W), n=1",
+   "sources": [
+    "https://www.intel.com/content/www/us/en/products/sku/226263/intel-core-i31215u-processor-10m-cache-up-to-4-40-ghz/specifications.html",
+    "https://www.notebookcheck.net/Intel-Core-i3-1215U-Processor-Benchmarks-and-Specs.590930.0.html"
+   ],
+   "missing": [
+    "cb2024_single",
+    "cb2024_multi"
+   ],
+   "note": "Cores 6 (2P+4E)/8T, max turbo 4.40 GHz, base power 15 W, max turbo power 55 W from intel.com. No NPU: intel.com lists only GNA 3.0 and DL Boost, and NBC agrees, so npu_tops is null (no NPU, not missing data). GB6 = NBC Geekbench 6.7.1 single 2082 / multi 5213 (n=1, HP 250 G9). Cinebench 2024 not on the NBC chip page (checked the whole page): chưa có.",
+   "igpu_key": "Intel UHD Graphics 64EUs (Alder Lake 12th Gen)",
+   "igpu_key_note": "64 EU confirmed. (Also an IPU variant, sku 226269.)",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/226263/intel-core-i31215u-processor-10m-cache-up-to-4-40-ghz/specifications.html",
+   "igpu_name_vendor": "Intel® UHD Graphics for 12th Gen Intel® Processors (64 EU, 1.10 GHz)"
+  },
+  "Intel Core i5-1235U": {
+   "cores_threads": "2P+8E/12T",
+   "boost_ghz": 4.4,
+   "tdp_w": "15 (PL2 55)",
+   "npu_tops": null,
+   "cb2024_single": 93,
+   "cb2024_multi": 406,
+   "gb6_single": 2095,
+   "gb6_multi": 6875,
+   "test_device": "CB2024: Schenker Work 14 Base (n=1). GB6 6.7.1: Schenker Work 14 Base (1981 / 6703) + Microsoft Surface Laptop Go 3 (2208 / 7046), n=2",
+   "sources": [
+    "https://www.intel.com/content/www/us/en/products/sku/226261/intel-core-i51235u-processor-12m-cache-up-to-4-40-ghz/specifications.html",
+    "https://www.notebookcheck.net/Intel-Core-i5-1235U-Processor-Benchmarks-and-Specs.589637.0.html"
+   ],
+   "missing": [],
+   "note": "Cores 10 (2P+8E)/12T, 4.40 GHz, 15 W base / 55 W max turbo from intel.com. No NPU (GNA 3.0 / DL Boost only), so npu_tops is null. NBC CB2024 single 93 / multi 406 (n=1, Schenker Work 14 Base). NBC GB 6.7.1 average single 2095 / multi 6875 (n=2). NBC's older GB 6.0 table: 1897 / 6161 (n=2, HP Dragonfly Pro Chromebook + Surface Laptop Go 3), not used.",
+   "igpu_key": "Intel Iris Xe Graphics G7 80EUs",
+   "igpu_key_note": "Intel Iris Xe brand needs 128-bit (dual-channel) memory, otherwise Intel UHD brand (intel.com footnote). No 80EU UHD key exists, so no alt.",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/226261/intel-core-i51235u-processor-12m-cache-up-to-4-40-ghz/specifications.html",
+   "igpu_name_vendor": "Intel® Iris® Xe Graphics eligible (80 EU, 1.20 GHz)"
+  },
+  "Intel Core 3 N350": {
+   "cores_threads": "8E/8T",
+   "boost_ghz": 3.9,
+   "tdp_w": "7",
+   "npu_tops": null,
+   "cb2024_single": null,
+   "cb2024_multi": null,
+   "gb6_single": 1349,
+   "gb6_multi": 4749,
+   "test_device": "GB6 6.7.1: Daowiz 14-N100 (12 GB RAM, UHD Graphics 32EUs), n=1",
+   "sources": [
+    "https://www.intel.com/content/www/us/en/products/sku/241638/intel-core-3-processor-n350-6m-cache-up-to-3-90-ghz/specifications.html",
+    "https://www.notebookcheck.net/Intel-Core-3-N350-Processor-Benchmarks-and-Specs.951346.0.html"
+   ],
+   "missing": [
+    "cb2024_single",
+    "cb2024_multi"
+   ],
+   "note": "intel.com: 8 cores / 8 threads, max turbo 3.9 GHz, Processor Base Power 7 W, no maximum turbo power listed. NBC: 8x Gracemont E-cores, PL1 7 W, and says 'higher than 18 W are unlikely'. No NPU (NBC), so npu_tops is null. GB 6.7.1 single 1349 / multi 4749 from the NBC chip page (n=1). Cinebench 2024 not on NBC: chưa có.",
+   "igpu_key": "Intel Graphics (Core 3 N350, Twin Lake)",
+   "igpu_key_note": "32 EU confirmed; single-channel memory only (max 16 GB).",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/241638/intel-core-3-processor-n350-6m-cache-up-to-3-90-ghz/specifications.html",
+   "igpu_name_vendor": "Intel® Graphics (32 EU, 1.35 GHz)"
+  },
+  "Intel Core 3 304": {
+   "cores_threads": "1P+4LPE/5T",
+   "boost_ghz": 4.3,
+   "tdp_w": "15 (PL2 35)",
+   "npu_tops": 15,
+   "cb2024_single": null,
+   "cb2024_multi": null,
+   "gb6_single": 2440,
+   "gb6_multi": 6348,
+   "test_device": "GB6 6.7.1: Chuwi UniBook (min: 2407 / 5987) and Intel Wildcat Lake Client Platform reference board WCL LP5x MD T3 RVP2 (max: 2472 / 6708). NBC shows min/avg/max only, no explicit n. Also listed on NBC: Chuwi UniBook at 35 W / 15 W.",
+   "sources": [
+    "https://www.intel.com/content/www/us/en/products/sku/246020/intel-core-3-processor-304-6m-cache-up-to-4-30-ghz/specifications.html",
+    "https://www.notebookcheck.net/Intel-Core-3-304-Processor-Benchmarks-and-Specs.1274070.0.html"
+   ],
+   "missing": [
+    "cb2024_single",
+    "cb2024_multi"
+   ],
+   "note": "intel.com: 5 cores (1 P-core + 4 LP E-cores, 0 E-cores) / 5 threads, 4.3 GHz, base 15 W, max turbo 35 W, NPU Peak TOPS (Int8) 15 (GPU 9 TOPS). GB 6.7.1 average single 2440 / multi 6348 from NBC. One of the two results is an Intel reference platform, not a retail laptop. Cinebench 2024 not on NBC (only R23 5263/1765, R20, R15 from Chuwi UniBook): chưa có.",
+   "igpu_key": "Intel Graphics (Core 3 304, Wildcat Lake)",
+   "igpu_key_note": "intel.com lists only 1 Xe-core (vs 2 on Core 5 315/320).",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/246020/intel-core-3-processor-304-6m-cache-up-to-4-30-ghz/specifications.html",
+   "igpu_name_vendor": "Intel® Graphics (1 Xe-core, 2.3 GHz)"
+  },
+  "Intel Core i5-13450HX": {
+   "cores_threads": "6P+4E/16T",
+   "boost_ghz": 4.6,
+   "tdp_w": "55 (PL2 157)",
+   "npu_tops": null,
+   "cb2024_single": 101.5,
+   "cb2024_multi": 812,
+   "gb6_single": 2415,
+   "gb6_multi": 12701,
+   "test_device": "CB2024: Lenovo LOQ 15IRX9 (CPU 119 W / 60 W, RTX 4060), n=1. GB6 6.7.1: Lenovo LOQ 15IRX9 (2381 / 12684), Lenovo LOQ 15IRX9 performance mode (2417 / 12799), Dell G15 5530 RTX 4050 (2448 / 12619), n=3",
+   "sources": [
+    "https://www.intel.com/content/www/us/en/products/sku/232132/intel-core-i513450hx-processor-20m-cache-up-to-4-60-ghz/specifications.html",
+    "https://www.notebookcheck.net/Intel-Core-i5-13450HX-Processor-Benchmarks-and-Specs.677231.0.html"
+   ],
+   "missing": [],
+   "note": "intel.com: 10 cores (6P+4E) / 16T, 4.60 GHz, base 55 W, max turbo 157 W. No NPU (NBC: 'no dedicated NPU'), so npu_tops is null. NBC CB2024 single 101.5 / multi 812 (n=1). NBC GB 6.7.1 average single 2415 / multi 12701 (n=3). GB 6.0: 2301 / 12295 (n=1), not used.",
+   "igpu_key": "Intel UHD Graphics 16EUs (Raptor Lake HX)",
+   "igpu_key_note": "16 EU confirmed.",
+   "igpu_source": "https://www.intel.com/content/www/us/en/products/sku/232132/intel-core-i513450hx-processor-20m-cache-up-to-4-60-ghz/specifications.html",
+   "igpu_name_vendor": "Intel® UHD Graphics for 13th Gen Intel® Processors (16 EU, 1.45 GHz)"
+  },
+  "AMD Ryzen 3 3200U": {
+   "cores_threads": "2C/4T",
+   "boost_ghz": 3.5,
+   "tdp_w": "15 (cTDP 12-25)",
+   "npu_tops": null,
+   "cb2024_single": null,
+   "cb2024_multi": null,
+   "gb6_single": 1033,
+   "gb6_multi": 2004,
+   "test_device": "GB 6.7.1: HP Laptop 14-cm1xxx 85B1 (R3 3200U, 17.5 GB), n=1",
+   "sources": [
+    "https://www.amd.com/en/support/downloads/drivers.html/processors/ryzen/ryzen-3000-series/amd-ryzen-3-3200u.html",
+    "https://www.notebookcheck.net/AMD-Ryzen-3-3200U-Processor.391091.0.html"
+   ],
+   "missing": [
+    "npu_tops: chưa có (không có NPU)",
+    "cb2024_single: chưa có",
+    "cb2024_multi: chưa có"
+   ],
+   "note": "amd.com (support/drivers page; the /products/... URL returns 404): 2 cores / 4 threads, up to 3.5 GHz, default TDP 15W, cTDP 12-25W, codename Picasso, Graphics Model 'Radeon Vega 3 Graphics', 3 cores, 1200 MHz. NBC page: GB 6.7.1 single 1033 / multi 2004 (n=1 each). NBC lists no Cinebench 2024.",
+   "igpu_key": "AMD Radeon Vega 3",
+   "igpu_source": "https://www.amd.com/en/support/downloads/drivers.html/processors/ryzen/ryzen-3000-series/amd-ryzen-3-3200u.html",
+   "igpu_key_note": "amd.com support/spec page: 'Radeon Vega 3 Graphics', 3 cores @1200 MHz (old /products/apu URL redirects to the home page). New ROUND3 canonical key.",
+   "igpu_name_vendor": "Radeon™ Vega 3 Graphics"
+  },
+  "AMD Ryzen 5 7430U": {
+   "cores_threads": "6C/12T",
+   "boost_ghz": 4.3,
+   "tdp_w": "15",
+   "npu_tops": null,
+   "cb2024_single": 77.3,
+   "cb2024_multi": 377.7,
+   "gb6_single": 1778,
+   "gb6_multi": 5958,
+   "test_device": "CB2024 n=3: Chuwi CoreBook X (35/25 W) 68 / 377, Ninkear A15-Pro (30/15 W) 82 / 395, Ninkear M7 (25/25 W) 82 / 361. GB 6.7.1 section n=4: Chuwi CoreBook X 1505/5245, Ninkear M7 1849/5705, Ninkear A15-Pro 1852/6142, Asus Vivobook M1605YA 1906/6741.",
+   "sources": [
+    "https://www.amd.com/en/products/processors/laptop/ryzen/7000-series/amd-ryzen-5-7430u.html",
+    "https://www.notebookcheck.net/AMD-Ryzen-5-7430U-Processor-Benchmarks-and-Specs.950966.0.html"
+   ],
+   "missing": [
+    "npu_tops: chưa có (không có NPU trên amd.com)"
+   ],
+   "note": "amd.com: 6C/12T Zen 3, Barcelo R, up to 4.3 GHz, default TDP 15W (no cTDP listed), Graphics Model 'AMD Radeon Graphics', 7 cores, 1800 MHz. NBC: CB2024 single avg 77.3 (68-82, n=3), multi avg 377.7 (361-395, n=3); GB 6.7.1 single avg 1778 (1505-1906), multi avg 5958 (5245-6741), n=4 (three entries are tagged Geekbench 6.4.0 Pro within NBC's 6.7.1 list). NBC links the iGPU to 'AMD Radeon RX Vega 7'.",
+   "igpu_key": "AMD Radeon RX Vega 7",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/7000-series/amd-ryzen-5-7430u.html",
+   "igpu_key_note": "amd.com gives only 'AMD Radeon Graphics' with 7 graphics cores @1800 MHz; mapped to the 7-CU Vega key by core count (Zen 3 Barcelo-R). The amd.com page itself does not print the word 'Vega'.",
+   "igpu_name_vendor": "AMD Radeon™ Graphics (Graphics Core Count 7, Graphics Frequency 1800 MHz)"
+  },
+  "AMD Ryzen 7 7730U": {
+   "cores_threads": "8C/16T",
+   "boost_ghz": 4.5,
+   "tdp_w": "15",
+   "npu_tops": null,
+   "cb2024_single": 86,
+   "cb2024_multi": 494,
+   "gb6_single": 1945,
+   "gb6_multi": 7368,
+   "test_device": "CB2024 n=1: Geekom A5 2027 Edition mini PC (25/15 W) 86 / 494, no laptop entry. GB 6.7.1 n=4: HP Envy x360 15-fh0077ng 1836/7760, Lenovo ThinkPad E16 G1 1960/6918, ThinkPad E14 G5 1976/7013, Geekom A5 2027 2009/7782.",
+   "sources": [
+    "https://www.amd.com/en/products/processors/laptop/ryzen/7000-series/amd-ryzen-7-7730u.html",
+    "https://www.notebookcheck.net/AMD-Ryzen-7-7730U-Processor-Benchmarks-and-Specs.681481.0.html"
+   ],
+   "missing": [
+    "npu_tops: chưa có (không có NPU trên amd.com)"
+   ],
+   "note": "amd.com: 8C/16T Zen 3, Barcelo R, up to 4.5 GHz, default TDP 15W, Graphics Model 'AMD Radeon Graphics', 8 cores, 2000 MHz. NBC: CB2024 single 86 / multi 494 (n=1, mini PC Geekom A5 2027, not a laptop); GB 6.7.1 single avg 1945 (1836-2009), multi avg 7368 (6918-7782), n=4. NBC links the iGPU to 'AMD Radeon RX Vega 8 (Ryzen 4000/5000)'.",
+   "igpu_key": "AMD Radeon RX Vega 8 (Ryzen 4000/5000)",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/7000-series/amd-ryzen-7-7730u.html",
+   "igpu_key_note": "amd.com gives only 'AMD Radeon Graphics' with 8 graphics cores @2000 MHz; mapped to the 8-CU Vega key by core count (Zen 3 Barcelo-R). The amd.com page itself does not print the word 'Vega'.",
+   "igpu_name_vendor": "AMD Radeon™ Graphics (Graphics Core Count 8, Graphics Frequency 2000 MHz)"
+  },
+  "AMD Ryzen 5 125": {
+   "cores_threads": "4C/8T",
+   "boost_ghz": 4.5,
+   "tdp_w": "28 (15-40)",
+   "npu_tops": null,
+   "cb2024_single": null,
+   "cb2024_multi": null,
+   "gb6_single": 1941,
+   "gb6_multi": 4788,
+   "test_device": "GB 6.7.1 n=1: Acer Nitro ANV15-A32 (Ryzen 5 125, 7.3 GB)",
+   "sources": [
+    "https://www.amd.com/en/products/processors/laptop/ryzen/100-series/amd-ryzen-7-125.html",
+    "https://www.notebookcheck.net/AMD-Ryzen-5-125-Processor-Benchmarks-and-Specs.1354780.0.html"
+   ],
+   "missing": [
+    "npu_tops: chưa có (NBC: 'does not feature an XDNA AI accelerator'; amd.com lists no NPU)",
+    "cb2024_single: chưa có",
+    "cb2024_multi: chưa có"
+   ],
+   "note": "amd.com (the page URL slug is 'amd-ryzen-7-125' but its title is 'AMD Ryzen 5 125'; the 'amd-ryzen-5-125' slug returns 404): 4C/8T Zen 4, Hawk Point, up to 4.5 GHz, default TDP 28W, cTDP 15-40W, launch 6/2/2026, Graphics Model 'AMD Radeon 740M Graphics', 4 cores, 2300 MHz. NBC: GB 6.7.1 1941 / 4788 (n=1); no Cinebench 2024.",
+   "igpu_key": "AMD Radeon 740M",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/100-series/amd-ryzen-7-125.html",
+   "igpu_key_note": "amd.com page title is 'AMD Ryzen 5 125' but AMD's own URL slug is amd-ryzen-7-125.html. 740M, RDNA 3, 4 cores.",
+   "igpu_name_vendor": "AMD Radeon™ 740M Graphics"
+  },
+  "AMD Ryzen AI 7 260": {
+   "cores_threads": "8C/16T",
+   "boost_ghz": 5.1,
+   "tdp_w": "45 (35-54)",
+   "npu_tops": 16,
+   "cb2024_single": 104.8,
+   "cb2024_multi": 927,
+   "gb6_single": 2660,
+   "gb6_multi": 12071,
+   "test_device": "CB2024 n=4: Asus VivoBook 18 M1807HA (60/54 W) 104 / 786, Asus TUF A18 FA808UM (80 W) 104 / 933, Asus TUF A16 FA608UP (80 W) 104.6 / 990, Lenovo Legion 5 15AHP G10 (85/80 W) 106.5 / 1000. GB 6.7.1: NBC average (single 2622-2686, multi 9977-13349).",
+   "sources": [
+    "https://storage-asset.msi.com/specSheet/vn/bnp/Venture%20A15%20AI%20A2HMG-003VN.pdf",
+    "https://www.amd.com/en/products/processors/laptop/ryzen/200-series/amd-ryzen-7-260.html",
+    "https://www.notebookcheck.net/AMD-Ryzen-7-260-Processor-Benchmarks-and-Specs.945912.0.html"
+   ],
+   "missing": [],
+   "note": "NAME CHECK: amd.com has no 'Ryzen AI 7 260' (/200-series/amd-ryzen-ai-7-260.html returns 404). MSI's VN spec sheet for Venture A15 AI A2HMG-003VN reads 'AMD Ryzen 7 260 processor, 8 cores, 16 threads, 24MB total cache, up to 5.1 GHz Max Boost' with 'AMD Radeon 780M'. This key is the same chip as the existing key 'AMD Ryzen 7 260' (alias). amd.com Ryzen 7 260: 8C/16T Zen 4, Hawk Point, up to 5.1 GHz, default TDP 45W, cTDP 35-54W, Radeon 780M 12 cores 2700 MHz, NPU up to 16 TOPS (overall 38 TOPS). NBC R7 260 page: CB2024 single avg 104.8 (104-106.5, n=4), multi avg 927 (786-1000, n=4); GB 6.7.1 single avg 2660, multi avg 12071. Multi-core spread: 786 in the thin VivoBook 18 vs 933-1000 in gaming laptops.",
+   "igpu_key": "AMD Radeon 780M",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/200-series/amd-ryzen-7-260.html",
+   "igpu_key_note": "Tên \"Ryzen AI 7 260\" không có trên amd.com; spec MSI VN của Venture A15 AI ghi \"AMD Ryzen 7 260\" + Radeon 780M → dùng iGPU của Ryzen 7 260 (xem alias_of trong entry CPU). Direct name match on amd.com 'Graphics Model'.",
+   "alias_of": "AMD Ryzen 7 260",
+   "igpu_name_vendor": "AMD Radeon™ 780M"
+  },
+  "AMD Ryzen AI 5 330": {
+   "cores_threads": "4C/8T (1 Zen 5 + 3 Zen 5c)",
+   "boost_ghz": 4.5,
+   "tdp_w": "28 (15-28)",
+   "npu_tops": 50,
+   "cb2024_single": null,
+   "cb2024_multi": null,
+   "gb6_single": 2478,
+   "gb6_multi": 7647,
+   "test_device": "GB 6.7.1 n=3: Acer KRK2 Venue (32 GB) 2357/7387, Lenovo IdeaPad Vibe 14AKP12 (45/35 W) 2501/7741, Lenovo IdeaPad Slim 5 16AKP10 (40/30 W) 2576/7814.",
+   "sources": [
+    "https://www.amd.com/en/products/processors/laptop/ryzen/ai-300-series/amd-ryzen-ai-5-330.html",
+    "https://www.notebookcheck.net/AMD-Ryzen-AI-5-330-Processor-Benchmarks-and-Specs.1049553.0.html"
+   ],
+   "missing": [
+    "cb2024_single: chưa có",
+    "cb2024_multi: chưa có"
+   ],
+   "note": "amd.com: 1x Zen 5 + 3x Zen 5c, 4C/8T, Krackan Point, up to 4.5 GHz, default TDP 28W, cTDP 15-28W, Radeon 820M 2 cores 2800 MHz, NPU up to 50 TOPS (overall 56). NBC: GB 6.7.1 single avg 2478 (2357-2576), multi avg 7647 (7387-7814), n=3. No Cinebench 2024 on NBC (it has CB R23 multi avg 7845, single avg 1776, n=2; for reference only).",
+   "igpu_key": "AMD Radeon 820M",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/ai-300-series/amd-ryzen-ai-5-330.html",
+   "igpu_key_note": "Direct name match on amd.com 'Graphics Model'.",
+   "igpu_name_vendor": "AMD Radeon™ 820M"
+  },
+  "AMD Ryzen AI 7 345": {
+   "cores_threads": "6C/12T (2 Zen 5 + 4 Zen 5c)",
+   "boost_ghz": 4.6,
+   "tdp_w": "28 (15-54)",
+   "npu_tops": 50,
+   "cb2024_single": 107,
+   "cb2024_multi": 618,
+   "gb6_single": 2561,
+   "gb6_multi": 8870,
+   "test_device": "CB2024 n=1: Lenovo ThinkPad E14 G8-21Y2006XGE 107 / 618. GB 6.7.1 n=2: Acer Swift SFA14-61M 2517/8639, Lenovo ThinkPad E14 G8 2604/9100.",
+   "sources": [
+    "https://www.amd.com/en/products/processors/laptop/ryzen/ai-300-series/amd-ryzen-ai-7-345.html",
+    "https://www.notebookcheck.net/AMD-Ryzen-AI-7-345-Processor-Benchmarks-and-Specs.1308017.0.html"
+   ],
+   "missing": [],
+   "note": "amd.com: 2x Zen 5 + 4x Zen 5c, 6C/12T, Krackan Point, up to 4.6 GHz, default TDP 28W, cTDP 15-54W, Radeon 840M 4 cores 2900 MHz, NPU up to 50 TOPS (overall 59). NBC: CB2024 single 107 / multi 618 (n=1); GB 6.7.1 single avg 2561, multi avg 8870 (n=2).",
+   "igpu_key": "AMD Radeon 840M",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/ai-300-series/amd-ryzen-ai-7-345.html",
+   "igpu_key_note": "Direct name match on amd.com 'Graphics Model'.",
+   "igpu_name_vendor": "AMD Radeon™ 840M"
+  },
+  "AMD Ryzen 7 155": {
+   "cores_threads": "6C/12T",
+   "boost_ghz": 4.7,
+   "tdp_w": "35 (15-40)",
+   "npu_tops": null,
+   "cb2024_single": null,
+   "cb2024_multi": null,
+   "gb6_single": 2453,
+   "gb6_multi": 9403,
+   "test_device": "GB 6.7.1 n=1: Acer ANV15-A31 (32 GB)",
+   "sources": [
+    "https://www.amd.com/en/products/processors/laptop/ryzen/100-series/amd-ryzen-7-155.html",
+    "https://www.notebookcheck.net/AMD-Ryzen-7-155-Processor-Benchmarks-and-Specs.1354567.0.html"
+   ],
+   "missing": [
+    "npu_tops: chưa có (amd.com lists no NPU; NBC German page says XDNA is disabled)",
+    "cb2024_single: chưa có",
+    "cb2024_multi: chưa có"
+   ],
+   "note": "amd.com: 6C/12T Zen 4, Hawk Point, up to 4.7 GHz, default TDP 35W, cTDP 15-40W, launch 6/2/2026, Graphics Model 'AMD Radeon 740M Graphics', 4 cores, 2600 MHz. NBC: GB 6.7.1 2453 / 9403 (n=1); no Cinebench 2024.",
+   "igpu_key": "AMD Radeon 740M",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/100-series/amd-ryzen-7-155.html",
+   "igpu_key_note": "amd.com: 'AMD Radeon 740M Graphics', RDNA 3, 4 cores, 2600 MHz.",
+   "igpu_name_vendor": "AMD Radeon™ 740M Graphics"
+  },
+  "AMD Ryzen 5 7533HS": {
+   "cores_threads": "6C/12T",
+   "boost_ghz": 4.4,
+   "tdp_w": "35-54",
+   "npu_tops": null,
+   "cb2024_single": null,
+   "cb2024_multi": null,
+   "gb6_single": null,
+   "gb6_multi": null,
+   "test_device": "none",
+   "sources": [
+    "https://www.amd.com/en/products/processors/laptop/ryzen/7000-series/amd-ryzen-5-7533hs.html",
+    "https://laptopmedia.com/processor/amd-ryzen-5-7533hs/"
+   ],
+   "missing": [
+    "npu_tops: chưa có (không có NPU)",
+    "cb2024_single: chưa có",
+    "cb2024_multi: chưa có",
+    "gb6_single: chưa có",
+    "gb6_multi: chưa có"
+   ],
+   "note": "amd.com: 6C/12T Zen 3+, Rembrandt R, up to 4.4 GHz, Default TDP '35-54W', cTDP 35-54W, launch Q3 2024, Radeon 660M 6 cores 1800 MHz. No Notebookcheck chip page found (searches return only the 7535HS). Laptopmedia's 7533HS page shows '-' for Cinebench R23 and Geekbench 6. No published benchmark found.",
+   "igpu_key": "AMD Radeon 660M",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/7000-series/amd-ryzen-5-7533hs.html",
+   "igpu_key_note": "Direct name match on amd.com 'Graphics Model'. Uses the new ROUND3 canonical key.",
+   "igpu_name_vendor": "AMD Radeon™ 660M"
+  },
+  "AMD Ryzen 7 7445HS": {
+   "cores_threads": "6C/12T (2 Zen 4 + 4 Zen 4c)",
+   "boost_ghz": 4.7,
+   "tdp_w": "35 (20-40)",
+   "npu_tops": null,
+   "cb2024_single": null,
+   "cb2024_multi": null,
+   "gb6_single": 2428,
+   "gb6_multi": 9285,
+   "test_device": "GB 6.7.1 n=1: HP Victus 15-fb3xxx (16 GB)",
+   "sources": [
+    "https://www.amd.com/en/products/processors/laptop/ryzen/7000-series/amd-ryzen-7-7445hs.html",
+    "https://www.notebookcheck.net/AMD-Ryzen-7-7445HS-Processor-Benchmarks-and-Specs.1443133.0.html"
+   ],
+   "missing": [
+    "npu_tops: chưa có (không có NPU trên amd.com)",
+    "cb2024_single: chưa có",
+    "cb2024_multi: chưa có"
+   ],
+   "note": "amd.com: 2x Zen 4 + 4x Zen 4c, 6C/12T, Phoenix, up to 4.7 GHz, default TDP 35W, cTDP 20-40W, Radeon 740M 4 cores 2700 MHz. NBC: GB 6.7.1 2428 / 9285 (n=1); no Cinebench 2024. NBC spec table says 28 W TDP; amd.com value used.",
+   "igpu_key": "AMD Radeon 740M",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/7000-series/amd-ryzen-7-7445hs.html",
+   "igpu_key_note": "amd.com: 740M, 4 cores, 2700 MHz.",
+   "igpu_name_vendor": "AMD Radeon™ 740M"
+  },
+  "AMD Ryzen 7 7735HS": {
+   "cores_threads": "8C/16T",
+   "boost_ghz": 4.75,
+   "tdp_w": "35-54",
+   "npu_tops": null,
+   "cb2024_single": 89.2,
+   "cb2024_multi": 671,
+   "gb6_single": 2085,
+   "gb6_multi": 9426,
+   "test_device": "CB2024 n=5: GMK NucBox K16 (50 W) 84.7/619, Lenovo IdeaPad Slim 5-15ARP G10 (45/30 W) 88.1/620, Maxtang MTN-FP750 (35 W) 90/620, Minisforum HX77G (54/35 W) 91/781, Aoostar GOD77 (54 W) 92/713. GB 6.7.1 n=9 (laptops incl. Acer Nitro 17 AN17-41 2115/10348, ThinkPad E14 Gen 6 2124/9512, IdeaPad Slim 5-15ARP G10 2058/8024).",
+   "sources": [
+    "https://www.amd.com/en/products/processors/laptop/ryzen/7000-series/amd-ryzen-7-7735hs.html",
+    "https://www.notebookcheck.net/AMD-Ryzen-7-7735HS-Processor-Benchmarks-and-Specs.681410.0.html"
+   ],
+   "missing": [
+    "npu_tops: chưa có (không có NPU)"
+   ],
+   "note": "amd.com: 8C/16T Zen 3+, Rembrandt R, up to 4.75 GHz, Default TDP '35-54W', cTDP 35-54W, Radeon 680M 12 cores 2200 MHz. NBC: CB2024 single avg 89.2 (84.7-92, n=5), multi avg 671 (619-781, median 620, n=5; the only laptop is the IdeaPad Slim 5 at 620, the rest are mini PCs); GB 6.7.1 single avg 2085 (1949-2153), multi avg 9426 (7046-11035), n=9.",
+   "igpu_key": "AMD Radeon 680M",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/7000-series/amd-ryzen-7-7735hs.html",
+   "igpu_key_note": "Direct name match on amd.com 'Graphics Model'. Uses the new ROUND3 canonical key.",
+   "igpu_name_vendor": "AMD Radeon™ 680M"
+  },
+  "AMD Ryzen 5 8645HS": {
+   "cores_threads": "6C/12T",
+   "boost_ghz": 5,
+   "tdp_w": "45 (35-54)",
+   "npu_tops": 16,
+   "cb2024_single": 99.7,
+   "cb2024_multi": 727,
+   "gb6_single": 2570,
+   "gb6_multi": 10882,
+   "test_device": "n=1 for all: Acer Nitro 14 AN14-41-R3MX (CPU 100/90 W, RTX 4060 110 W)",
+   "sources": [
+    "https://www.amd.com/en/products/processors/laptop/ryzen/8000-series/amd-ryzen-5-8645hs.html",
+    "https://www.notebookcheck.net/AMD-Ryzen-5-8645HS-Processor-Benchmarks-and-Specs.780989.0.html"
+   ],
+   "missing": [],
+   "note": "amd.com: 6C/12T Zen 4, Hawk Point, up to 5 GHz, default TDP 45W, cTDP 35-54W, Radeon 760M 8 cores 2600 MHz, NPU up to 16 TOPS (overall 31). NBC: CB2024 single 99.7 / multi 727; GB 6.7.1 list 2570 / 10882 (entry run on Geekbench 6.2.1); all n=1 from the Acer Nitro 14.",
+   "igpu_key": "AMD Radeon 760M",
+   "igpu_source": "https://www.amd.com/en/products/processors/laptop/ryzen/8000-series/amd-ryzen-5-8645hs.html",
+   "igpu_key_note": "Direct name match on amd.com 'Graphics Model'.",
+   "igpu_name_vendor": "AMD Radeon™ 760M"
   }
  },
  "gpus": {
@@ -4483,7 +5257,12 @@
    "missing": [
     "steel_nomad: chưa có"
    ],
-   "note": "A separate NBC page exists ('NVIDIA GeForce RTX 3050 6GB Laptop GPU', GN20-P0-R, 2560 CUDA, 96-bit, 6 GB GDDR6, 35-80 W TGP). Time Spy Graphics min 4501 / avg 4631 / median 4571 / max 4820, n=3. There is no Steel Nomad section on its NBC page. nvidia.com has one 'RTX 3050 Laptop GPU' column covering both variants: 35-80 W, 6 GB / 4 GB GDDR6."
+   "note": "A separate NBC page exists ('NVIDIA GeForce RTX 3050 6GB Laptop GPU', GN20-P0-R, 2560 CUDA, 96-bit, 6 GB GDDR6, 35-80 W TGP). Time Spy Graphics min 4501 / avg 4631 / median 4571 / max 4820, n=3. There is no Steel Nomad section on its NBC page. nvidia.com has one 'RTX 3050 Laptop GPU' column covering both variants: 35-80 W, 6 GB / 4 GB GDDR6.",
+   "recheck_2026_11_23": {
+    "steel_nomad": null,
+    "source": "https://www.notebookcheck.net/NVIDIA-GeForce-RTX-3050-6GB-Laptop-GPU-GPU-Benchmarks-and-Specs.692276.0.html",
+    "note": "chưa có. Rechecked 2026-11-23: the NBC 'NVIDIA GeForce RTX 3050 6GB Laptop GPU' page still lists only 3DMark Time Spy (Graphics avg 4631, n=3); no Steel Nomad section. Laptopmedia (https://laptopmedia.com/video-card/nvidia-geforce-rtx-3050-laptop-6gb/) lists only 3DMark Steel Nomad Light (avg 4761; e.g. Acer Nitro Lite 16 NL16-71G 4523), a different test that is not comparable. A search snippet cited a benchmarks.ul.com figure, but that page could not be fetched (connection reset), so it is not used."
+   }
   },
   "AMD Radeon 610M": {
    "vram": "shared system memory (iGPU, 2 CU / 128 shaders)",
@@ -4513,6 +5292,144 @@
     "steel_nomad: chưa có"
    ],
    "note": "amd.com names the 5400U iGPU 'AMD Radeon Graphics' (6 cores, 1600 MHz). NBC's 5400U page links it to 'AMD Radeon RX Vega 6 (Ryzen 4000/5000)' (page h1). Time Spy Graphics avg 821 is NBC's average over 22 Ryzen 4000/5000 laptops; there is no 5400U-specific measurement. No Steel Nomad section on the page."
+  },
+  "Intel Iris Xe Graphics G7 80EUs": {
+   "vram": "shared",
+   "tgp_w": null,
+   "timespy_graphics": 1175,
+   "steel_nomad": 155,
+   "test_device": "Time Spy Graphics: NBC average across many devices (range 561-1576). Steel Nomad: Acer Aspire Go AG15-51P-56UR (i5-1334U), DX12 141 + Vulkan 169, n=2",
+   "sources": [
+    "https://www.notebookcheck.net/Intel-Tiger-Lake-U-Xe-Graphics-G7-80EUs-GPU-Benchmarks-and-Specs.466209.0.html"
+   ],
+   "missing": [
+    "tgp_w"
+   ],
+   "note": "NBC page 'Intel Tiger Lake-U Xe Graphics G7 80EUs GPU - Benchmarks and Specs' (H1 'Intel Iris Xe Graphics G7 80EUs'), 80 EUs, 400-1350 MHz. Despite the Tiger Lake-U name, NBC uses this page for 12th/13th Gen 80-EU parts too (Steel Nomad entries use i5-1334U and Core 5 220H). Time Spy Graphics: min 561 / avg 1175 / median 1181 / max 1576; NBC shows '111' benchmarks. Steel Nomad avg 155 (n=2, one laptop, DX12 + Vulkan). Steel Nomad Light avg 1135 (n=3), not used. tgp_w is not applicable for an iGPU and shares the CPU package power: chưa có."
+  },
+  "Intel Iris Xe Graphics G7 96EUs": {
+   "vram": "shared",
+   "tgp_w": null,
+   "timespy_graphics": 1496,
+   "steel_nomad": 191.2,
+   "test_device": "Time Spy Graphics: NBC average across many devices (e.g. Samsung Galaxy Book2 Pro 360 i7-1260P, Asus ExpertBook B3 Flip i7-1165G7, MSI Modern 15 A11M i7-1165G7, GPD Pocket 3 i7-1195G7). Steel Nomad n=6, all mini PCs: BMAX B9 Power i9-12900HK (DX12 165 / Vulkan 212), Alliwava GH9 i9-12900HK (180 / 221), Geekom XT13 Pro i9-13900H (183), Geekom GT13 Pro i9-13900H (186)",
+   "sources": [
+    "https://www.notebookcheck.net/Intel-Tiger-Lake-U-Xe-Graphics-G7-96EUs-GPU-Benchmarks-and-Specs.462145.0.html"
+   ],
+   "missing": [
+    "tgp_w"
+   ],
+   "note": "NBC page 'Intel Tiger Lake-U Xe Graphics G7 96EUs GPU - Benchmarks and Specs' (H1 'Intel Iris Xe Graphics G7 96EUs'), 96 EUs, 400-1350 MHz. Time Spy Graphics: min 707 / avg 1496 / median 1560.5 / max 1890; NBC shows '218' benchmarks, no explicit n in the header. Steel Nomad: min 165 / avg 191.2 / median 184.5 / max 221 (n=6, mini PCs with H-series chips, so it may run higher than a 15 W ultrabook). Steel Nomad Light avg 1280 (n=2), not used. tgp_w: chưa có (iGPU)."
+  },
+  "Intel UHD Graphics 16EUs (Raptor Lake HX)": {
+   "vram": "shared",
+   "tgp_w": null,
+   "timespy_graphics": 344.7,
+   "steel_nomad": null,
+   "test_device": "Time Spy Graphics n=3: ACEMagician Ace AX15 (Intel N95) 313, Blackview MP200 (i5-11400H) 348, Dell XPS 15 9510 (i5-11400H) 373. No Raptor Lake-HX device among them.",
+   "sources": [
+    "https://www.notebookcheck.net/Intel-UHD-Graphics-Xe-16EUs-GPU-Benchmarks-and-Specs.559668.0.html"
+   ],
+   "missing": [
+    "steel_nomad",
+    "tgp_w"
+   ],
+   "note": "NBC page 'Intel UHD Graphics Xe 16EUs GPU - Benchmarks and Specs', 16 EUs (128 shaders), 350-1450 MHz. NBC says it is in 'select Intel 11th, 12th, 13th and 14th Gen Core' chips. The CPU list includes i5-13450HX, i5-13500HX, i7-13650HX, i5-14450HX and i5-12450HX. Time Spy Graphics avg 344.7 (min 313 / median 348 / max 373, n=3), but all from Tiger Lake-H / N95 systems, not HX laptops, so use with caution. Steel Nomad not found in the fetched part of the page (characters 0-100000 of 398530): chưa có."
+  },
+  "Intel Graphics (Core 3 N350, Twin Lake)": {
+   "vram": "shared",
+   "tgp_w": null,
+   "timespy_graphics": 567,
+   "steel_nomad": null,
+   "test_device": "Time Spy Graphics n=4: Asus BR1402FG (i3-N305) 523, Maxtang MTN-ALN50 (i3-N305) 536, Acer Aspire Go 15 AG15-31P-34JP (i3-N305) 583, Asus NUC 14 Essential (Core 3 N355) 625. No N350 device.",
+   "sources": [
+    "https://www.notebookcheck.net/Intel-UHD-Graphics-32EUs-Alder-Lake-Benchmarks-and-Specs.1147379.0.html",
+    "https://www.notebookcheck.net/Intel-Core-3-N350-Processor-Benchmarks-and-Specs.951346.0.html"
+   ],
+   "missing": [
+    "steel_nomad",
+    "tgp_w"
+   ],
+   "note": "NBC page 'Intel UHD Graphics 32EUs (Alder Lake) - Benchmarks and Specs', 32 EUs, about 1250-1350 MHz. NBC's N350 chip page names this iGPU, and intel.com calls it 'Intel Graphics', 32 EUs, 1.35 GHz. Time Spy Graphics: min 523 / avg 567 / median 559.5 / max 625 (n=4, i3-N305 / N355 systems with the same 32-EU GPU). Steel Nomad not found in the fetched part (characters 0-100000 of 351679): chưa có."
+  },
+  "Intel Graphics (Core 3 304, Wildcat Lake)": {
+   "vram": "shared",
+   "tgp_w": null,
+   "timespy_graphics": 753,
+   "steel_nomad": null,
+   "test_device": "Chuwi UniBook (Core 3 304, 35 W / 15 W, GPU 2300 MHz, 8 GB RAM), n=1",
+   "sources": [
+    "https://www.notebookcheck.net/Intel-Graphics-1-Xe3-Wildcat-Lake-iGPU-Benchmarks-and-Specs.1302175.0.html",
+    "https://www.intel.com/content/www/us/en/products/sku/246020/intel-core-3-processor-304-6m-cache-up-to-4-30-ghz/specifications.html"
+   ],
+   "missing": [
+    "steel_nomad",
+    "tgp_w"
+   ],
+   "note": "NBC page 'Intel Graphics 1-core Xe3 Wildcat Lake iGPU - Benchmarks and Specs' (H1 'Intel Graphics 1 Xe3 Wildcat Lake iGPU'): 1 of 2 Xe3 cores enabled, 8 EUs / 128 ALUs, 1 RT core, boost 2300 MHz. intel.com: 1 Xe-core, 2.3 GHz. Time Spy Graphics 753 (n=1). Full Steel Nomad not listed: chưa có. Steel Nomad Light 587 (n=1, same Chuwi), not used."
+  },
+  "AMD Radeon Vega 3": {
+   "vram": "shared",
+   "tgp_w": "15 (NBC 'Power Consumption')",
+   "timespy_graphics": 371.8,
+   "steel_nomad": null,
+   "test_device": "Time Spy Graphics n=11 (196-450, median 393): R3 3200U entries Asus Vivobook 15 F512DA 300, HP 255 G7 389 (450 in dual-channel), Asus M509DA 405; others Athlon 3050e 196, Athlon 300U 296, R3 2200U 379, Athlon 3150U 393, R3 3250U 400/433/449.",
+   "sources": [
+    "https://www.notebookcheck.net/AMD-Radeon-RX-Vega-3-GPU.278652.0.html"
+   ],
+   "missing": [
+    "steel_nomad: chưa có"
+   ],
+   "note": "NBC page 'AMD Radeon RX Vega 3': 192 shaders, 600-1200 MHz. Time Spy Graphics avg 371.8 is NBC's average over 11 entries. No Steel Nomad section on the page.",
+   "nbc_name": "AMD Radeon RX Vega 3"
+  },
+  "AMD Radeon RX Vega 7": {
+   "vram": "shared",
+   "tgp_w": "15 (NBC 'Power Consumption')",
+   "timespy_graphics": 980,
+   "steel_nomad": 160.5,
+   "test_device": "Time Spy Graphics n=61 (496-1249, median 1017), Ryzen 4000/5000/7030 U/H laptops. R5 7430U entries: Ninkear M7 741, Ninkear A15-Pro 767, Chuwi CoreBook X 784. Steel Nomad n=4: Ninkear M7 (R5 7430U) Vulkan 130 / DX12 135; Geekom A5 Pro mini PC (R5 7530U) DX12 185 / Vulkan 192.",
+   "sources": [
+    "https://www.notebookcheck.net/AMD-Radeon-RX-Vega-7-Graphics-Card-Benchmarks-and-Specs.450004.0.html"
+   ],
+   "missing": [],
+   "note": "448 shaders, up to 1800 MHz. NBC averages: Time Spy Graphics 980, Steel Nomad 160.5 (mix of DX12 and Vulkan runs). The 7430U-specific Time Spy entries (741-784) are below the average."
+  },
+  "AMD Radeon RX Vega 8 (Ryzen 4000/5000)": {
+   "vram": "shared",
+   "tgp_w": "15 (NBC 'Power Consumption')",
+   "timespy_graphics": 1144,
+   "steel_nomad": 235.5,
+   "test_device": "Time Spy Graphics n=58 (540-1557, median 1163). R7 7730U laptop entries: ThinkPad E14 G5 1146, ThinkPad E16 G1 1164, Asus ZenBook 14 UM3402Y 1199, HP Envy x360 15-fh0077ng 1269, Lenovo Yoga 6 13 1283, IdeaPad Flex 5 16ABR G8 1330 (Geekom A5 2027 mini PC 1201). Steel Nomad n=2: Geekom A5 2027 mini PC (R7 7730U) Vulkan 215, Geekom A5 mini PC (R7 5800H) 256.",
+   "sources": [
+    "https://www.notebookcheck.net/AMD-Radeon-RX-Vega-8-Ryzen-4000-5000-GPU-Benchmarks-and-Specs.453150.0.html"
+   ],
+   "missing": [],
+   "note": "512 shaders, up to 2100 MHz. NBC averages: Time Spy Graphics 1144, Steel Nomad 235.5. Both Steel Nomad entries are mini PCs, not laptops."
+  },
+  "AMD Radeon 660M": {
+   "vram": "shared",
+   "tgp_w": "45 (NBC 'Power Consumption')",
+   "timespy_graphics": 1450,
+   "steel_nomad": 229.7,
+   "test_device": "Time Spy Graphics n=13 (1016-1588, median 1535): e.g. Ninkear S14 (R5 7535HS) 1535, ThinkPad E16 Gen 2 (R5 7535HS) 1585, IdeaPad 5 Pro 16ARH7 (R5 6600HS) 1580, ThinkPad L14 G5 (R5 7535U) 1016, Asus ExpertBook B1 (R5 7535U) 1273. Steel Nomad n=7: Chuwi CoreBook Air (R5 6600H) Vulkan 184 / DX12 221, Asus ExpertBook B1 BM1503CDA (R5 7535U) 211/219, Ninkear S14 (R5 7535HS) Vulkan 242 / DX12 256, GMK NucBox M6 mini PC (R5 6600H) 275.",
+   "sources": [
+    "https://www.notebookcheck.net/AMD-Radeon-660M-GPU-Benchmarks-and-Specs.589879.0.html"
+   ],
+   "missing": [],
+   "note": "384 shaders, up to 1900 MHz. NBC averages: Time Spy Graphics 1450, Steel Nomad 229.7. No Ryzen 5 7533HS device on the page; the closest entries are R5 7535HS laptops."
+  },
+  "AMD Radeon 680M": {
+   "vram": "shared",
+   "tgp_w": "45 (NBC 'Power Consumption')",
+   "timespy_graphics": 2195,
+   "steel_nomad": 317.8,
+   "test_device": "Time Spy Graphics n=42 (1359-2607, median 2297.5). R7 7735HS entries: Maxtang MTN-FP750 1399, GMK NucBox K16 1518, ThinkPad E14 Gen 6 2203, Aoostar GOD77 2290, Beelink SER6 Pro 2395, IdeaPad Slim 5-15ARP G10 2430, GMK NucBox K2 2436, Yoga Pro 7 14ARP G8 2578. Steel Nomad n=6: IdeaPad Slim 3 15ARP10 (R7 170, 25/20 W) Vulkan 215 / DX12 223, Legion Go S (Z2 Go) Vulkan 312 / DX12 339, IdeaPad Slim 5-15ARP G10 (R7 7735HS) 402, GMK NucBox M7 Ultra (R7 PRO 6850U) DX12 416.",
+   "sources": [
+    "https://www.notebookcheck.net/AMD-Radeon-680M-GPU-Benchmarks-and-Specs.589860.0.html"
+   ],
+   "missing": [],
+   "note": "768 shaders, up to 2400 MHz. NBC averages: Time Spy Graphics 2195, Steel Nomad 317.8. Wide spread depending on power and RAM; the only 7735HS laptop with a Steel Nomad run scored 402."
   }
  },
  "laptops": {
@@ -5057,5 +5974,5 @@
    "RTX 5080": "NVIDIA GeForce RTX 5080 Laptop"
   }
  },
- "notes": "Mọi số đều lấy từ trang đã đọc trong phiên này (URL trong sources/source; note ghi số nào từ URL nào). Không ước tính/nội suy. Thiếu = null + liệt kê trong \"missing\" (chưa có).\nCPU/GPU: chủ yếu là trung bình Notebookcheck trên nhiều máy (n và min–max trong note). Số mẫu ít (n=1–2) được ghi rõ trong note.\nApple: không có 3DMark Time Spy trên macOS → timespy_graphics = null; dùng steel_nomad (+ steel_nomad_light, wild_life_extreme). Apple không công bố TDP/TOPS NPU (trừ M4 38 TOPS).\nNVIDIA: tgp_w là dải chính thức của nvidia.com (không gồm Dynamic Boost); by_tgp là kết quả đo từng máy theo TGP do Notebookcheck ghi (thường đã gồm Dynamic Boost). Nên dùng by_tgp gần TGP máy thay vì trung bình.\nLaptop: các bài test pin KHÁC nhau giữa nguồn (NBC Wi‑Fi 150 nit, LaptopMedia/TechPowerUp video 180 nit, PCMark 10, ước lượng của reviewer) → không so sánh trực tiếp; xem battery_test_type. proxy_* = máy cùng dòng nhưng khác cấu hình, chỉ tham khảo.\nHiệu chỉnh khi gộp: TUF A14 FA401GM — CG Mag ghi \"Cinebench 2024 1061\" không rõ single/multi → để null. MacBook Pro 14 M5 Pro — review là bản 18 nhân OLED, khác data.js → chuyển sang proxy_other_config.\nChênh lệch nguồn: NPU TOPS Panther Lake theo Intel QRG (355=49, 325=47, 322=46), NBC ghi 50. RTX 5050: NVIDIA ghi GDDR7, NBC ghi GDDR6. Core Ultra 5 322 chỉ có iGPU 2 nhân Xe3 (không phải 4).\nKiểm tra chéo ngẫu nhiên (đọc lại trang NBC): Ryzen 7 260 CB2024 104.8/927, Ultra 7 355 CB2024 118.1/652, RTX 5060 TS 11674 / SN 2591 — khớp.\nBị chặn tự động: Laptopmedia (một phần), Ultrabookreview, Geekbench Browser, trang so sánh NBC → một số GB6 của AMD còn null.\nBổ sung 2026-11-23 (đợt 2): 10 CPU, 8 GPU mới; \"Core Ultra 7 365H\" không phải SKU của Intel."
+ "notes": "Mọi số đều lấy từ trang đã đọc trong phiên này (URL trong sources/source; note ghi số nào từ URL nào). Không ước tính/nội suy. Thiếu = null + liệt kê trong \"missing\" (chưa có).\nCPU/GPU: chủ yếu là trung bình Notebookcheck trên nhiều máy (n và min–max trong note). Số mẫu ít (n=1–2) được ghi rõ trong note.\nApple: không có 3DMark Time Spy trên macOS → timespy_graphics = null; dùng steel_nomad (+ steel_nomad_light, wild_life_extreme). Apple không công bố TDP/TOPS NPU (trừ M4 38 TOPS).\nNVIDIA: tgp_w là dải chính thức của nvidia.com (không gồm Dynamic Boost); by_tgp là kết quả đo từng máy theo TGP do Notebookcheck ghi (thường đã gồm Dynamic Boost). Nên dùng by_tgp gần TGP máy thay vì trung bình.\nLaptop: các bài test pin KHÁC nhau giữa nguồn (NBC Wi‑Fi 150 nit, LaptopMedia/TechPowerUp video 180 nit, PCMark 10, ước lượng của reviewer) → không so sánh trực tiếp; xem battery_test_type. proxy_* = máy cùng dòng nhưng khác cấu hình, chỉ tham khảo.\nHiệu chỉnh khi gộp: TUF A14 FA401GM — CG Mag ghi \"Cinebench 2024 1061\" không rõ single/multi → để null. MacBook Pro 14 M5 Pro — review là bản 18 nhân OLED, khác data.js → chuyển sang proxy_other_config.\nChênh lệch nguồn: NPU TOPS Panther Lake theo Intel QRG (355=49, 325=47, 322=46), NBC ghi 50. RTX 5050: NVIDIA ghi GDDR7, NBC ghi GDDR6. Core Ultra 5 322 chỉ có iGPU 2 nhân Xe3 (không phải 4).\nKiểm tra chéo ngẫu nhiên (đọc lại trang NBC): Ryzen 7 260 CB2024 104.8/927, Ultra 7 355 CB2024 118.1/652, RTX 5060 TS 11674 / SN 2591 — khớp.\nBị chặn tự động: Laptopmedia (một phần), Ultrabookreview, Geekbench Browser, trang so sánh NBC → một số GB6 của AMD còn null.\nBổ sung 2026-11-23 (đợt 2): 10 CPU, 8 GPU mới; \"Core Ultra 7 365H\" không phải SKU của Intel.\nĐợt 3 (2026-11-23): +18 CPU, +10 iGPU; mọi CPU có igpu_key (key trong \"gpus\") + igpu_source (trang hãng); igpu_key null = không có iGPU / SKU không tồn tại / chưa có entry GPU (xem igpu_key_note)."
 }
